@@ -1,7 +1,7 @@
 package = "loft2d"
 version = "scm-1"
 source = {
-   url = "https://github.com/bainchild/loft2d.git"
+   url = "git://github.com/bainchild/loft2d"
 }
 description = {
    homepage = "https://github.com/bainchild/loft2d",
