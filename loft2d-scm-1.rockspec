@@ -14,6 +14,20 @@ build = {
       ["loft.arg"] = "loft.arg.lua",
       ["loft.boot"] = "loft.boot.lua",
       ["loft.callbacks"] = "loft.callbacks.lua",
+      ["loft.timer"] = "loft.timer.lua",
+      ["loft.system"] = "loft.system.lua",
+      ["loft.data"] = "loft.data.lua",
+      ["loft.thread"] = "loft.thread.lua",
+      ["loft.event"] = "loft.event.lua",
+      ["loft.filesystem"] = "loft.filesystem/init.lua",
+      ["loft.filesystem.vfs"] = "loft.filesystem/vfs.lua",
+      ["loft.filesystem.stream"] = "loft.filesystem/stream.lua",
+      ["loft.window"] = "graphics_subsys/loft.window.lua",
+      ["loft.graphics"] = "graphics_subsys/loft.graphics/init.lua",
+      ["loft._classes"] = "_classes/init.lua",
+      ["loft._classes.Object"] = "_classes/Object.lua",
+      ["loft._classes.Data"] = "_classes/Data.lua",
+      ["loft._classes.ByteData"] = "_classes/ByteData.lua",
       ["loft.nogame"] = "loft.nogame.lua"
    }
 }

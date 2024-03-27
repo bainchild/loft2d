@@ -1,3 +1,4 @@
+-- modified: loft require name, modules to load, + config changes
 --[[
 Copyright (c) 2006-2024 LOVE Development Team
 
@@ -36,8 +37,8 @@ local invalid_game_path = nil
 local main_file = "main.lua"
 
 -- This can't be overridden.
-function love.boot()
-
+function love.boot(...)
+	local arg = {...}
 	-- This is absolutely needed.
 	require("loft.filesystem")
 
@@ -56,6 +57,7 @@ function love.boot()
 	invalid_game_path = nil
 
 	-- Is this one of those fancy "fused" games?
+  -- can I haz game too?
 	local can_has_game = pcall(love.filesystem.setSource, exepath)
 
 	-- It's a fused game, don't parse --game argument
@@ -126,23 +128,22 @@ function love.boot()
 	-- before the save directory (the identity should be appended.)
 	pcall(love.filesystem.setIdentity, identity, true)
 
-  -- can I haz game?
 	if can_has_game and not (love.filesystem.getInfo(main_file) or (not custom_main_file and love.filesystem.getInfo("conf.lua"))) then
 		no_game_code = true
 	end
 
 	if not can_has_game then
         -- when editing this message, change it at love.cpp too
-        print([[LOVE is an *awesome* framework you can use to make 2D games in Lua
-https://love2d.org
+--         print([[LOVE is an *awesome* framework you can use to make 2D games in Lua
+-- https://love2d.org
 
-usage:
-    love --version                  prints LOVE version and quits
-    love --help                     prints this message and quits
-    love path/to/gamedir            runs the game from the given directory which contains a main.lua file
-    love path/to/packagedgame.love  runs the packaged game from the provided .love file
-    love path/to/file.lua           runs the game from the given .lua file
-]]);
+-- usage:
+--     loft --version                  prints LOVE version and quits
+--     loft --help                     prints this message and quits
+--     loft path/to/gamedir            runs the game from the given directory which contains a main.lua file
+--     loft path/to/packagedgame.love  runs the packaged game from the provided .love file
+--     loft path/to/file.lua           runs the game from the given .lua file
+-- ]]);
 		local nogame = require("loft.nogame")
 		nogame()
 	end
@@ -161,14 +162,14 @@ function love.init()
 			height = 600,
 			x = nil,
 			y = nil,
-			minwidth = 1,
-			minheight = 1,
-			fullscreen = false,
-			fullscreentype = "desktop",
-			displayindex = 1,
+			minwidth = 800,
+			minheight = 600,
+			fullscreen = true,
+			fullscreentype = "exclusive",
+			display = 1,
 			vsync = 1,
 			msaa = 0,
-			borderless = false,
+			borderless = true,
 			resizable = false,
 			centered = true,
 			usedpiscale = true,
@@ -300,24 +301,24 @@ function love.init()
 	-- Gets desired modules.
 	for k,v in ipairs{
 		"data",
-		"thread",
+		-- "thread",
 		"timer",
-		"event",
-		"keyboard",
-		"joystick",
-		"mouse",
-		"touch",
-		"sound",
+		-- "event",
+		-- "keyboard",
+		-- "joystick",
+		-- "mouse",
+		-- "touch",
+		-- "sound",
 		"system",
-		"sensor",
-		"audio",
-		"image",
-		"video",
-		"font",
+		-- "sensor",
+		-- "audio",
+		-- "image",
+		-- "video",
+		-- "font",
 		"window",
 		"graphics",
-		"math",
-		"physics",
+		-- "math",
+		-- "physics",
 	} do
 		if c.modules[v] then
 			require("loft." .. v)
@@ -417,7 +418,8 @@ end
 -- The root of all calls.
 -----------------------------------------------------------
 
-return function()
+return function(...)
+	local arg = {...}
 	local func
 	local inerror = false
 
@@ -430,7 +432,7 @@ return function()
 
 	local function earlyinit()
 		-- If love.boot fails, return 1 and finish immediately
-		local result = xpcall(love.boot, error_printer)
+		local result = xpcall(function() love.boot((unpack or table.unpack)(arg)) end, error_printer)
 		if not result then return 1 end
 
 		-- If love.init or love.run fails, don't return a value,
