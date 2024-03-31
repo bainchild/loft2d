@@ -303,7 +303,7 @@ function love.init()
 		"data",
 		-- "thread",
 		"timer",
-		-- "event",
+		"event",
 		-- "keyboard",
 		-- "joystick",
 		-- "mouse",
@@ -432,7 +432,7 @@ return function(...)
 
 	local function earlyinit()
 		-- If love.boot fails, return 1 and finish immediately
-		local result = xpcall(function() love.boot((unpack or table.unpack)(arg)) end, error_printer)
+		local result = xpcall(function() return love.boot((unpack or table.unpack)(arg)) end, error_printer)
 		if not result then return 1 end
 
 		-- If love.init or love.run fails, don't return a value,

@@ -23,11 +23,14 @@ build = {
       ["loft.filesystem.vfs"] = "loft.filesystem/vfs.lua",
       ["loft.filesystem.stream"] = "loft.filesystem/stream.lua",
       ["loft.window"] = "graphics_subsys/loft.window.lua",
-      ["loft.graphics"] = "graphics_subsys/loft.graphics/init.lua",
-      ["loft._classes"] = "_classes/init.lua",
+      ["loft.graphics"] = "graphics_subsys/loft.graphics.lua",
       ["loft._classes.Object"] = "_classes/Object.lua",
       ["loft._classes.Data"] = "_classes/Data.lua",
       ["loft._classes.ByteData"] = "_classes/ByteData.lua",
+      ["loft._classes.Canvas"] = "_classes/Canvas.lua",
+      ["loft._classes.Drawable"] = "_classes/Drawable.lua",
+      ["loft._classes.FileData"] = "_classes/FileData.lua",
+      ["loft._classes.Texture"] = "_classes/Texture.lua",
       ["loft.nogame"] = "loft.nogame.lua"
    }
 }

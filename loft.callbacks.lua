@@ -235,8 +235,14 @@ function love.errhand(msg)
 	love.graphics.origin()
 
 	local sanitizedmsg = {}
-	for char in msg:gmatch(utf8.charpattern) do
-		table.insert(sanitizedmsg, char)
+	if utf8.charpattern then
+		for char in msg:gmatch(utf8.charpattern) do
+			table.insert(sanitizedmsg, char)
+		end
+	elseif utf8.gmatch then
+		for char in utf8.gmatch(msg,".") do
+			table.insert(sanitizedmsg, char)
+		end
 	end
 	sanitizedmsg = table.concat(sanitizedmsg)
 

@@ -11,7 +11,8 @@ function love.nogame()
       end
    end
    function love.draw()
-      love.graphics.print("loft no game",50,50)
+      local width,height = love.graphics.getDimensions()
+      love.graphics.print("loft no game",math.floor(width/2),math.floor(height/2))
    end
 end
 return love.nogame
