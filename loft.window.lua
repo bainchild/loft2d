@@ -1,5 +1,6 @@
 ---@diagnostic disable: unused-local
 local love = require("loft")
+require("loft.graphics")
 local prov = love._provider
 love.window = {}
 local defmode = {
@@ -26,6 +27,7 @@ local mode = defmode
 local use_dpi_scale = true
 local dpi_scale = 1
 love.window._mode = mode
+if love.graphics then love.graphics._newScreen(mode.width,mode.height,dpi_scale) end
 local function round(a)
    if a%1==0 then return a end
    if a%1>=.5 then return a-(a%1)+1 end
@@ -91,6 +93,7 @@ function love.window.setMode(width,height,flags)
       if prov.display.changeFlags then
          prov.display.changeFlags(mode.flags)
       end
+      if love.graphics then love.graphics._newScreen(mode.width,mode.height,dpi_scale) end
       return true
    end
    return false

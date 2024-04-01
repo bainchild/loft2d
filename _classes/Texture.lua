@@ -45,12 +45,31 @@ end
 -- setFilter
 -- setMipmapFilter
 -- setWrap
-function Texture:_default()
-   local n = {
-      _width=1,
-      _height=1,
-      _dpiscale=1,
-   }
+function Texture:_default(type,format)
+   if type==nil then type="2d" end
+   if format==nil or format=="normal" then format="rgba8" end
+   local n
+   if type=="2d" then
+      n = {
+         _width=1,
+         _height=1,
+         _dpiscale=1,
+         _pxformat=format,
+         _type=type,
+         _pxarray={}
+      }
+      if format=="r8" or format=="r16" or format=="r16f" or format=="r32f" then
+         n._pxarray[1]={0}
+      elseif format=="rg8" or format=="rg16" or format=="rg16f" or format=="rg32f" then
+         n._pxarray[1]={{0,0}}
+      elseif format=="rgba8" or format=="srgba8" or format=="rgba18" or format=="rgba16f" or format=="rgba32f" then
+         n._pxarray[1]={{0,0,0}}
+      else
+         return nil
+      end
+   else
+      return nil
+   end
    for i,v in next, self do
       n[i]=v
    end

@@ -37,7 +37,7 @@ for i,v in next, love._providers do
       for i2,v2 in next, v do
          if (v2.check==nil or v2.check()) then
             love._provider[i]=v2.get()
-            print("LOFT: Using "..i2.." as a "..i.." provider")
+            -- print("LOFT: Using "..i2.." as a "..i.." provider")
             break
          end
       end

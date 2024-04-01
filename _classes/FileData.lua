@@ -14,4 +14,13 @@ function FileData:getFilename()
    local spp = split(rawget(self,"_fullname"),"%.")
    return table.concat(spp,".",1,#spp-1)
 end
+function FileData:_new(str,name)
+   local n = {
+      _string=str;
+      _size=#str;
+      _fullname=name or "file.bin"
+   }
+   for i,v in next, self do n[i]=v end
+   return n
+end
 return FileData
