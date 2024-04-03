@@ -3,7 +3,7 @@ local love = require("loft")
 love.timer = {}
 local prov = love._provider
 local clk = os.clock -- works on "CPU time", will be off by a significant amount
-if prov.thread.time then
+if prov.thread and prov.thread.time then
    clk=prov.thread.time
 end
 local _start = clk()

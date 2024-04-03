@@ -1,4 +1,3 @@
-local love = require("loft")
 local FileData = require('loft._classes.FileData')
 local ImageData = require('loft._classes.Data'):_inherit({_classname="ImageData"})
 -- this is just texture but again
@@ -6,10 +5,21 @@ local ImageData = require('loft._classes.Data'):_inherit({_classname="ImageData"
 -- ImageData:encode()
 -- ImageData:paste()
 local encoders = {
-   ["png"] = require('loft._encode.png')
+   ["png"] = require('loft._formats.png')
 }
 function ImageData:encode(form,name)
-   return FileData:_new(encoders[form](self),name or ("file."..form))
+   return FileData:_new(encoders[form].into(self),name or ("file."..form))
+end
+function ImageData:_decode(src,form)
+   if form==nil then
+      for _,v in next, encoders do
+         if v.isA and v.isA(src) then
+            return v.from(src)
+         end
+      end
+   else
+      return encoders[form].from(src)
+   end
 end
 function ImageData:getDimensions()
    return rawget(self,"_width"),rawget(self,"_height")
@@ -56,12 +66,14 @@ function ImageData:getPixel(x,y)
    x,y=math.floor(x)+1,math.floor(y)+1
    return convert(rawget(self,"_format"),(unpack or table.unpack)(rawget(self,"_pixels")[x][y]))
 end
+local love
 function ImageData:mapPixel(func,x,y,width,height)
    if x==nil then x=1 else x=x+1 end
    if y==nil then y=1 else y=y+1 end
    if width==nil then width=rawget(self,"_width") end
    if height==nil then height=rawget(self,"_height") end
    if rawget(self,"_mutable")==false then
+      if love==nil then love=require("loft") end
       if love.timer and love.timer.sleep then
          repeat love.timer.sleep(1/1000) until rawget(self,"_mutable")
       else

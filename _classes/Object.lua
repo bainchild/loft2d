@@ -49,10 +49,15 @@ function Object:_inherit(other)
       end
    end
    if other._inherits~=nil then
-      other._inherits[#other._inherits+1] = rawget(self,"_classname")
+      for _,v in next, rawget(self,"_inherits") do
+         print("inehrting..",v)
+         other._inherits[#other._inherits+1] = v
+      end
    else
-      other._inherits = {rawget(self,"_classname")}
+      ---@diagnostic disable-next-line: deprecated
+      other._inherits = {(unpack or table.unpack)(rawget(self,"_inherits"))}
    end
+   other._inherits[#other._inherits+1] = rawget(self,"_classname")
    other._inherit = self._inherit
    if other._default==nil then other._default = self._default end
    if other._securitize==nil then other._securitize = self._securitize end

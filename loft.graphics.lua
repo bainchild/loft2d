@@ -1,12 +1,15 @@
 ---@diagnostic disable: unused-local, deprecated
 local love = require('loft')
+local ImageData = require('loft._classes.ImageData')
 local Canvas = require('loft._classes.Canvas')
+local Image = require('loft._classes.Image')
 love.graphics = {}
 local dc_r,dc_g,dc_b,dc_a = 1,1,1,1
 local bg_r,bg_g,bg_b,bg_a = 0,0,0,0
-local scissor,blendmode,ccm,wireframe = nil,"replace",{true,true,true,true},false
+local scissor,blendmode,ccm,wireframe = nil,"alphamultiply",{true,true,true,true},false
 local transform_ox,transform_oy,transform_sx,transform_sy,transform_r = 0,0,1,1,0
 local line_mode,point_size,line_size = "smooth",1,.25
+local font
 local canvas
 local screen
 local shallow_clone = table.clone or function(a)
@@ -48,7 +51,7 @@ local function convert(format,r,g,b,a)
       return r/255,g/255,b/255,a/255
    elseif format:sub(-2)=="16" or format:sub(-3)=="16f" then
       return r/65535,g/65535,b/65535,a/65535
-   elseif format:sub(-2)=="32" or format:sub(-3)=="32f" then
+  elseif format:sub(-2)=="32" or format:sub(-3)=="32f" then
       local max = 2^31
       return r/max,g/max,b/max,a/max
    end
@@ -88,20 +91,77 @@ local function transform(canva)
    end
    return newcan
 end
+local function clampf(a,b,c)
+   if a>c then return c end
+   if a<b then return b end
+   return math.floor(a)
+end
 local function blend(canva,canvb,bx,by)
    -- assumes that canva is bigger than canvb
    -- clips canvb with canva
-   -- TODO: blending modes
+   -- TODO: blending modes (currently just alphamultiply)
    local width,height = canva:getWidth(),canva:getHeight()
    local bwidth,bheight = canvb:getWidth(),canvb:getHeight()
+   local cf = canva:getFormat()
+   local format_max
+   if cf:sub(-1)=="8" then
+      format_max=255
+   elseif cf:sub(-2)=="16" then
+      format_max=65535
+   elseif cf:sub(-2)=="32" then
+      format_max=2^31
+   end
    local canvr = canva:_clone_nc()
    local px,apx,bpx = rawget(canvr,"_pxarray"),rawget(canva,"_pxarray"),rawget(canvb,"_pxarray")
    for x=1,width do
       for y=1,height do
-         -- easter egg (real)
-         if bounds(x,y,bx,by,bwidth,bheight) then
+         if bounds(x,y,bx,by,bwidth-1,bheight-1) then
+            -- print(x-bx+1,y-by+1,"(@",bwidth,bheight,")")
             -- blending!!!
-            px[x][y] = bpx[x-bx+1][y-by+1]
+            local src_2 = bpx[x-bx+1][y-by+1]
+            if type(src_2)=="table" then
+               local src={
+                  src_2[1]/format_max,
+                  src_2[2]/format_max,
+                  src_2[3]/format_max,
+                  src_2[4]/format_max
+               }
+               local dst
+               do
+                  local dst_1 = apx[x][y];
+                  dst={
+                     dst_1[1]/format_max,
+                     dst_1[2]/format_max,
+                     dst_1[3]/format_max,
+                     dst_1[4]/format_max
+                  }
+               end
+               local src_alpha = src[4]
+               local iv_alpha = 1-src_alpha
+               -- print(clr1a,clr1an,iv_clr1a)
+               if format_max==nil then
+                  px[x][y] = {
+                     (dst[1] * iv_alpha + src[1] * src_alpha)*format_max;
+                     (dst[2] * iv_alpha + src[2] * src_alpha)*format_max;
+                     (dst[3] * iv_alpha + src[3] * src_alpha)*format_max;
+                     (dst[4] * iv_alpha + src_alpha)*format_max;
+                  }
+               else
+                  px[x][y] = {
+                     clampf((dst[1] * iv_alpha + src[1] * src_alpha)*format_max,0,format_max);
+                     clampf((dst[2] * iv_alpha + src[2] * src_alpha)*format_max,0,format_max);
+                     clampf((dst[3] * iv_alpha + src[3] * src_alpha)*format_max,0,format_max);
+                     clampf((dst[4] * iv_alpha + src_alpha)*format_max,0,format_max);
+                  }
+               end
+               -- local cpx = px[x][y]
+               -- print(("(%d,%d,%d,%d) + (%d,%d,%d,%d) = (%d,%d,%d,%d)"):format(
+               --    clr2[1],clr2[2],clr2[3],clr2[4],
+               --    clr1[1],clr1[2],clr1[3],clr1[4],
+               --    cpx[1],cpx[2],cpx[3],cpx[4]))
+            else
+               px[x][y] = src_2
+            end
          else
             px[x][y] = apx[x][y]
          end
@@ -138,8 +198,25 @@ local function copy(canva,canvb,noc)
 end
 love.graphics._transform = transform
 love.graphics._blend = blend
-function love.graphics.setFont() end
-function love.graphics.newFont() end
+function love.graphics.newImage(file,settings)
+   if type(file)=="table" and rawget(file,"_isAobject") and file:typeOf("Data") then
+      if file:typeOf("ImageData") then
+         return Image:_new("2d",file,settings)
+      else
+         file=file:getString()
+      end
+   elseif type(file)=="string" then
+      file=assert(love.filesystem.read(file))
+   end
+   return Image:_new("2d",ImageData:_decode(file),settings)
+end
+function love.graphics.setFont(fon) font=fon end
+-- filename, size, hinting, dpiscale: truetype
+-- filename, imagefilename: BMFont + image
+-- size, hinting, dpiscale: inbuilt
+function love.graphics.newFont(size,hinting,dpiscale)
+
+end
 function love.graphics.isActive()
    return love.graphics.isCreated() and (canvas or screen)
 end
@@ -150,7 +227,7 @@ function love.graphics.reset()
    assert(love.graphics.isActive(),"not active...")
    dc_r,dc_g,dc_b,dc_a = 1,1,1,1
    bg_r,bg_g,bg_b,bg_a = 0,0,0,0
-   scissor,blendmode,ccm,wireframe = nil,"replace",{true,true,true,true},false
+   scissor,blendmode,ccm,wireframe = nil,"alphamultiply",{true,true,true,true},false
    transform_ox,transform_oy,transform_sx,transform_sy,transform_r = 0,0,1,1,0
    line_mode,point_size,line_size = "smooth",1,.25
 end
@@ -231,6 +308,15 @@ function love.graphics.setLineSize(size)
 end
 function love.graphics.setPointSize(size)
    point_size=size
+end
+-- no shears here!!!
+-- NOTE: ignoring scale for now, and rotation
+-- cause the blender will not like that
+function love.graphics.draw(drawable,x,y,r,sx,sy,ox,oy)
+   assert(love.graphics.isActive(),"not active...")
+   local target = (canvas or screen)
+   local w,h,px = drawable:_getpxarray("rgba8")
+   copy(target,blend(target,Canvas:_new(w,h,1,"rgba8",px),x,y),true)
 end
 function love.graphics.line(x1,y1,x2,y2)
    -- TODO: overloads

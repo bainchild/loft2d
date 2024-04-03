@@ -299,6 +299,12 @@ function love.init()
 	end
 
 	-- Gets desired modules.
+	-- if c.modules.data then require("loft.data") end
+	-- if c.modules.timer then require("loft.timer") end
+	-- if c.modules.event then require("loft.event") end
+	-- if c.modules.system then require("loft.system") end
+	-- if c.modules.window then require("loft.window") end
+	-- if c.modules.graphics then require("loft.graphics") end
 	for k,v in ipairs{
 		"data",
 		-- "thread",
@@ -312,7 +318,7 @@ function love.init()
 		"system",
 		-- "sensor",
 		-- "audio",
-		-- "image",
+		"image",
 		-- "video",
 		-- "font",
 		"window",
