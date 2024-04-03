@@ -370,18 +370,18 @@ function love.graphics.points(x,y)
    local pix = rawget(canv,"_pxarray")
    -- hope it's format isn't a single channel!
    local conv_color = {unconvert(canv:getFormat(),dc_r,dc_g,dc_b,dc_a)}
-   local benx,beny = x-point_size,y-point_size
-   local endx,endy = x+point_size,y+point_size
-   local center_x = benx+(endx-benx)/2
-   local center_y = beny+(endy-beny)/2
+   local benx,beny = x-point_size/2,y-point_size/2
+   local endx,endy = x+point_size/2,y+point_size/2
+   -- local center_x = benx+(endx-benx)/2
+   -- local center_y = beny+(endy-beny)/2
    for px=benx,endx do
       for py=beny,endy do
-         if (px-center_x)^2+(py-center_y)^2<=point_size then
+         -- if (px-center_x)^2+(py-center_y)^2<=point_size then
             local rx,ry = round(px),round(py)
-            if bounds(rx,ry,1,1,ow-1,oh-1) then
+         --    if bounds(rx,ry,1,1,ow-1,oh-1) then
                pix[rx][ry] = conv_color
-            end
-         end
+         --    end
+         -- end
       end
    end
    copy((canvas or screen),blend((canvas or screen),transform(canv),1,1),true)

@@ -264,6 +264,9 @@ function love.nogame()
       love.graphics.points(width/2,height/4)
       love.graphics.setColor(0,1,0,1)
       love.graphics.points(width/2,height*3/4)
+      -- there is no tint, so we don't have to set color here.
+      -- if there was, though:
+      -- love.graphics.setColor(1,1,1,1)
       love.graphics.draw(img2,math.floor((width/2)-(imgdata:getWidth()/2)),math.floor((height/2)-(imgdata:getHeight()/2)))
       io.write(love.graphics._getScreen():newImageData():encode("png"):getString())
       os.exit(0)
