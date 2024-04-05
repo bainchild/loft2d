@@ -7,7 +7,7 @@ love.graphics = {}
 local dc_r,dc_g,dc_b,dc_a = 1,1,1,1
 local bg_r,bg_g,bg_b,bg_a = 0,0,0,0
 local scissor,blendmode,ccm,wireframe = nil,"alphamultiply",{true,true,true,true},false
-local transform_ox,transform_oy,transform_sx,transform_sy,transform_r = 0,0,1,1,0
+local transform_ox,transform_oy,transform_sx,transform_sy,transform_rot = 0,0,1,1,0
 local line_mode,point_size,line_size = "smooth",1,.25
 local font
 local canvas
@@ -74,18 +74,37 @@ local function unconvert(format,r,g,b,a)
    end
    return r,g,b,a
 end
-local function transform(canva)
-   -- TODO: rotation
+local function rotate(angle,x,y,ox,oy)
+   local sin,cos = math.sin(angle),math.cos(angle)
+   local relx,rely = (x-ox),(y-oy)
+   return (relx*cos)-(rely*sin)+ox,
+          (relx*sin)+(rely*cos)+oy
+end
+local function rotate_origin(angle,x,y)
+   local sin,cos = math.sin(angle),math.cos(angle)
+   return x*cos-y*sin,
+          x*sin+y*cos
+end
+local function transform(canva,bonus_rot,rox,roy)
    -- NEVER_TODO_PROBABLY: shear
    local width,height = canva:getDimensions()
-   local newcan = canva:_clone_nc({unconvert(canva:getFormat(),bg_r,bg_g,bg_b,bg_a)})
+   local newcan = canva:_clone_nc({unconvert(canva:getFormat(),0,0,0,0)})
    local newpx = rawget(newcan,"_pxarray")
    local px = rawget(canva,"_pxarray")
    for x=1,width do
       for y=1,height do
-         local nx,ny = math.floor(x*transform_sx+transform_ox),math.floor(y*transform_sy+transform_oy)
-         if not (nx>width or ny>height) then
-            newpx[x][y] = px[x][y]
+         local nx,ny = (x+transform_ox)*transform_sx,(y+transform_oy)*transform_sy
+         -- print("B4 ROTATION",nx,ny)
+         if rox==nil and roy==nil then
+            nx,ny = rotate_origin(transform_rot+(bonus_rot or 0),nx,ny)
+         else
+            nx,ny = rotate(transform_rot+(bonus_rot or 0),nx,ny,rox or 0,roy or 0)
+         end
+         nx,ny = round(nx),round(ny)
+         -- print("A4 ROTATION",nx,ny,"(",width,height,")")
+         if not (nx>width or ny>height or nx<1 or ny<1) then
+            newpx[x][y] = px[nx][ny]
+            -- newpx[nx][ny] = px[x][y]
          end
       end
    end
@@ -96,10 +115,54 @@ local function clampf(a,b,c)
    if a<b then return b end
    return math.floor(a)
 end
+-- TODO: blending modes (currently just alphamultiply)
+local blend_alphamultiply = function(src,dst)
+   local src_alpha = src[4]
+   local iv_alpha = 1-src_alpha
+   return {
+      (dst[1] * iv_alpha + src[1] * src_alpha);
+      (dst[2] * iv_alpha + src[2] * src_alpha);
+      (dst[3] * iv_alpha + src[3] * src_alpha);
+      (dst[4] * iv_alpha + src_alpha);
+   }
+end
+local function translate(canva,x,y)
+   local width,height = canva:getDimensions()
+   local newcan = canva:_clone_nc({unconvert(canva:getFormat(),bg_r,bg_g,bg_b,bg_a)})
+   local newpx = rawget(newcan,"_pxarray")
+   local px = rawget(canva,"_pxarray")
+   for x2=1,width do
+      for y2=1,height do
+         local nx,ny = round(x2+x),round(y2+y)
+         if not (nx>width or ny>height or nx<1 or ny<1) then
+            newpx[x][y] = px[x][y]
+         end
+      end
+   end
+   return newcan
+end
+local function place(canva,new_width,new_height,nx,ny)
+   local ow,oh = canva:getDimensions()
+   local px = rawget(canva,"_pxarray")
+   local newcan = Canvas:_new(new_width,new_height,1,canva:getFormat(),nil,{unconvert(canva:getFormat(),0,0,0,0)})
+   local newpx = rawget(newcan,"_pxarray")
+   if nx>new_width or ny>new_height or nx<1 or ny<1 then
+      -- skipping!!!!!@@@
+      return newcan
+   end
+   for x=1,new_width do
+      for y=1,new_height do
+         if x<nx+ow and x>=nx and y<ny+oh and y>=ny then
+            -- print(x,y,nx,ny,"=",x-nx+1,y-ny+1)
+            newpx[x][y]=px[x-nx+1][y-ny+1]
+         end
+      end
+   end
+   return newcan
+end
 local function blend(canva,canvb,bx,by)
-   -- assumes that canva is bigger than canvb
+   -- assumes that canva is bigger than or equal to canvb
    -- clips canvb with canva
-   -- TODO: blending modes (currently just alphamultiply)
    local width,height = canva:getWidth(),canva:getHeight()
    local bwidth,bheight = canvb:getWidth(),canvb:getHeight()
    local cf = canva:getFormat()
@@ -115,43 +178,30 @@ local function blend(canva,canvb,bx,by)
    local px,apx,bpx = rawget(canvr,"_pxarray"),rawget(canva,"_pxarray"),rawget(canvb,"_pxarray")
    for x=1,width do
       for y=1,height do
-         if bounds(x,y,bx,by,bwidth-1,bheight-1) then
-            -- print(x-bx+1,y-by+1,"(@",bwidth,bheight,")")
+         if (bwidth==width and bheight==height) or bounds(x,y,bx,by,bwidth-1,bheight-1) then
             -- blending!!!
             local src_2 = bpx[x-bx+1][y-by+1]
             if type(src_2)=="table" then
-               local src={
-                  src_2[1]/format_max,
-                  src_2[2]/format_max,
-                  src_2[3]/format_max,
-                  src_2[4]/format_max
-               }
-               local dst
-               do
-                  local dst_1 = apx[x][y];
-                  dst={
+               local dst_1 = apx[x][y];
+               if format_max==nil then
+                  px[x][y] = blend_alphamultiply(src_2,dst_1)
+               else
+                  local res = blend_alphamultiply({
+                     src_2[1]/format_max,
+                     src_2[2]/format_max,
+                     src_2[3]/format_max,
+                     src_2[4]/format_max
+                  },{
                      dst_1[1]/format_max,
                      dst_1[2]/format_max,
                      dst_1[3]/format_max,
                      dst_1[4]/format_max
-                  }
-               end
-               local src_alpha = src[4]
-               local iv_alpha = 1-src_alpha
-               -- print(clr1a,clr1an,iv_clr1a)
-               if format_max==nil then
+                  })
                   px[x][y] = {
-                     (dst[1] * iv_alpha + src[1] * src_alpha)*format_max;
-                     (dst[2] * iv_alpha + src[2] * src_alpha)*format_max;
-                     (dst[3] * iv_alpha + src[3] * src_alpha)*format_max;
-                     (dst[4] * iv_alpha + src_alpha)*format_max;
-                  }
-               else
-                  px[x][y] = {
-                     clampf((dst[1] * iv_alpha + src[1] * src_alpha)*format_max,0,format_max);
-                     clampf((dst[2] * iv_alpha + src[2] * src_alpha)*format_max,0,format_max);
-                     clampf((dst[3] * iv_alpha + src[3] * src_alpha)*format_max,0,format_max);
-                     clampf((dst[4] * iv_alpha + src_alpha)*format_max,0,format_max);
+                     clampf(res[1]*format_max,0,format_max);
+                     clampf(res[2]*format_max,0,format_max);
+                     clampf(res[3]*format_max,0,format_max);
+                     clampf(res[4]*format_max,0,format_max);
                   }
                end
                -- local cpx = px[x][y]
@@ -168,6 +218,60 @@ local function blend(canva,canvb,bx,by)
       end
    end
    return canvr
+end
+local function tint(canva,color)
+   local res,w,h = canva:_clone_nc(),canva:getDimensions()
+   local rpx,px = rawget(res,"_pxarray"),rawget(canva,"_pxarray")
+   local cf = canva:getFormat()
+   local format_max
+   if cf:sub(-1)=="8" then
+      format_max=255
+   elseif cf:sub(-2)=="16" then
+      format_max=65535
+   elseif cf:sub(-2)=="32" then
+      format_max=2^31
+   end
+   if type(color)=="number" then
+      for x=1,w do
+         for y=1,h do
+            local v = px[x][y]*color
+            if format_max then
+               rpx[x][y]=clampf(v,0,format_max)
+            else
+               rpx[x][y]=v
+            end
+         end
+      end
+   else
+      for x=1,w do
+         for y=1,h do
+            local v = px[x][y]
+            local al = v[4]/format_max
+            local bl = {
+               (v[1]/format_max)*(color[1]/format_max);
+               (v[2]/format_max)*(color[2]/format_max);
+               (v[3]/format_max)*(color[3]/format_max);
+               v[4]/format_max;
+            }
+            if format_max then
+               rpx[x][y]={
+                  clampf(bl[1]*format_max,0,format_max);
+                  clampf(bl[2]*format_max,0,format_max);
+                  clampf(bl[3]*format_max,0,format_max);
+                  clampf(bl[4]*format_max,0,format_max);
+               }
+            else
+               rpx[x][y]={
+                  bl[1];
+                  bl[2];
+                  bl[3];
+                  bl[4];
+               }
+            end
+         end
+      end
+   end
+   return res
 end
 local function copy(canva,canvb,noc)
    local ax,ay = canva:getDimensions()
@@ -211,6 +315,7 @@ function love.graphics.newImage(file,settings)
    return Image:_new("2d",ImageData:_decode(file),settings)
 end
 function love.graphics.setFont(fon) font=fon end
+function love.graphics.getFont() return font end
 -- filename, size, hinting, dpiscale: truetype
 -- filename, imagefilename: BMFont + image
 -- size, hinting, dpiscale: inbuilt
@@ -228,16 +333,16 @@ function love.graphics.reset()
    dc_r,dc_g,dc_b,dc_a = 1,1,1,1
    bg_r,bg_g,bg_b,bg_a = 0,0,0,0
    scissor,blendmode,ccm,wireframe = nil,"alphamultiply",{true,true,true,true},false
-   transform_ox,transform_oy,transform_sx,transform_sy,transform_r = 0,0,1,1,0
+   transform_ox,transform_oy,transform_sx,transform_sy,transform_rot = 0,0,1,1,0
    line_mode,point_size,line_size = "smooth",1,.25
 end
 function love.graphics.origin()
    assert(love.graphics.isActive(),"not active...")
-   transform_ox,transform_oy,transform_sx,transform_sy,transform_r = 0,0,1,1,0
+   transform_ox,transform_oy,transform_sx,transform_sy,transform_rot = 0,0,1,1,0
 end
 function love.graphics.rotate(n)
    assert(love.graphics.isActive(),"not active...")
-   transform_r=n
+   transform_rot=transform_rot+n
 end
 function love.graphics.translate(x,y)
    assert(love.graphics.isActive(),"not active...")
@@ -252,7 +357,7 @@ function love.graphics.scale(sx,sy)
 end
 function love.graphics.clear(r,g,b,a,stencil,depth)
    assert(love.graphics.isActive(),"not active...")
-   if r==nil then r,g,b,a = 0,0,0,0 end -- haha get side effected!!!!
+   if r==nil then r,g,b,a = 0,0,0,1 end -- haha get side effected!!!!
    if a==nil then a=1 end
    local canva = canvas or screen
    local px,form = rawget(canva,"_pxarray"),rawget(canva,"_pxformat")
@@ -267,11 +372,35 @@ function love.graphics.clear(r,g,b,a,stencil,depth)
    end
 end
 love.graphics.discard = love.graphics.clear
+local screenshot_queued = false
+local screenshot_arg
 function love.graphics.present()
    assert(love.graphics.isActive(),"not active...")
+   local img
    if love._provider and love._provider.display and love._provider.display.update then
-      love._provider.display.update(screen:newImageData())
+      img = screen:newImageData()
+      love._provider.display.update(img)
    end
+   if screenshot_queued then
+      screenshot_queued = false
+      local param = screenshot_arg
+      screenshot_arg = nil
+      img = img or screen:newImageData()
+      if type(param)=="string" then
+         if love.filesystem.write then
+            assert(love.filesystem.write(param,img:_guess_encode(param)))
+         end
+      elseif type(param)=="function" then
+         param(img)
+      elseif type(param)=="table" and rawget(param,"_isAobject") and param:typeOf("Channel") then
+         param:push(img)
+      end
+   end
+end
+function love.graphics.captureScreenshot(a)
+   assert(love.graphics.isActive(),"not active...")
+   screenshot_queued = true
+   screenshot_arg = a
 end
 function love.graphics.getWidth()
    assert(love.graphics.isActive(),"not active...")
@@ -310,13 +439,13 @@ function love.graphics.setPointSize(size)
    point_size=size
 end
 -- no shears here!!!
--- NOTE: ignoring scale for now, and rotation
--- cause the blender will not like that
 function love.graphics.draw(drawable,x,y,r,sx,sy,ox,oy)
    assert(love.graphics.isActive(),"not active...")
    local target = (canvas or screen)
    local w,h,px = drawable:_getpxarray("rgba8")
-   copy(target,blend(target,Canvas:_new(w,h,1,"rgba8",px),x,y),true)
+   local tined = tint(Canvas:_new(w,h,1,"rgba8",px),{unconvert("rgba8",dc_r,dc_g,dc_b,dc_a)})
+   -- place(target,target:getWidth(),target:getHeight(),x+1,y+1)
+   copy(target,blend(target,transform(place(tined,target:getWidth(),target:getHeight(),x+1,y+1),r,ox,oy),1,1),true)
 end
 function love.graphics.line(x1,y1,x2,y2)
    -- TODO: overloads
@@ -330,7 +459,7 @@ function love.graphics.line(x1,y1,x2,y2)
    --    print("early exit due to ptp bound check")
    --    return
    -- end
-   local canv = orgc:_clone_nc()
+   local canv = orgc:_clone_nc({unconvert(orgc:getFormat(),0,0,0,0)})
    local pix = rawget(canv,"_pxarray")
    -- hope it's format isn't a single channel!
    local conv_color = {unconvert(canv:getFormat(),dc_r,dc_g,dc_b,dc_a)}
@@ -358,7 +487,7 @@ function love.graphics.line(x1,y1,x2,y2)
          end
       end
    end
-   copy((canvas or screen),blend((canvas or screen),transform(canv),1,1),true)
+   copy(orgc,blend(orgc,transform(canv),1,1),true)
 end
 function love.graphics.points(x,y)
    x,y=x+1,y+1
@@ -366,7 +495,7 @@ function love.graphics.points(x,y)
    local orgc = (canvas or screen)
    local ow,oh = orgc:getDimensions()
    -- TODO: bounds check
-   local canv = orgc:_clone_nc()
+   local canv = orgc:_clone_nc({unconvert(orgc:getFormat(),0,0,0,0)})
    local pix = rawget(canv,"_pxarray")
    -- hope it's format isn't a single channel!
    local conv_color = {unconvert(canv:getFormat(),dc_r,dc_g,dc_b,dc_a)}
@@ -384,7 +513,7 @@ function love.graphics.points(x,y)
          -- end
       end
    end
-   copy((canvas or screen),blend((canvas or screen),transform(canv),1,1),true)
+   copy(orgc,blend(orgc,transform(canv),1,1),true)
 end
 --
 function love.graphics._setScreen(scree)
