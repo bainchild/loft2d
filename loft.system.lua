@@ -33,5 +33,5 @@ function love.system.setClipboard(text)
       love._provider.system.setClipboard(text)
    end
 end
-function love.system.vibrate(seconds)end
+function love.system.vibrate(seconds) end
 return love.system

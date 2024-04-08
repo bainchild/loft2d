@@ -1,0 +1,4 @@
+[[language]]
+name = "lua"
+indent = { tab-width = 3, unit = "   " }
+formatter = { command = "stylua", args = ["--sort-requires","-"] }

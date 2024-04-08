@@ -1,4 +1,3 @@
-
 --[[
 Copyright (c) 2006-2024 LOVE Development Team
 
@@ -27,156 +26,152 @@ love.arg = {}
 
 -- Replace any \ with /.
 function love.path.normalslashes(p)
-	return p:gsub("\\", "/")
+   return p:gsub("\\", "/")
 end
 
 -- Makes sure there is a slash at the end
 -- of a path.
 function love.path.endslash(p)
-	if p:sub(-1) ~= "/" then
-		return p .. "/"
-	else
-		return p
-	end
+   if p:sub(-1) ~= "/" then
+      return p .. "/"
+   else
+      return p
+   end
 end
 
 -- Checks whether a path is absolute or not.
 function love.path.abs(p)
+   local tmp = love.path.normalslashes(p)
 
-	local tmp = love.path.normalslashes(p)
+   -- Path is absolute if it starts with a "/".
+   if tmp:find("/") == 1 then
+      return true
+   end
 
-	-- Path is absolute if it starts with a "/".
-	if tmp:find("/") == 1 then
-		return true
-	end
+   -- Path is absolute if it starts with a
+   -- letter followed by a colon.
+   if tmp:find("%a:") == 1 then
+      return true
+   end
 
-	-- Path is absolute if it starts with a
-	-- letter followed by a colon.
-	if tmp:find("%a:") == 1 then
-		return true
-	end
-
-	-- Relative.
-	return false
-
+   -- Relative.
+   return false
 end
 
 -- Converts any path into a full path.
 function love.path.getFull(p)
+   if love.path.abs(p) then
+      return love.path.normalslashes(p)
+   end
 
-	if love.path.abs(p) then
-		return love.path.normalslashes(p)
-	end
+   local cwd = love.filesystem.getWorkingDirectory()
+   cwd = love.path.normalslashes(cwd)
+   cwd = love.path.endslash(cwd)
 
-	local cwd = love.filesystem.getWorkingDirectory()
-	cwd = love.path.normalslashes(cwd)
-	cwd = love.path.endslash(cwd)
+   -- Construct a full path.
+   local full = cwd .. love.path.normalslashes(p)
 
-	-- Construct a full path.
-	local full = cwd .. love.path.normalslashes(p)
-
-	-- Remove trailing /., if applicable
-	return full:match("(.-)/%.$") or full
+   -- Remove trailing /., if applicable
+   return full:match("(.-)/%.$") or full
 end
 
 -- Returns the leaf of a full path.
 function love.path.leaf(p)
-	p = love.path.normalslashes(p)
+   p = love.path.normalslashes(p)
 
-	local a = 1
-	local last = p
+   local a = 1
+   local last = p
 
-	while a do
-		a = p:find("/", a+1)
+   while a do
+      a = p:find("/", a + 1)
 
-		if a then
-			last = p:sub(a+1)
-		end
-	end
+      if a then
+         last = p:sub(a + 1)
+      end
+   end
 
-	return last
+   return last
 end
 
 -- Finds the key in the table with the lowest integral index. The lowest
 -- will typically the executable, for instance "lua5.1.exe".
 function love.arg.getLow(a)
-	local m = math.huge
-	for k,v in pairs(a) do
-		if k < m then
-			m = k
-		end
-	end
-	return a[m], m
+   local m = math.huge
+   for k, v in pairs(a) do
+      if k < m then
+         m = k
+      end
+   end
+   return a[m], m
 end
 
 love.arg.options = {
-	console = { a = 0 },
-	fused = { a = 0 },
-	game = { a = 1 },
-	renderers = { a = 1 },
-	excluderenderers = { a = 1 },
+   console = { a = 0 },
+   fused = { a = 0 },
+   game = { a = 1 },
+   renderers = { a = 1 },
+   excluderenderers = { a = 1 },
 }
 
 love.arg.optionIndices = {}
 
 function love.arg.parseOption(m, i)
-	m.set = true
+   m.set = true
 
-	if m.a > 0 then
-		m.arg = {}
-		for j=i,i+m.a-1 do
-			love.arg.optionIndices[j] = true
-			table.insert(m.arg, arg[j])
-		end
-	end
+   if m.a > 0 then
+      m.arg = {}
+      for j = i, i + m.a - 1 do
+         love.arg.optionIndices[j] = true
+         table.insert(m.arg, arg[j])
+      end
+   end
 
-	return m.a
+   return m.a
 end
 
 function love.arg.parseOptions(arg)
+   local game
+   local argc = #arg
 
-	local game
-	local argc = #arg
+   local i = 1
+   while i <= argc do
+      -- Look for options.
+      local m = arg[i]:match("^%-%-(.*)")
 
-	local i = 1
-	while i <= argc do
-		-- Look for options.
-		local m = arg[i]:match("^%-%-(.*)")
+      if m and m ~= "" and love.arg.options[m] and not love.arg.options[m].set then
+         love.arg.optionIndices[i] = true
+         i = i + love.arg.parseOption(love.arg.options[m], i + 1)
+      elseif m == "" then -- handle '--' as an option
+         love.arg.optionIndices[i] = true
+         if not game then -- handle '--' followed by game name
+            game = i + 1
+         end
+         break
+      elseif not game then
+         game = i
+      end
+      i = i + 1
+   end
 
-		if m and m ~= "" and love.arg.options[m] and not love.arg.options[m].set then
-			love.arg.optionIndices[i] = true
-			i = i + love.arg.parseOption(love.arg.options[m], i+1)
-		elseif m == "" then -- handle '--' as an option
-			love.arg.optionIndices[i] = true
-			if not game then -- handle '--' followed by game name
-				game = i + 1
-			end
-			break
-		elseif not game then
-			game = i
-		end
-		i = i + 1
-	end
-
-	if not love.arg.options.game.set then
-		love.arg.parseOption(love.arg.options.game, game or 0)
-	end
+   if not love.arg.options.game.set then
+      love.arg.parseOption(love.arg.options.game, game or 0)
+   end
 end
 
 -- Returns the arguments that are passed to your game via love.load()
 -- arguments that were parsed as options are skipped.
 function love.arg.parseGameArguments(a)
-	local out = {}
+   local out = {}
 
-	local _, lowindex = love.arg.getLow(a)
+   local _, lowindex = love.arg.getLow(a)
 
-	local o = lowindex
-	for i=lowindex, #a do
-		if not love.arg.optionIndices[i] then
-			out[o] = a[i]
-			o = o + 1
-		end
-	end
+   local o = lowindex
+   for i = lowindex, #a do
+      if not love.arg.optionIndices[i] then
+         out[o] = a[i]
+         o = o + 1
+      end
+   end
 
-	return out
+   return out
 end

@@ -1,0 +1,77 @@
+NOTE: results are not averaged
+                | Luau        | Luajit      | Lua         |
+				|-------------|-------------|-------------|
+pxarray_create	| 0.01191802s | 0.01095300s | 0.02605900s | -- equal on luau
+dpxarray_create	| 0.00850484s | 0.00205200s | 0.01315500s | -- best on luajit
+strpxa_create	| 0.06235248s | 0.06691300s | 0.10390600s | -- worst on lua
+sum	           	| 0.64394766s | 0.07991800s | 0.14312000s |
+                |-------------|-------------|-------------|
+pxarray_read	| 0.00347348s | 0.00078900s | 0.00771200s | -- good for lua, second best luau
+dpxarray_read	| 0.00560154s | 0.00319200s | 0.00939400s | -- almost equal, not preferable
+strpxa_read	    | 0.00247992s | 0.00026600s | 0.00963600s | -- use on luajit, luau
+sum	           	| 0.01155494s |           s |           s |
+				|-------------|-------------|-------------|
+pxarray_single	| 0.00000083s | 0.00000200s | 0.00000100s | -- best on luau
+dpxarray_single	| 0.00000174s | 0.00000200s | 0.00000200s | -- worst
+strpxa_single	| 0.00000097s | 0.00000200s | 0.00000100s | -- equal
+                |-------------|-------------|-------------|
+pxarray_clone	| 0.00550886s | 0.01676100s | 0.04548800s | -- worst on lua
+dpxarray_clone	| 0.00166171s | 0.00163100s | 0.00836500s | -- best  
+strpxa_clone	| 0.00000050s | 0.00000100s | 0.00000200s | -- not comparible
+                |-------------|-------------|-------------|
+TOTAL SUM       |             |             |             | 
+
+
+luajit:
+pxarray_create	: 0.00523936s
+dpxarray_create	: 0.00143087s
+strpxa_create	: 0.05363224s
+---
+pxarray_read	: 0.00057124s
+dpxarray_read	: 0.00276776s
+strpxa_read	: 0.00018860s
+---
+pxarray_single	: 0.00000079s
+dpxarray_single	: 0.00000080s
+strpxa_single	: 0.00000070s
+---
+pxarray_clone	: 0.01439187s
+dpxarray_clone	: 0.00154137s
+strpxa_clone	: 0.00000238s
+---
+
+luau:
+pxarray_create	: 0.00605574s
+dpxarray_create	: 0.00778928s
+strpxa_create	: 0.05289923s
+---
+pxarray_read	: 0.00350592s
+dpxarray_read	: 0.00528539s
+strpxa_read	: 0.00228131s
+---
+pxarray_single	: 0.00000012s
+dpxarray_single	: 0.00000019s
+strpxa_single	: 0.00000017s
+---
+pxarray_clone	: 0.00757281s
+dpxarray_clone	: 0.07870306s
+strpxa_clone	: 0.00000018s
+---
+
+lua:
+pxarray_create	: 0.01720857s
+dpxarray_create	: 0.00905310s
+strpxa_create	: 0.08607925s
+---
+pxarray_read	: 0.00761766s
+dpxarray_read	: 0.00936704s
+strpxa_read	: 0.00786158s
+---
+pxarray_single	: 0.00000083s
+dpxarray_single	: 0.00000087s
+strpxa_single	: 0.00000086s
+---
+pxarray_clone	: 0.04623491s
+dpxarray_clone	: 0.00791972s
+strpxa_clone	: 0.00000078s
+---

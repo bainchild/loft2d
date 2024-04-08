@@ -7,10 +7,14 @@ description = {
    homepage = "https://github.com/bainchild/loft2d",
    license = "Unlicense"
 }
+dependencies = {
+   "utf8 >= 1.2-0"
+}
 build = {
    type = "builtin",
    modules = {
       loft = "loft.lua",
+      ["loft._logging"] = "logging.lua",
       ["loft.arg"] = "loft.arg.lua",
       ["loft.boot"] = "loft.boot.lua",
       ["loft.callbacks"] = "loft.callbacks.lua",
@@ -23,21 +27,34 @@ build = {
       ["loft.data"] = "loft.data/init.lua",
       ["loft.data.base64"] = "loft.data/base64.lua",
       ["loft.image"] = "loft.image/init.lua",
+      ["loft.font"] = "loft.font/init.lua",
+      ["loft._formats.png"] = "loft.image/png.lua",
+      ["loft._formats.pngencoder"] = "loft.image/pngencoder.lua",
+      ["loft._formats.pnglua"] = "loft.image/pnglua.lua",
       ["loft.filesystem"] = "loft.filesystem/init.lua",
       ["loft.filesystem.vfs"] = "loft.filesystem/vfs.lua",
       ["loft.filesystem.stream"] = "loft.filesystem/stream.lua",
       ["loft._classes.Object"] = "_classes/Object.lua",
       ["loft._classes.Data"] = "_classes/Data.lua",
       ["loft._classes.Drawable"] = "_classes/Drawable.lua",
+      ["loft._classes.Font"] = "_classes/Font.lua",
+      ["loft._classes.GlyphData"] = "_classes/GlyphData.lua",
       ["loft._classes.Texture"] = "_classes/Texture.lua",
       ["loft._classes.Image"] = "_classes/Image.lua",
       ["loft._classes.Canvas"] = "_classes/Canvas.lua",
       ["loft._classes.ByteData"] = "_classes/ByteData.lua",
       ["loft._classes.ImageData"] = "_classes/ImageData.lua",
       ["loft._classes.FileData"] = "_classes/FileData.lua",
-      ["loft._formats.png"] = "_formats/png.lua",
-      ["loft._formats.pngencoder"] = "_formats/pngencoder.lua",
-      ["loft._formats.pnglua"] = "_formats/pnglua.lua",
-      ["loft.nogame"] = "loft.nogame.lua"
+      ["loft.nogame"] = "loft.nogame.lua",
+
+      ["loft._font.Default"] = "fonts/BitstreamVeraSans.lua",
+      ["loft._font.DefaultBold"] = "fonts/BitstreamVeraSansBold.lua",
+      ["loft._font.DefaultItalic"] = "fonts/BitstreamVeraSansItalic.lua",
+      ["loft._font.DefaultBoldItalic"] = "fonts/BitstreamVeraSansBoldItalic.lua",
+            
+      ["loft._font.BitstreamVeraSansMono"] = "fonts/BitstreamVeraSansMono.lua",
+      ["loft._font.BitstreamVeraSansMonoBold"] = "fonts/BitstreamVeraSansMonoBold.lua",
+      ["loft._font.BitstreamVeraSansMonoItalic"] = "fonts/BitstreamVeraSansMonoItalic.lua",
+      ["loft._font.BitstreamVeraSansMonoBoldItalic"] = "fonts/BitstreamVeraSansMonoBoldItalic.lua",
    }
 }

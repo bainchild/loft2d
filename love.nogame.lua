@@ -19,16 +19,18 @@ freely, subject to the following restrictions:
 --]]
 
 -- Make sure love exists.
-local love = require("love")
+local love = require("loft")
 
 function love.nogame()
+   local R = {}
 
-	local R = {}
+   R.bg = { [1] = {}, [2] = {} }
 
-	R.bg = {[1]={}, [2]={}}
-
-	-- cloud_1.png
-	R.bg[1].cloud_1_png = love.data.decode("data", "base64", "\
+   -- cloud_1.png
+   R.bg[1].cloud_1_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAALEAAABUCAYAAADNoNb0AAAGqElEQVR4nO3de6wcVR0H8M\
 	+lL20bX1iItFANVEEkpai1tWBJg6JEkxrwCWrAlEpMNdHYaDSpJjU+Eo0mmqBi+odKUuID\
 	Y4xExFdjhJJqRYKCYkzUP6RCedWalkv949wmze3O3t3ZmXNm7/19kv3j7u7M+e293zs7c2\
@@ -63,9 +65,13 @@ function love.nogame()
 	HtxVbsr7PwKMOTfo/1uE66aUgIw3pQys96NQNMczdjnI/NuFa6j2/cEixUeUq668Au3Dr1\
 	80iavKPocc+TZhDaKN0WdxVOFdNizUWH8DD+gnvxq6nHI0020kaIQ8gqhuyHsRchDmMvQh\
 	zGXoQ4jL3/A4htWI/rxYLaAAAAAElFTkSuQmCC\
-	")
-	-- cloud_1@2x.png
-	R.bg[2].cloud_1_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- cloud_1@2x.png
+   R.bg[2].cloud_1_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAAWIAAACoCAYAAADaWOQcAAAOEElEQVR4nO3debQfZX3H8f\
 	cl4SZkITkmshmwIYgBTVgLZRMwBiwuOaCCqCig4illq2KL2x+etmqtWFcqirGlLlXcDngE\
 	BbHUKEKhKkILFRO2YpEkEiGQQLjpH98bEvAmmZnfzDyzvF/n3HNzYGaeLwn5/J77zLMMrV\
@@ -136,9 +142,13 @@ function love.nogame()
 	odAExIWpGkJlsL3Ezsd/M94HrgyaQVbUUbgviZJhBT4OYBLyCOsN4V2AGYSRxoKqnbHgWW\
 	E6fJ3wssA24DfkmcFrQ2XWn5tTGIJalTUk5fkyRhEEtScgaxJCVmEEtSYgaxJCVmEEtSYg\
 	axJCVmEEtSYgaxJCX2/5ixqodpMZm+AAAAAElFTkSuQmCC\
-	")
-	-- cloud_2.png
-	R.bg[1].cloud_2_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- cloud_2.png
+   R.bg[1].cloud_2_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAALEAAABUCAYAAADNoNb0AAAF0klEQVR4nO3dW4hVVRzH8e\
 	8cc2w0M6uZhjE1m0lNsbLsOj5FXgoyKlMLSqMxYx6znsughzDMh56sibALFSEUpFQiFUVk\
 	SdJDNF2s7DZYUGNTDU7j9PA/kWSkc87/v9dl/z/gy6hr/w/nx5q1115r7YaRkRGcS1kldA\
@@ -169,9 +179,13 @@ function love.nogame()
 	iZA13IAXMuTwP88z0PFXXRohfF9wBzkXGyy8s25Lst/DduyLcnXQTciwz8x4YqwtVlCAnv\
 	RmBPqCJieBljMzJ+ugY5t6I1bDnuGPqQ5ZTbkamzH8OWE0eInauLbxR1yfMQu+R5iF3yPM\
 	QueX8BzokhiMHuRk0AAAAASUVORK5CYII=\
-	")
-	-- cloud_2@2x.png
-	R.bg[2].cloud_2_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- cloud_2@2x.png
+   R.bg[2].cloud_2_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAAWIAAACoCAYAAADaWOQcAAAMXUlEQVR4nO3de6zf8x3H8e\
 	fR9kQxpZ2WCkqrOlKrul9Kmds2m5lths0lw1oWhMzcZtnMNrK4zUzS2NjFzDW2mWxzN5Ni\
 	ZshQrbmUMkxrSteq7o+PE1XV8/ud8/v93p/P9/t8JJKmOel55cjvdd6/z+/z/Xy6lixZgi\
@@ -234,9 +248,13 @@ function love.nogame()
 	KwG7AfsC+wbmwcqdKeA24ArgduBd6OjZMHi/i9uoCtgB2B7YHtcFqW+uNpYDpwD+moyvsp\
 	/KS0drCIJSlY1bevSVL2LGJJCmYRS1Iwi1iSglnEkhTMIpakYBaxJAWziCUpmEUsScH+D0\
 	EmR28m6dqwAAAAAElFTkSuQmCC\
-	")
-	-- cloud_3.png
-	R.bg[1].cloud_3_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- cloud_3.png
+   R.bg[1].cloud_3_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAALEAAABUCAYAAADNoNb0AAAFhklEQVR4nO3dWYxfUxwH8E\
 	+rElGh1tSe1NJUiMTEFtEmJR5ILEG8iC1p8SAhggdeRCW1e6JCiCdLBKkSsST2pfYtDCFE\
 	SSNFhDZ9YOrhZGTKjLbTmfn9zr3n89zMfPs/3zn/c+89995pGzZs0DQ1mx4doGm2VitxU7\
@@ -266,9 +284,13 @@ function love.nogame()
 	8rkOqKjA1DcTjzQDZ+FCnKi+P8gMhvCC8krcx1R6kanmEo+0h3IEvUCZSeZq73wezTpl88\
 	57eBnP4afQRBOgKyVueqx9BTfVayVuqtdK3FSvlbip3t9rOy6aUG6iAgAAAABJRU5ErkJg\
 	gg==\
-	")
-	-- cloud_3@2x.png
-	R.bg[2].cloud_3_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- cloud_3@2x.png
+   R.bg[2].cloud_3_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAAWIAAACoCAYAAADaWOQcAAALhklEQVR4nO3daaxdVRnG8f\
 	8tpUUopdQKSEtb5qkBQSwEiUBDUagyiBIpiVZAQcBqkDAlihJAgZKIUEIIKE4Eq0yCTEJB\
 	YtFiDEhoGVqGho7QkDKUoUDrh3Xh9HLnc88579p7/39Jk/bTfdqc/fS96661dtu6deuQJM\
@@ -327,9 +349,13 @@ function love.nogame()
 	fGUUk9QzqSfzfpbu13Y+MILOKcbUG6gH4vYE9SMW9Lupxe6s0a4HngWeB/wGOkC9tfjgyl\
 	rlnEkhTMfcSSFMwilqRgFrEkBbOIJSmYRSxJwSxiSQpmEUtSMItYkoJZxJIU7P83pECPnM\
 	xUCgAAAABJRU5ErkJggg==\
-	")
-	-- cloud_4.png
-	R.bg[1].cloud_4_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- cloud_4.png
+   R.bg[1].cloud_4_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAALEAAABUCAYAAADNoNb0AAAFz0lEQVR4nO3dW4hfxR0H8M\
 	+mGhuNxqLWe0niNUaNEol3tJrY4L312tYbIlpB0BcVvDy1YIgoKqioEGKfKlgo2IcGqigY\
 	xIiYxtYoahSLNWhDi7fqJnH7MCsmMSy7c+bc9v/7wJ9AsjPze/juyfzPmZkzNDIyIoQ+m9\
@@ -360,9 +386,13 @@ function love.nogame()
 	mO69p2vxrzpd+69TWNEfphvZSD+WoIMM28oHwarsK1WFD3YKEzVmEZfi+dRVybJkK8pVk4\
 	09bvsdtdO+/TC2VsknZkrJMeXLyIZ/FeUwU0HeIQioujqELvRYhD70WIQ+9FiEPvRYhD7/\
 	0fHvIyRu6OJTkAAAAASUVORK5CYII=\
-	")
-	-- cloud_4@2x.png
-	R.bg[2].cloud_4_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- cloud_4@2x.png
+   R.bg[2].cloud_4_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAAWIAAACoCAYAAADaWOQcAAAMOklEQVR4nO3de+zXVR3H8e\
 	dP7oKCCoLITUEylJuXykQltQJvXbzNQZnlJS0vMFeuZWpO29yylO4zMZelkq2823Rqma6G\
 	U1DLNPCSBojmBVkR6K8/zu9niL/r93Len8/3+3xsTOZl56VzLw7ncy4tra2tSJLibBUdQJ\
@@ -424,12 +454,16 @@ function love.nogame()
 	MBc4EBgVG0dSBVYDvwfuAG4n4Kn7HBq5iLe0K+nB0qnAZGAC6amm4cC2cbGkpvcG8DLplY\
 	xngaeAx0hvyK2Mi5VPMxWxJBWSa6iSFMwilqRgFrEkBbOIJSmYRSxJwSxiSQpmEUtSMItY\
 	koJZxJIUzCKWpGAWsSQF+x/RmkrWbHB7LQAAAABJRU5ErkJggg==\
-	")
+	"
+   )
 
-	R.chain = {[1]={}, [2]={}}
+   R.chain = { [1] = {}, [2] = {} }
 
-	-- a.png
-	R.chain[1].a_png = love.data.decode("data", "base64", "\
+   -- a.png
+   R.chain[1].a_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAADj0lEQVRIic2WTWwUZRjHf/\
 	OxM/vRtSnttgsYSttN2yUBWqQKWC1BE6iGBj3IAcHoRcWLiRxMTCTiyejRqCeNPejBkxSQ\
 	Fg6GxEjSkLYgEmDXrwjFOmtry352Zl4Pg4WZnd2uhhD+yVze93me3zPvx/O8khCCeyn5nt\
@@ -449,9 +483,13 @@ function love.nogame()
 	rtaAk8CI9ftsR+7z7zDPXqsKUzbECL+4DTURTwF7gIu+SdX4xDho/fKnVvo+jfmTgcjkQI\
 	DUFEZZ04DW14bavaoIfIKzjPOVAi4H/FdxYB8wCPRwu1xlgCngJDCMc+iqqlbgXdN9+y69\
 	a/oHeH87HFWBERQAAAAASUVORK5CYII=\
-	")
-	-- a@2x.png
-	R.chain[2].a_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- a@2x.png
+   R.chain[2].a_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAH3ElEQVRoge2aXWwVxxXHf7\
 	O7d++XDcQOBgzYOMHUNg00JHyHD4coLYSEVn1paJq0iCZqm1YofUirfqjNQ6u+oJY0ahu5\
 	fWgDEZEipfBQERRaaMCQNnGggCDU2MSNqQMmYPD1/dqdPqz3foB39861rYaIv3SlmdkzZ8\
@@ -492,9 +530,13 @@ function love.nogame()
 	7L2BevOlM4lUVUhBGVEfQZt2E0TEavvyEJcxr4Gc56H52BY3wRaMPwZZ5UGReBMtK5RPSF\
 	j9tFoJEwESf0vxQngDwLJwzpRhASOCGRM8Bx4ACwj3G4yjVeBD82+MTfNrxF8GbHLYI3O/\
 	4HzN2+0cWu1vEAAAAASUVORK5CYII=\
-	")
-	-- e.png
-	R.chain[1].e_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- e.png
+   R.chain[1].e_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAADrElEQVRIic2WW2hcVRSGv3\
 	OZk8wtJjhpUk1bk6a1sZhqsVJFLFpQIxIRivhQBd+kogQvCIooFJ8K9cHQF5+kbz6UqkGJ\
 	BEVF0ZRaBkxtNZOml9w6k06ayXQm55y9tw+niXPOmWlSLaU/zMu/11r/WmfP3v/WlFLcTO\
@@ -515,9 +557,13 @@ function love.nogame()
 	E7WzNAL1W8cCVB8LxxP7BPnMla9vAY7mgWlS+BK9BakhhtjVg72jG33GED/XhPkrBnrVJw\
 	CS3AXqAHb1+WLocc3jkbBA5TYUP/V/CG4ZZ9l94w/AMIA3oLRCGsQwAAAABJRU5ErkJggg\
 	==\
-	")
-	-- e@2x.png
-	R.chain[2].e_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- e@2x.png
+   R.chain[2].e_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAH2klEQVRoge2ae4xVRx3HPz\
 	PnnPvYe/cur12WLQu7FBrYllJgC6VgTZfGKqBNaku0sSYkbRq1GEhMmviI1uh/YjVg1JTE\
 	pDWgRIlajAGxKLUFAWlB3UIXlvdjW3bZ133fc8Y/zj2Xvbt7zz3n7qKl4ZtsMr85v5n5fe\
@@ -558,9 +604,13 @@ function love.nogame()
 	hZE5XKISIBRCxkR7eba9FmTAYhhjY9BXwL2IF9TFWOcXwIJPOPeF7LP+rxi0y+7WPKflT0\
 	oXkINBqcp1wPAK3YMdbp5CN12PGeLuyowTHsu+dNecp1swh+aPCRf214m+CtjtsEb3X8F5\
 	Lt7GKi5gIEAAAAAElFTkSuQmCC\
-	")
-	-- g.png
-	R.chain[1].g_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- g.png
+   R.chain[1].g_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAADvElEQVRIidWWTUxcVRTHf/\
 	d9DcwM00FomYYAQ9uhbdIUUWNrmtqA2pguqk3UBYp148LEdKELv5aaNHFRTWpMTGy0lcYY\
 	MW60Ma0BGrW18hUhEW0tjICKM1CgwLxh3rx3XQzFecMwUGOaepK3+Z/zzu+ee+479wkpJb\
@@ -581,9 +631,13 @@ function love.nogame()
 	pbdmHs3hwHHseR57PbshYgQAXwJlI+aQ2MqakfhrCHryGvJ8FyEOVe1OpSjHvC6DurbTTl\
 	I+AVYHylhKsBM9spRBhoBvYDO4CyRe8kMEBm604jZRSxvKqbA/7Hdtv+Jv5/gX8Djf96T7\
 	NLXZQAAAAASUVORK5CYII=\
-	")
-	-- g@2x.png
-	R.chain[2].g_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- g@2x.png
+   R.chain[2].g_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAIJ0lEQVRoge2aWZBU1RnHf+\
 	feXuf2DMyAs7AYlgEGnLBETQVBEkFMjKIVLYwlSbRSZVW0ECV5yYsVH5JKkVS5lSmtSpFo\
 	MDFWEhcCWAYTDMNmRjZFBhhHBodtmBmYpffue08ebndPd9F36Z4hAYv/073nfuec//+e7T\
@@ -625,9 +679,13 @@ function love.nogame()
 	QeAnGSK5SwgylkI/fo5UezfGmQGMvggkdZAS/B5EpR+1YSzq1PF4ZzXkdiIZ9GFeQHiWMl\
 	otH6N9jeQB4EHMA8pyYvPbMT2nP3IZXSMphlpgGbAQmAd8CbMbZ33fGOZVkU+Bw5jLz7+4\
 	zC8CXZb4wt9VuyrwSsdVgVc6rgq80vFfbDnjk7U4d3EAAAAASUVORK5CYII=\
-	")
-	-- m.png
-	R.chain[1].m_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- m.png
+   R.chain[1].m_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAADkUlEQVRIic2WXWwUVRTHf3\
 	dmdva7RLst21Zql1ZsqxBoKvKRCOqDAhF50wRNNCFR8UGMEh+MEjE+GI36pM8SP2J8MAoG\
 	LYkPJoQSTFpNCrHtVjSUQrtrW7a70935uD5srZ2d6W4lhPBP5mHOuff+zr33zDkjpJTcTC\
@@ -647,9 +705,13 @@ function love.nogame()
 	tQbcBZywL02vLXx62pPylVI3NBB5dhtaR3IU2AcM+QZV4xcjTrnFHLT/mNJL/WmssQwyWw\
 	ApEYkoautt6Pel0Dqbi8AnwBHKp+SrWsB/lQT2A7uAjfxXrrLAANAHHAOu1lpopcAbplv2\
 	v/SG6R/27zmuL3E50QAAAABJRU5ErkJggg==\
-	")
-	-- m@2x.png
-	R.chain[2].m_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- m@2x.png
+   R.chain[2].m_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAH/klEQVRoge2aaXBVZxnHf+\
 	855557c29CAkIMWUGaNCRsJh22KGVRRqCVOnXGkUGxiqPW4mD9UJ2Oy/jFGT/gSNvROti6\
 	QRWXD8VlFKUlU0ixVqQ0gCxDIAKlkJClufu9rx/OPTd3ydmyaOnwn7kz533P8z7LPed53u\
@@ -691,9 +753,13 @@ function love.nogame()
 	7izUhpmFPM8A38Hw94kpOMkHgT6SOcwTG8dBoIQ0DhE98HY7CDQWyjFK/yswCshzMMqQ5m\
 	d+GKMkcg7jw/ow8CJTcJRrqgx82+Adf9rwjoG3O+4YeLvjv1Ru0JflEZTtAAAAAElFTkSu\
 	QmCC\
-	")
-	-- n.png
-	R.chain[1].n_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- n.png
+   R.chain[1].n_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAADbElEQVRIidWWTWxUVRSAv/\
 	v+Zt60dChQWlNpB1NqF9aimFajMjVRsSWwUEJcYI0LNNG4MJjoojHG+LdgZ3TXGDEmRuOC\
 	aDCAfxijEWP4SRcCBQpF+bHTTpmZN9P3d13M1On0dV4HYgie5OW9d+495zvn3fvOuUJKyY\
@@ -712,9 +778,13 @@ function love.nogame()
 	bbwHYWFG4I74cbgS/csUurrA9/wTt+JRSktC3D3NGLcV/HJLANXx5iQXZLAQFaKHb8IffE\
 	RWEfPoN3ehJ/0gJfIhpN1PZG9LvbMda3e2jKxxQ7/uVqDpcCzkkC2AE8AtwBzLWGKWAUOA\
 	h8gpRnEcGsrgf4n8lNe0z8/wL/AWkORFUNbGW+AAAAAElFTkSuQmCC\
-	")
-	-- n@2x.png
-	R.chain[2].n_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- n@2x.png
+   R.chain[2].n_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAHaElEQVRoge2aa2wU1xXHf/\
 	PY99rgEAdDjTEBHEgbwisENSmPUJSYCslRqZK2n5qoqlRF1Cpp0yp8qPoBNaUNTZXHJ0RV\
 	KSlIlULV1ORVSExFAzVJREJqXjHQ2BQ3xsbe987M7Yfx7M7indnZ9W5TR/5/unPvufee/9\
@@ -753,9 +823,13 @@ function love.nogame()
 	t1cZN9tcD0L3djvrxJHbrV/I0kAnwLM29f6W8kx4G9mB6KN6+7BKpJ0I4mYDNmbHU5MA8z\
 	8mXtvRSmsejDNPsnMPP+FQZgnVErgv83+Nz/qzZNcKpjmuBUxzTBqY7/AmDdgoJ+h2mjAA\
 	AAAElFTkSuQmCC\
-	")
-	-- o.png
-	R.chain[1].o_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- o.png
+   R.chain[1].o_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAGXRFWHRTb2Z0d2FyZQBBZG\
 	9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBh\
 	Y2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4On\
@@ -792,9 +866,13 @@ function love.nogame()
 	62ELoSvYDZsXRFrm/3hs8/gvZ+4OfvlKkuCmMhpJJ57ALeTKj9kyfGGUS1DfKzNij19MTo\
 	6IcekinPJPDTUiAWZEHMzyQRCTep7x6rJwYYoQ34CacIDYSIPmKsbBxt99mcx9LD/w/hhO\
 	2bAAMAGcakBZrrNusAAAAASUVORK5CYII=\
-	")
-	-- o@2x.png
-	R.chain[2].o_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- o@2x.png
+   R.chain[2].o_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAH90lEQVRoge2abXAV1RnHf/\
 	ty3/NKEhJeApeEgLEqUSRNeBGKIjO2aFvHStXWji3TdjqljF/amVpbO5WxnSlDazuj0mod\
 	2xlKYaTDDFYEq4DyYkcGSwjUxIaEAAkQyMvNzb27e7cfNnvvDZI9uzfJWBz+n/acfZ5z/v\
@@ -835,9 +913,13 @@ function love.nogame()
 	WST+QSQjYqgV8BDwDpg3Wzfwjt5FmM9oukuvut/2lCR4r4kYvCKJWTUGsqkMsLstsysUbG\
 	T7EuC40Z43kRaDbWtZLVWJORF/RgCXsOODFehGB8BdpQgSVYByP1WMKjgJ1siWHdmGgGjg\
 	C7sXYGwvxKLpgIgf9X+NTfNrwu8FrHdYHXOv4HXDGZ3/Dil9AAAAAASUVORK5CYII=\
-	")
-	-- square.png
-	R.chain[1].square_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- square.png
+   R.chain[1].square_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAACHklEQVRIie2VzWsTQRjGn9\
 	l2t7GktmmLJiD1YPw4+HHwIIqi9FCw0D9AsRRF/Ac82LNQ/wJPQi+CV48WROqhgrZGglJJ\
 	CYKGQm1Mk7j5aHdms/N4sFg/ss2uloKlA3MYeN/nN8+8vO8IktjOZWwrbRe4I4DtoTM8CX\
@@ -850,9 +932,13 @@ function love.nogame()
 	SxqV7APrRB8pSuZItq9uKPPlSvzlKX3+ZJHtdOYesa/6fmT+rap0U1N0j1eoi68iFD8oCW\
 	5a2dNBvjrQaSCV3LvdG13BOSe7WqhtJoWcM/SqBsQLvr9TMhrO5Q+aGB/7p2/o+/C/z/gd\
 	8AcTpAf+9BGPQAAAAASUVORK5CYII=\
-	")
-	-- square@2x.png
-	R.chain[2].square_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- square@2x.png
+   R.chain[2].square_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAADpElEQVRoge2Zb2hVZRzHP+\
 	c558w796c5YbG1miaVu9tKeucLEyosK7GwIChEhjGKIRYGUYkyohgRMkYGG4kU6asiYrKi\
 	ImS+KMIgWLoWrJW4zMlWY+rN8+fbiy0ha5b3nHPlyPnAgQv3PN/n9+Gee5/n+V1LEtcy5m\
@@ -872,12 +958,16 @@ function love.nogame()
 	243C2M+CQOI9mS5JCk+8p8JQowpD9fNXw1/NJ09Se5LNp8S7WpK2S1Iw8eGc5JEmBb8MSN\
 	KspPuTnr8Ugkh6XFIhOPWxgskhSRqXtKoUcyfZVbuU1cy1JIaBLczthBKnlIJXhey/ibST\
 	CaadTDDtZIJpJxNMO5lg2skE0841L/gnbItHb7ZckqQAAAAASUVORK5CYII=\
-	")
+	"
+   )
 
-	R.duckloon = {[1]={}, [2]={}}
+   R.duckloon = { [1] = {}, [2] = {} }
 
-	-- blink.png
-	R.duckloon[1].blink_png = love.data.decode("data", "base64", "\
+   -- blink.png
+   R.duckloon[1].blink_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAAJEAAADNCAYAAAC4lJKvAAAAGXRFWHRTb2Z0d2FyZQBBZG\
 	9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBh\
 	Y2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4On\
@@ -1143,9 +1233,13 @@ function love.nogame()
 	PgQs002cYwcQDZasRfVUfALXzw69+T9ZBvoxBGmd+9INNXf1rkvQn/0Y12V780PyBpw0XG\
 	Yw5tmFbustI2+fkPEQb9Yoa+ecx/o4DiAaLFkLa8o4aPTcie3aMdYPLBrWxTlh86T2cq9c\
 	Ups9BstgGcREg2UA0WAZQDRYBhANlsHS2vL/BRgAoPt28wv5YoIAAAAASUVORK5CYII=\
-	")
-	-- blink@2x.png
-	R.duckloon[2].blink_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- blink@2x.png
+   R.duckloon[2].blink_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAASIAAAGaCAYAAACrJ06uAAAgAElEQVR4nOy9ebgtx1XY+6\
 	veZ7izZku2hCQs2Vi2CDaW55HEDA/C4ITwEfIygJmS90gg+RiSEHDyMhBI+PICL/BIXh4v\
 	jEmwGY0J4IlBHmIDxpPAA5Y8SbakK+le3XvPOXv3en90VfeqVdW9e8/7nLvX9917urqqa1\
@@ -1835,9 +1929,13 @@ function love.nogame()
 	lo2IrLqXwAX5S+nhItPfGas/9/Kwn+gChHwT0qH6lNtHcqhW5VZu83wrq27UOu+x4ATfta\
 	+4VJ9+w2gPyKqUsiCysrIauWzTzMrKauSyILKyshq5LIisrKxGLgsiKyurkcuCyMrKauSy\
 	ILKyshq5LIisrKxGLgsiKyurkeu/ABHELVe8zEuIAAAAAElFTkSuQmCC\
-	")
-	-- normal.png
-	R.duckloon[1].normal_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- normal.png
+   R.duckloon[1].normal_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAAJEAAADNCAYAAAC4lJKvAAAgAElEQVR4nO2debwlR3WYv9\
 	N3e+vMaEbLaB0JARISMouMRywCJIyNQTHEISEQb8EsxiRxTBwbnIBJMI632NgxJpFXYvDC\
 	ajAy2CARVgkQi8SmXRqN0Db7vJm33O6ukz+qqru6b/d999533zLSO7/fTHdXV1dXV33vnF\
@@ -2122,9 +2220,13 @@ function love.nogame()
 	WXrwBnm4RDUROkZQA+jf3arZWZ2aM6N4fMzq5TFddfKmesNwWO/eGVhZigmZ+7lu5HLkOa\
 	NoZaml2aP/yt9avgBpJNiDZlxbI5OtuUFcsmRJuyYtmEaFNWLP8frUcjd38kwVYAAAAASU\
 	VORK5CYII=\
-	")
-	-- normal@2x.png
-	R.duckloon[2].normal_png = love.data.decode("data", "base64", "\
+	"
+   )
+   -- normal@2x.png
+   R.duckloon[2].normal_png = love.data.decode(
+      "data",
+      "base64",
+      "\
 	iVBORw0KGgoAAAANSUhEUgAAASIAAAGaCAYAAACrJ06uAAAgAElEQVR4nOy9ebgtx1XY+6\
 	ve+5xzZ83WiCRbtmwNBGPJFjaeADMEYoiJkwckIY/JEF5IIHwBkhAwCUkg08tLeIGQvDwS\
 	EiCMBmwMOJ4YPOERD5IH2ZIs25KQdCXdq3vvOWd3r/zRVd2rVlf37j2dvc+5e33fvaerq7\
@@ -2824,474 +2926,551 @@ function love.nogame()
 	R2a/Mzb9wmvieaJLEPLNSI/6M+8eyaY6VVuFzfOdnLpR66IngRd9177mU3/2raPdIKdKyo\
 	HIyclp5HJDMycnp5HLgcjJyWnkciBycnIauRyInJycRi4HIicnp5HLgcjJyWnkciBycnIa\
 	uRyInJycRq7/D3Tgxzs5ujSKAAAAAElFTkSuQmCC\
-	")
-
-	-- 30log.lua begins
-	local function require_30log()
-	local assert, pairs, type, tostring, setmetatable = assert, pairs, type, tostring, setmetatable
-	local baseMt, _instances, _classes, _class = {}, setmetatable({},{__mode='k'}), setmetatable({},{__mode='k'})
-	local function assert_class(class, method) assert(_classes[class], ('Wrong method call. Expected class:%s.'):format(method)) end
-	local function deep_copy(t, dest, aType) t = t or {}; local r = dest or {}
-	  for k,v in pairs(t) do
-		if aType and type(v)==aType then r[k] = v elseif not aType then
-		  if type(v) == 'table' and k ~= "__index" then r[k] = deep_copy(v) else r[k] = v end
-		end
-	  end; return r
-	end
-	local function instantiate(self,...)
-	  assert_class(self, 'new(...) or class(...)'); local instance = {class = self}; _instances[instance] = tostring(instance); setmetatable(instance,self)
-	  if self.init then if type(self.init) == 'table' then deep_copy(self.init, instance) else self.init(instance, ...) end; end; return instance
-	end
-	local function extend(self, name, extra_params)
-	  assert_class(self, 'extend(...)'); local heir = {}; _classes[heir] = tostring(heir); deep_copy(extra_params, deep_copy(self, heir));
-	  heir.name, heir.__index, heir.super = extra_params and extra_params.name or name, heir, self; return setmetatable(heir,self)
-	end
-	baseMt = { __call = function (self,...) return self:new(...) end, __tostring = function(self)
-	  if _instances[self] then return ("instance of '%s' (%s)"):format(rawget(self.class,'name') or '?', _instances[self]) end
-	  return _classes[self] and ("class '%s' (%s)"):format(rawget(self,'name') or '?',_classes[self]) or self
-	end}; _classes[baseMt] = tostring(baseMt); setmetatable(baseMt, {__tostring = baseMt.__tostring})
-	local class = {isClass = function(class, ofsuper) local isclass = not not _classes[class]; if ofsuper then return isclass and (class.super == ofsuper) end; return isclass end, isInstance = function(instance, ofclass)
-    ---@diagnostic disable-next-line: cast-local-type
-		local isinstance = not not _instances[instance]; if ofclass then return isinstance and (instance.class == ofclass) end; return isinstance end}; _class = function(name, attr)
-	  local c = deep_copy(attr); c.mixins=setmetatable({},{__mode='k'}); _classes[c] = tostring(c); c.name, c.__tostring, c.__call = name or c.name, baseMt.__tostring, baseMt.__call
-	  c.include = function(self,mixin) assert_class(self, 'include(mixin)'); self.mixins[mixin] = true; return deep_copy(mixin, self, 'function') end
-	  c.new, c.extend, c.__index, c.includes = instantiate, extend, c, function(self,mixin) assert_class(self,'includes(mixin)') return not not (self.mixins[mixin] or (self.super and self.super:includes(mixin))) end
-	  c.extends = function(self, class2) assert_class(self, 'extends(class)') local super = self; repeat super = super.super until (super == class2 or super == nil); return class2 and (super == class2) end
-		return setmetatable(c, baseMt) end; class._DESCRIPTION = '30 lines library for object orientation in Lua'; class._VERSION = '30log v1.0.0'; class._URL = 'http://github.com/Yonaba/30log'; class._LICENSE = 'MIT LICENSE <http://www.opensource.org/licenses/mit-license.php>'
-	return setmetatable(class,{__call = function(_,...) return _class(...) end })
-	end
-	-- 30log.lua ends
-
-	local class = require_30log()
-
-	local g_t = 0 -- The current elapsed time.
-	local g_step = 0 -- The current physics step.
-	local STEP = 1/20 -- 20Hz physics.
-
-	-- Debug things.
-	local DEBUG = false
-	-- local LOCAL = true
-	local g_frame_count = 0
-	local g_step_count = 0
-  local world
-  local duckloon
-  local chain
-  local clouds
-  local g_objs
-  local img_duckloon_normal
-  local img_duckloon_blink
-  local img_n,img_o,img_g,img_a,img_m,img_e
-  local img_square
-  local img_cloud_1,img_cloud_2,img_cloud_3,img_cloud_4
-  local cloud_images
-
-	-- A State maintains two x,y,angle states for some
-	-- body, and interpolates between those states.
-	local State = class("State")
-
-	function State:init(body)
-		self.t0 = 0
-		self.x0 = body:getX()
-		self.y0 = body:getY()
-		self.r0 = body:getAngle()
-
-		self.t1 = self.t0
-		self.x1 = self.x0
-		self.y1 = self.y0
-		self.r1 = self.r0
-	end
-
-	-- Calculate the next state for Body, at time t.
-	function State:save(body, t)
-		self.t0 = self.t1
-		self.x0 = self.x1
-		self.y0 = self.y1
-		self.r0 = self.r1
-
-		self.t1 = t
-		self.x1 = body:getX()
-		self.y1 = body:getY()
-		self.r1 = body:getAngle()
-	end
-
-	function State:get(t)
-		t = math.min(t, self.t1)
-		t = math.max(t, self.t0)
-
-		local p = (t - self.t0) / (self.t1 - self.t0)
-
-		local x = self.x0 + p * (self.x1 - self.x0)
-		local y = self.y0 + p * (self.y1 - self.y0)
-		local r = self.r0 + p * (self.r1 - self.r0)
-
-		return x, y, r
-	end
-
-	-- Simple class for figuring out whether the eyes
-	-- of the Duckloon should be closed.
-	local Blink = class("Blink")
-
-	function Blink:init()
-		-- When this hits zero, we open the eyes.
-		self.closed_t = 0
-
-		-- When this hits zero, we close the eyes.
-		self.next_blink_t = 5
-	end
-
-	function Blink:update(dt)
-		self.next_blink_t = math.max(0, self.next_blink_t - dt)
-		self.closed_t = math.max(0, self.closed_t - dt)
-
-		if self.next_blink_t == 0 then
-			self.next_blink_t = 5 + math.random(0, 3)
-			self.closed_t = 0.1
-		end
-	end
-
-	function Blink:is_closed()
-		return self.closed_t > 0
-	end
-
-	-- Duckloon (TM)
-	local Duckloon = class("Duckloon")
-
-	function Duckloon:init(world2, x, y)
-		self.body = love.physics.newBody(world2, x, y, "dynamic")
-		self.body:setLinearDamping(0.8)
-		self.body:setAngularDamping(0.8)
-		self.shape = love.physics.newPolygonShape(-55, -60, 0, 90, 55, -60)
-		self.fixture = love.physics.newFixture(self.body, self.shape, 1)
-		self.fixture:setRestitution(0.5)
-		self.img_normal = img_duckloon_normal
-		self.img_blink = img_duckloon_blink
-		self.img = self.img_normal
-		self.blink = Blink()
-		self.pin = love.physics.newMouseJoint(self.body, x, y - 80)
-		self.state = State(self.body)
-	end
-
-	function Duckloon:step()
-		self.state:save(self.body, g_step)
-
-		if math.floor(g_step % 5) == 0 then
-			self.body:applyForce(math.random(30, 50), 0)
-		end
-	end
-
-	function Duckloon:update(dt)
-		self.blink:update(dt)
-	end
-
-	function Duckloon:draw()
-		local x, y, r = self.state:get(g_t)
-
-		love.graphics.setColor(1, 1, 1)
-
-		local img = self.img_normal
-		if self.blink:is_closed() then
-			img = self.img_blink
-		end
-
-		love.graphics.draw(img, x, y, r, 1, 1, img:getWidth() / 2, img:getHeight() / 2)
-
-		if DEBUG then
-			love.graphics.setColor(0.8, 0.3, 0.1)
-			love.graphics.polygon("fill", self.body:getWorldPoints(self.shape:getPoints()))
-
-			love.graphics.setColor(0, 1, 0)
-			local ax, ay = self:attachment_point()
-			love.graphics.circle("fill", ax, ay, 3)
-		end
-	end
-
-	-- This is where to attach the Chain.
-	function Duckloon:attachment_point()
-		return self.body:getWorldPoint(4, 90)
-	end
-
-	-- The chain is built from a string containing "# nogame",
-	-- which represents what should be "drawn" along the chain.
-	local Chain = class("Chain")
-
-	function Chain:init(world2, x, y, str, duckloon2)
-		self.links = {}
-		self.str = str
-
-		local DRAW_INFO = {
-			n = { r = 11, img = img_n },
-			o = { r = 11, img = img_o },
-			g = { r = 11, img = img_g },
-			a = { r = 11, img = img_a },
-			m = { r = 11, img = img_m },
-			e = { r = 11, img = img_e },
-			[" "] = { r = 4, img = nil },
-			["#"] = { r = 7, img = img_square }
-		}
-
-		for i=1,#str do
-
-			local prev = nil
-
-			if i >=2 then
-				prev = self.links[i - 1]
-			end
-
-			local byte = str:byte(i)
-			local link = {}
-
-			link.x = x
-			link.y = y
-
-			link.info = DRAW_INFO[string.char(byte)]
-			link.radius = link.info.r
-
-			if prev ~= nil then
-				link.y = prev.y + prev.radius + link.radius
-			end
-
-			link.body = love.physics.newBody(world2, link.x, link.y, "dynamic")
-			link.body:setLinearDamping(0.5)
-			link.body:setAngularDamping(0.5)
-			link.shape = love.physics.newCircleShape(link.radius)
-			link.fixture = love.physics.newFixture(link.body, link.shape, 0.1 / i)
-			link.state = State(link.body)
-
-			-- Note: every link must also be attached to the Duckloon. Otherwise the
-			--       chain easily goes haywire on higher speeds.
-
-			if prev ~= nil then
-				link.joint = love.physics.newRevoluteJoint(link.body, prev.body, link.x, link.y - link.radius / 2)
-				link.join2 = love.physics.newRopeJoint(link.body, duckloon2.body, link.x, link.y, x, y, link.y - y)
-			else
-				link.joint = love.physics.newRevoluteJoint(link.body, duckloon2.body, link.x, link.y)
-			end
-
-			table.insert(self.links, link)
-		end
-
-	end
-
-	function Chain:step()
-		for _, link in ipairs(self.links) do
-			link.state:save(link.body, g_step)
-		end
-	end
-
-	function Chain:update(_)
-	end
-
-	function Chain:draw()
-		local rope = {}
-
-		for _, link in ipairs(self.links) do
-			local x, y = link.state:get(g_t)
-			table.insert(rope, x)
-			table.insert(rope, y)
-		end
-
-		love.graphics.setLineWidth(3)
-		love.graphics.setColor(1, 1, 1, 0.7)
-		love.graphics.line(rope)
-
-		for _, link in ipairs(self.links) do
-			if link.info.img ~= nil then
-				local x, y, r = link.state:get(g_t)
-				local ox, oy = link.info.img:getWidth() / 2, link.info.img:getHeight() / 2
-				love.graphics.setColor(1, 1, 1)
-				love.graphics.draw(link.info.img, x, y, r, 1, 1, ox, oy)
-			end
-		end
-
-		if DEBUG then
-			for _, link in ipairs(self.links) do
-				love.graphics.setColor(1, 0, 1)
-				local x, y = link.body:getPosition()
-				love.graphics.circle("fill", x, y, link.shape:getRadius())
-			end
-		end
-	end
-
-	-- Draws clouds in a repeating pattern of 1,2,3,4, but with
-	-- an offset on each track.
-	local CloudTrack = class("CloudTrack")
-
-	-- x,y: Top-left corner of cloud track.
-	function CloudTrack:init(x, y, offset, speed, img)
-		self.x = x
-		self.y = y
-		self.initial_offset = offset
-		self.h_spacing = 50
-		self.img = img
-		self.w = self.h_spacing + self.img:getWidth()
-		self.speed = speed -- px/s
-		self.count = love.graphics.getWidth() / self.w + 2
-		self.initial_img = math.random(1, 4)
-	end
-
-	function CloudTrack:update(_)
-	end
-
-	function CloudTrack:draw()
-		local abs_offset = (self.initial_offset + (self.speed * g_t))
-		local offset = abs_offset % self.w
-		love.graphics.setColor(1, 1, 1, 0.3)
-		for i=1, self.count do
-			local x = self.x + (i - 1) * (self.img:getWidth() + self.h_spacing) + offset - self.w
-			local y = self.y
-			local img_no =  math.floor(abs_offset / self.w)
-			love.graphics.draw(cloud_images[1 + (self.initial_img + i - img_no) % 4], x, y, -0.05)
-		end
-	end
-
-	local Clouds = class("Clouds")
-
-	function Clouds:init()
-		local layer_height = 100
-
-		self.tracks = {}
-		local max = (love.graphics.getHeight() / layer_height) + 1
-		for i=1, max do
-			table.insert(self.tracks, CloudTrack(0, 20 + (i - 1) * layer_height, img_cloud_1:getWidth() / 2 * i, 40, img_cloud_1))
-		end
-	end
-
-	function Clouds:draw()
-		for _,track in ipairs(self.tracks) do
-			track:draw()
-		end
-	end
-
-	-- Called on resize.
-	local function create_world()
-		local wx, wy = love.graphics.getDimensions()
-		world = love.physics.newWorld(0, 9.81*64)
-		duckloon = Duckloon(world, wx / 2, wy / 2 - 100)
-		local ax, ay = duckloon:attachment_point()
-		chain = Chain(world, ax, ay, "  n o # g a m e # ", duckloon)
-		clouds = Clouds()
-
-		g_objs = {
-			chain,
-			duckloon
-		}
-	end
-
-	function love.load()
-		love.graphics.setBackgroundColor(43/255, 165/255, 223/255)
-		love.physics.setMeter(64)
-
-		local dpiscale = love.window.getDPIScale() > 1 and 2 or 1
-		local settings = {dpiscale = dpiscale}
-
-		R.chain.n = R.chain[dpiscale].n_png
-		R.chain.o = R.chain[dpiscale].o_png
-		R.chain.g = R.chain[dpiscale].g_png
-		R.chain.a = R.chain[dpiscale].a_png
-		R.chain.m = R.chain[dpiscale].m_png
-		R.chain.e = R.chain[dpiscale].e_png
-		R.chain.square = R.chain[dpiscale].square_png
-		R.duckloon.blink = R.duckloon[dpiscale].blink_png
-		R.duckloon.normal = R.duckloon[dpiscale].normal_png
-		R.bg.cloud_1 = R.bg[dpiscale].cloud_1_png
-		R.bg.cloud_2 = R.bg[dpiscale].cloud_2_png
-		R.bg.cloud_3 = R.bg[dpiscale].cloud_3_png
-		R.bg.cloud_4 = R.bg[dpiscale].cloud_4_png
-
-		img_duckloon_normal = love.graphics.newImage(R.duckloon.normal, settings)
-		img_duckloon_blink = love.graphics.newImage(R.duckloon.blink, settings)
-
-		img_n = love.graphics.newImage(R.chain.n, settings)
-		img_o = love.graphics.newImage(R.chain.o, settings)
-		img_g = love.graphics.newImage(R.chain.g, settings)
-		img_a = love.graphics.newImage(R.chain.a, settings)
-		img_m = love.graphics.newImage(R.chain.m, settings)
-		img_e = love.graphics.newImage(R.chain.e, settings)
-		img_square = love.graphics.newImage(R.chain.square, settings)
-
-		img_cloud_1 = love.graphics.newImage(R.bg.cloud_1, settings)
-		img_cloud_2 = love.graphics.newImage(R.bg.cloud_2, settings)
-		img_cloud_3 = love.graphics.newImage(R.bg.cloud_3, settings)
-		img_cloud_4 = love.graphics.newImage(R.bg.cloud_4, settings)
-
-		cloud_images = {
-			img_cloud_1,
-			img_cloud_2,
-			img_cloud_3,
-			img_cloud_4,
-		}
-
-		create_world()
-	end
-
-	function love.update(dt)
-		g_t = g_t + dt
-
-		while g_t > g_step do
-			world:update(STEP)
-			g_step = g_step + STEP
-			for _,v in ipairs(g_objs) do
-				v:step()
-			end
-			g_step_count = g_step_count + 1
-		end
-
-		for i in ipairs(g_objs) do
-			g_objs[i]:update(dt)
-		end
-	end
-
-	function love.draw()
-		clouds:draw()
-
-		for i in ipairs(g_objs) do
-			g_objs[i]:draw()
-		end
-
-		if DEBUG then
-			love.graphics.setColor(0, 0, 0, 0.5)
-			love.graphics.print("FPS: " .. love.timer.getFPS(), 50, 50)
-			love.graphics.print("Time: " .. g_t, 50, 65)
-			love.graphics.print("g_step: " .. g_step, 50, 80)
-			love.graphics.print("Frame: " .. g_frame_count, 50, 95)
-			love.graphics.print("Step: " .. g_step_count, 50, 110)
-		end
-
-		g_frame_count = g_frame_count + 1
-	end
-
-	function love.mousepressed(_, _, _, istouch, clicks)
-		-- Double-tap the screen (when using a touch screen) to exit.
-		if istouch and clicks == 2 then
-			if love.window.showMessageBox("Exit No-Game Screen", "", {"OK", "Cancel"}) == 1 then
-				love.event.quit()
-			end
-		end
-	end
-
-	function love.keypressed(key)
-		if key == "escape" then
-			love.event.quit()
-		end
-	end
-
-	function love.resize()
-		create_world()
-	end
-
-	function love.conf(t)
-		t.title = "L\195\150VE " .. love._version .. " (" .. love._version_codename .. ")"
-		t.gammacorrect = true
-		t.modules.audio = false
-		t.modules.sound = false
-		t.modules.joystick = false
-		t.window.resizable = true
-		t.window.highdpi = true
-
-		if love._os == "iOS" then
-			t.window.borderless = true
-		end
-	end
+	"
+   )
+
+   -- 30log.lua begins
+   local function require_30log()
+      local assert, pairs, type, tostring, setmetatable = assert, pairs, type, tostring, setmetatable
+      local baseMt, _instances, _classes, _class =
+         {}, setmetatable({}, { __mode = "k" }), setmetatable({}, { __mode = "k" })
+      local function assert_class(class, method)
+         assert(_classes[class], ("Wrong method call. Expected class:%s."):format(method))
+      end
+      local function deep_copy(t, dest, aType)
+         t = t or {}
+         local r = dest or {}
+         for k, v in pairs(t) do
+            if aType and type(v) == aType then
+               r[k] = v
+            elseif not aType then
+               if type(v) == "table" and k ~= "__index" then
+                  r[k] = deep_copy(v)
+               else
+                  r[k] = v
+               end
+            end
+         end
+         return r
+      end
+      local function instantiate(self, ...)
+         assert_class(self, "new(...) or class(...)")
+         local instance = { class = self }
+         _instances[instance] = tostring(instance)
+         setmetatable(instance, self)
+         if self.init then
+            if type(self.init) == "table" then
+               deep_copy(self.init, instance)
+            else
+               self.init(instance, ...)
+            end
+         end
+         return instance
+      end
+      local function extend(self, name, extra_params)
+         assert_class(self, "extend(...)")
+         local heir = {}
+         _classes[heir] = tostring(heir)
+         deep_copy(extra_params, deep_copy(self, heir))
+         heir.name, heir.__index, heir.super = extra_params and extra_params.name or name, heir, self
+         return setmetatable(heir, self)
+      end
+      baseMt = {
+         __call = function(self, ...)
+            return self:new(...)
+         end,
+         __tostring = function(self)
+            if _instances[self] then
+               return ("instance of '%s' (%s)"):format(rawget(self.class, "name") or "?", _instances[self])
+            end
+            return _classes[self] and ("class '%s' (%s)"):format(rawget(self, "name") or "?", _classes[self]) or self
+         end,
+      }
+      _classes[baseMt] = tostring(baseMt)
+      setmetatable(baseMt, { __tostring = baseMt.__tostring })
+      local class = {
+         isClass = function(class, ofsuper)
+            local isclass = not not _classes[class]
+            if ofsuper then
+               return isclass and (class.super == ofsuper)
+            end
+            return isclass
+         end,
+         isInstance = function(instance, ofclass)
+            ---@diagnostic disable-next-line: cast-local-type
+            local isinstance = not not _instances[instance]
+            if ofclass then
+               return isinstance and (instance.class == ofclass)
+            end
+            return isinstance
+         end,
+      }
+      _class = function(name, attr)
+         local c = deep_copy(attr)
+         c.mixins = setmetatable({}, { __mode = "k" })
+         _classes[c] = tostring(c)
+         c.name, c.__tostring, c.__call = name or c.name, baseMt.__tostring, baseMt.__call
+         c.include = function(self, mixin)
+            assert_class(self, "include(mixin)")
+            self.mixins[mixin] = true
+            return deep_copy(mixin, self, "function")
+         end
+         c.new, c.extend, c.__index, c.includes =
+            instantiate, extend, c, function(self, mixin)
+               assert_class(self, "includes(mixin)")
+               return not not (self.mixins[mixin] or (self.super and self.super:includes(mixin)))
+            end
+         c.extends = function(self, class2)
+            assert_class(self, "extends(class)")
+            local super = self
+            repeat
+               super = super.super
+            until super == class2 or super == nil
+            return class2 and (super == class2)
+         end
+         return setmetatable(c, baseMt)
+      end
+      class._DESCRIPTION = "30 lines library for object orientation in Lua"
+      class._VERSION = "30log v1.0.0"
+      class._URL = "http://github.com/Yonaba/30log"
+      class._LICENSE = "MIT LICENSE <http://www.opensource.org/licenses/mit-license.php>"
+      return setmetatable(class, {
+         __call = function(_, ...)
+            return _class(...)
+         end,
+      })
+   end
+   -- 30log.lua ends
+
+   local class = require_30log()
+
+   local g_t = 0 -- The current elapsed time.
+   local g_step = 0 -- The current physics step.
+   local STEP = 1 / 20 -- 20Hz physics.
+
+   -- Debug things.
+   local DEBUG = false
+   -- local LOCAL = true
+   local g_frame_count = 0
+   local g_step_count = 0
+   local world
+   local duckloon
+   local chain
+   local clouds
+   local g_objs
+   local img_duckloon_normal
+   local img_duckloon_blink
+   local img_n, img_o, img_g, img_a, img_m, img_e
+   local img_square
+   local img_cloud_1, img_cloud_2, img_cloud_3, img_cloud_4
+   local cloud_images
+
+   -- A State maintains two x,y,angle states for some
+   -- body, and interpolates between those states.
+   local State = class("State")
+
+   function State:init(body)
+      self.t0 = 0
+      self.x0 = body:getX()
+      self.y0 = body:getY()
+      self.r0 = body:getAngle()
+
+      self.t1 = self.t0
+      self.x1 = self.x0
+      self.y1 = self.y0
+      self.r1 = self.r0
+   end
+
+   -- Calculate the next state for Body, at time t.
+   function State:save(body, t)
+      self.t0 = self.t1
+      self.x0 = self.x1
+      self.y0 = self.y1
+      self.r0 = self.r1
+
+      self.t1 = t
+      self.x1 = body:getX()
+      self.y1 = body:getY()
+      self.r1 = body:getAngle()
+   end
+
+   function State:get(t)
+      t = math.min(t, self.t1)
+      t = math.max(t, self.t0)
+
+      local p = (t - self.t0) / (self.t1 - self.t0)
+
+      local x = self.x0 + p * (self.x1 - self.x0)
+      local y = self.y0 + p * (self.y1 - self.y0)
+      local r = self.r0 + p * (self.r1 - self.r0)
+
+      return x, y, r
+   end
+
+   -- Simple class for figuring out whether the eyes
+   -- of the Duckloon should be closed.
+   local Blink = class("Blink")
+
+   function Blink:init()
+      -- When this hits zero, we open the eyes.
+      self.closed_t = 0
+
+      -- When this hits zero, we close the eyes.
+      self.next_blink_t = 5
+   end
+
+   function Blink:update(dt)
+      self.next_blink_t = math.max(0, self.next_blink_t - dt)
+      self.closed_t = math.max(0, self.closed_t - dt)
+
+      if self.next_blink_t == 0 then
+         self.next_blink_t = 5 + math.random(0, 3)
+         self.closed_t = 0.1
+      end
+   end
+
+   function Blink:is_closed()
+      return self.closed_t > 0
+   end
+
+   -- Duckloon (TM)
+   local Duckloon = class("Duckloon")
+
+   function Duckloon:init(world2, x, y)
+      self.body = love.physics.newBody(world2, x, y, "dynamic")
+      self.body:setLinearDamping(0.8)
+      self.body:setAngularDamping(0.8)
+      self.shape = love.physics.newPolygonShape(-55, -60, 0, 90, 55, -60)
+      self.fixture = love.physics.newFixture(self.body, self.shape, 1)
+      self.fixture:setRestitution(0.5)
+      self.img_normal = img_duckloon_normal
+      self.img_blink = img_duckloon_blink
+      self.img = self.img_normal
+      self.blink = Blink()
+      self.pin = love.physics.newMouseJoint(self.body, x, y - 80)
+      self.state = State(self.body)
+   end
+
+   function Duckloon:step()
+      self.state:save(self.body, g_step)
+
+      if math.floor(g_step % 5) == 0 then
+         self.body:applyForce(math.random(30, 50), 0)
+      end
+   end
+
+   function Duckloon:update(dt)
+      self.blink:update(dt)
+   end
+
+   function Duckloon:draw()
+      local x, y, r = self.state:get(g_t)
+
+      love.graphics.setColor(1, 1, 1)
+
+      local img = self.img_normal
+      if self.blink:is_closed() then
+         img = self.img_blink
+      end
+
+      love.graphics.draw(img, x, y, r, 1, 1, img:getWidth() / 2, img:getHeight() / 2)
+
+      if DEBUG then
+         love.graphics.setColor(0.8, 0.3, 0.1)
+         love.graphics.polygon("fill", self.body:getWorldPoints(self.shape:getPoints()))
+
+         love.graphics.setColor(0, 1, 0)
+         local ax, ay = self:attachment_point()
+         love.graphics.circle("fill", ax, ay, 3)
+      end
+   end
+
+   -- This is where to attach the Chain.
+   function Duckloon:attachment_point()
+      return self.body:getWorldPoint(4, 90)
+   end
+
+   -- The chain is built from a string containing "# nogame",
+   -- which represents what should be "drawn" along the chain.
+   local Chain = class("Chain")
+
+   function Chain:init(world2, x, y, str, duckloon2)
+      self.links = {}
+      self.str = str
+
+      local DRAW_INFO = {
+         n = { r = 11, img = img_n },
+         o = { r = 11, img = img_o },
+         g = { r = 11, img = img_g },
+         a = { r = 11, img = img_a },
+         m = { r = 11, img = img_m },
+         e = { r = 11, img = img_e },
+         [" "] = { r = 4, img = nil },
+         ["#"] = { r = 7, img = img_square },
+      }
+
+      for i = 1, #str do
+         local prev = nil
+
+         if i >= 2 then
+            prev = self.links[i - 1]
+         end
+
+         local byte = str:byte(i)
+         local link = {}
+
+         link.x = x
+         link.y = y
+
+         link.info = DRAW_INFO[string.char(byte)]
+         link.radius = link.info.r
+
+         if prev ~= nil then
+            link.y = prev.y + prev.radius + link.radius
+         end
+
+         link.body = love.physics.newBody(world2, link.x, link.y, "dynamic")
+         link.body:setLinearDamping(0.5)
+         link.body:setAngularDamping(0.5)
+         link.shape = love.physics.newCircleShape(link.radius)
+         link.fixture = love.physics.newFixture(link.body, link.shape, 0.1 / i)
+         link.state = State(link.body)
+
+         -- Note: every link must also be attached to the Duckloon. Otherwise the
+         --       chain easily goes haywire on higher speeds.
+
+         if prev ~= nil then
+            link.joint = love.physics.newRevoluteJoint(link.body, prev.body, link.x, link.y - link.radius / 2)
+            link.join2 = love.physics.newRopeJoint(link.body, duckloon2.body, link.x, link.y, x, y, link.y - y)
+         else
+            link.joint = love.physics.newRevoluteJoint(link.body, duckloon2.body, link.x, link.y)
+         end
+
+         table.insert(self.links, link)
+      end
+   end
+
+   function Chain:step()
+      for _, link in ipairs(self.links) do
+         link.state:save(link.body, g_step)
+      end
+   end
+
+   function Chain:update(_) end
+
+   function Chain:draw()
+      local rope = {}
+
+      for _, link in ipairs(self.links) do
+         local x, y = link.state:get(g_t)
+         table.insert(rope, x)
+         table.insert(rope, y)
+      end
+
+      love.graphics.setLineWidth(3)
+      love.graphics.setColor(1, 1, 1, 0.7)
+      love.graphics.line(rope)
+
+      for _, link in ipairs(self.links) do
+         if link.info.img ~= nil then
+            local x, y, r = link.state:get(g_t)
+            local ox, oy = link.info.img:getWidth() / 2, link.info.img:getHeight() / 2
+            love.graphics.setColor(1, 1, 1)
+            love.graphics.draw(link.info.img, x, y, r, 1, 1, ox, oy)
+         end
+      end
+
+      if DEBUG then
+         for _, link in ipairs(self.links) do
+            love.graphics.setColor(1, 0, 1)
+            local x, y = link.body:getPosition()
+            love.graphics.circle("fill", x, y, link.shape:getRadius())
+         end
+      end
+   end
+
+   -- Draws clouds in a repeating pattern of 1,2,3,4, but with
+   -- an offset on each track.
+   local CloudTrack = class("CloudTrack")
+
+   -- x,y: Top-left corner of cloud track.
+   function CloudTrack:init(x, y, offset, speed, img)
+      self.x = x
+      self.y = y
+      self.initial_offset = offset
+      self.h_spacing = 50
+      self.img = img
+      self.w = self.h_spacing + self.img:getWidth()
+      self.speed = speed -- px/s
+      self.count = love.graphics.getWidth() / self.w + 2
+      self.initial_img = math.random(1, 4)
+   end
+
+   function CloudTrack:update(_) end
+
+   function CloudTrack:draw()
+      local abs_offset = (self.initial_offset + (self.speed * g_t))
+      local offset = abs_offset % self.w
+      love.graphics.setColor(1, 1, 1, 0.3)
+      for i = 1, self.count do
+         local x = self.x + (i - 1) * (self.img:getWidth() + self.h_spacing) + offset - self.w
+         local y = self.y
+         local img_no = math.floor(abs_offset / self.w)
+         love.graphics.draw(cloud_images[1 + (self.initial_img + i - img_no) % 4], x, y, -0.05)
+      end
+   end
+
+   local Clouds = class("Clouds")
+
+   function Clouds:init()
+      local layer_height = 100
+
+      self.tracks = {}
+      local max = (love.graphics.getHeight() / layer_height) + 1
+      for i = 1, max do
+         table.insert(
+            self.tracks,
+            CloudTrack(0, 20 + (i - 1) * layer_height, img_cloud_1:getWidth() / 2 * i, 40, img_cloud_1)
+         )
+      end
+   end
+
+   function Clouds:draw()
+      for _, track in ipairs(self.tracks) do
+         track:draw()
+      end
+   end
+
+   -- Called on resize.
+   local function create_world()
+      local wx, wy = love.graphics.getDimensions()
+      world = love.physics.newWorld(0, 9.81 * 64)
+      duckloon = Duckloon(world, wx / 2, wy / 2 - 100)
+      local ax, ay = duckloon:attachment_point()
+      chain = Chain(world, ax, ay, "  n o # g a m e # ", duckloon)
+      clouds = Clouds()
+
+      g_objs = {
+         chain,
+         duckloon,
+      }
+   end
+
+   function love.load()
+      love.graphics.setBackgroundColor(43 / 255, 165 / 255, 223 / 255)
+      love.physics.setMeter(64)
+
+      local dpiscale = love.window.getDPIScale() > 1 and 2 or 1
+      local settings = { dpiscale = dpiscale }
+
+      R.chain.n = R.chain[dpiscale].n_png
+      R.chain.o = R.chain[dpiscale].o_png
+      R.chain.g = R.chain[dpiscale].g_png
+      R.chain.a = R.chain[dpiscale].a_png
+      R.chain.m = R.chain[dpiscale].m_png
+      R.chain.e = R.chain[dpiscale].e_png
+      R.chain.square = R.chain[dpiscale].square_png
+      R.duckloon.blink = R.duckloon[dpiscale].blink_png
+      R.duckloon.normal = R.duckloon[dpiscale].normal_png
+      R.bg.cloud_1 = R.bg[dpiscale].cloud_1_png
+      R.bg.cloud_2 = R.bg[dpiscale].cloud_2_png
+      R.bg.cloud_3 = R.bg[dpiscale].cloud_3_png
+      R.bg.cloud_4 = R.bg[dpiscale].cloud_4_png
+
+      img_duckloon_normal = love.graphics.newImage(R.duckloon.normal, settings)
+      img_duckloon_blink = love.graphics.newImage(R.duckloon.blink, settings)
+
+      img_n = love.graphics.newImage(R.chain.n, settings)
+      img_o = love.graphics.newImage(R.chain.o, settings)
+      img_g = love.graphics.newImage(R.chain.g, settings)
+      img_a = love.graphics.newImage(R.chain.a, settings)
+      img_m = love.graphics.newImage(R.chain.m, settings)
+      img_e = love.graphics.newImage(R.chain.e, settings)
+      img_square = love.graphics.newImage(R.chain.square, settings)
+
+      img_cloud_1 = love.graphics.newImage(R.bg.cloud_1, settings)
+      img_cloud_2 = love.graphics.newImage(R.bg.cloud_2, settings)
+      img_cloud_3 = love.graphics.newImage(R.bg.cloud_3, settings)
+      img_cloud_4 = love.graphics.newImage(R.bg.cloud_4, settings)
+
+      cloud_images = {
+         img_cloud_1,
+         img_cloud_2,
+         img_cloud_3,
+         img_cloud_4,
+      }
+
+      create_world()
+   end
+
+   function love.update(dt)
+      g_t = g_t + dt
+
+      while g_t > g_step do
+         world:update(STEP)
+         g_step = g_step + STEP
+         for _, v in ipairs(g_objs) do
+            v:step()
+         end
+         g_step_count = g_step_count + 1
+      end
+
+      for i in ipairs(g_objs) do
+         g_objs[i]:update(dt)
+      end
+   end
+
+   function love.draw()
+      clouds:draw()
+
+      for i in ipairs(g_objs) do
+         g_objs[i]:draw()
+      end
+
+      if DEBUG then
+         love.graphics.setColor(0, 0, 0, 0.5)
+         love.graphics.print("FPS: " .. love.timer.getFPS(), 50, 50)
+         love.graphics.print("Time: " .. g_t, 50, 65)
+         love.graphics.print("g_step: " .. g_step, 50, 80)
+         love.graphics.print("Frame: " .. g_frame_count, 50, 95)
+         love.graphics.print("Step: " .. g_step_count, 50, 110)
+      end
+
+      g_frame_count = g_frame_count + 1
+   end
+
+   function love.mousepressed(_, _, _, istouch, clicks)
+      -- Double-tap the screen (when using a touch screen) to exit.
+      if istouch and clicks == 2 then
+         if love.window.showMessageBox("Exit No-Game Screen", "", { "OK", "Cancel" }) == 1 then
+            love.event.quit()
+         end
+      end
+   end
+
+   function love.keypressed(key)
+      if key == "escape" then
+         love.event.quit()
+      end
+   end
+
+   function love.resize()
+      create_world()
+   end
+
+   function love.conf(t)
+      t.title = "L\195\150VE " .. love._version .. " (" .. love._version_codename .. ")"
+      t.gammacorrect = true
+      t.modules.audio = false
+      t.modules.sound = false
+      t.modules.joystick = false
+      t.window.resizable = true
+      t.window.highdpi = true
+
+      if love._os == "iOS" then
+         t.window.borderless = true
+      end
+   end
 end
 
 return love.nogame

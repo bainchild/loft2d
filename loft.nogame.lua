@@ -1,17 +1,20 @@
-local love = require('loft')
+local love = require("loft")
 -- local Canvas = require('loft._classes.Canvas')
 function love.nogame()
    -- local last;
-   local logo,logo_data
+   local logo, logo_data
    local start
-   local past_warning,warning_transition,warning_skippable,waiting_on_screenshot = false,false,false,false
-   local warning_screenshot,warning_screenshotdata
+   local past_warning, warning_transition, warning_skippable, waiting_on_screenshot = false, false, false, false
+   local warning_screenshot, warning_screenshotdata
    local warning_base_time
    function love.load()
       -- last=0
-      love.graphics.setBackgroundColor(226/255,226/255,195/255,1)
+      love.graphics.setBackgroundColor(226 / 255, 226 / 255, 195 / 255, 1)
       love.graphics.setPointSize(45)
-      logo_data=love.image.newImageData(love.data.decode("data","base64","\
+      logo_data = love.image.newImageData(love.data.decode(
+         "data",
+         "base64",
+         "\
       iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAgAElEQVR4nO29WZAl2Xnf9ztLZt61\
       9qpep2fFYBtwgMFCEQJACoQo0iRFQQ46FLb8QDtk2Y6wH/zgB/OBjvCDw+Hw+mQ7HA5HKCjbD7Yl\
       h0IOm6RESpAICYsHMwBmQWOmp9fq6qrqqlt3y8yz+OFk3srOzlu3qnsGM83Q6bid2/mfzDzf+dbz\
@@ -243,12 +246,15 @@ function love.nogame()
       n0afPiq23lGL3mFeB37ksf9iunDOaP+zgm1i+TqxOeG4LjrOwsFNg6LpHvXrj4utqqWqemri/iYO\
       eqKwiwhyWg58HOPlNOVx2m/CnlZKNXHLk4h9ZP37ONhFRtFJ9R4H24SpSp8maXTS/T7S2H8xXXj6\
       8ig680PH/v8AzNLk9rAFkgAAAABJRU5ErkJggg==\
-      "))
-      logo=love.graphics.newImage(logo_data)
-      start=love.timer.getTime()
+      "
+      ))
+      logo = love.graphics.newImage(logo_data)
+      start = love.timer.getTime()
    end
    local function set_transition()
-      if past_warning or warning_transition or waiting_on_screenshot then return end
+      if past_warning or warning_transition or waiting_on_screenshot then
+         return
+      end
       if warning_skippable then
          waiting_on_screenshot = true
          love.graphics.captureScreenshot(function(img)
@@ -256,24 +262,28 @@ function love.nogame()
             warning_screenshotdata = img
             warning_screenshot = love.graphics.newImage(img)
             warning_base_time = love.timer.getTime()
-            love.graphics.setBackgroundColor(1,1,1,1)
+            love.graphics.setBackgroundColor(1, 1, 1, 1)
          end)
       end
    end
-   local function clamp(a,b,c)
-      if a<b then return b end
-      if a>c then return c end
+   local function clamp(a, b, c)
+      if a < b then
+         return b
+      end
+      if a > c then
+         return c
+      end
       return a
    end
    function love.update()
       if not past_warning then
          local time = love.timer.getTime()
-         local space = time-start
+         local space = time - start
          if space > 2 and not warning_skippable then
             warning_skippable = true
-            warning_base_time=love.timer.getTime()
-         elseif warning_transition and time-warning_base_time > 4 then
-            past_warning=true
+            warning_base_time = love.timer.getTime()
+         elseif warning_transition and time - warning_base_time > 3.25 then
+            past_warning = true
             warning_screenshot:release()
             warning_screenshotdata:release()
             waiting_on_screenshot = false
@@ -282,10 +292,10 @@ function love.nogame()
          end
       end
    end
-   local scale_w,scale_h = 1,1
+   local scale_w, scale_h = 1, 1
    function love.draw()
       -- love.graphics.rotate(math.pi/8)
-      local width,height = 800,600--love.graphics.getDimensions()
+      local width, height = 800, 600 --love.graphics.getDimensions()
       -- local r,g,b = love.graphics.getBackgroundColor()
       -- love.graphics.setColor(1-r,1-g,1-b,1)
       -- love.graphics.line(0,0,width,height)
@@ -301,46 +311,57 @@ function love.nogame()
       -- love.graphics.points(width/2,height*3/4)
       -- -- there is now tint!!!!
       -- love.graphics.setColor(1,1,1,1)
-      love.graphics.scale(scale_w,scale_h)
+      love.graphics.scale(scale_w, scale_h)
       if not past_warning then
          if warning_transition then
-            love.graphics.setColor(1,1,1,clamp(1-((love.timer.getTime()-warning_base_time)/.38),0,1))
-            love.graphics.draw(warning_screenshot,(width/2)-(warning_screenshotdata:getWidth()/2),(height/2)-(warning_screenshotdata:getHeight()/2))
+            love.graphics.setColor(1, 1, 1, clamp(1 - ((love.timer.getTime() - warning_base_time) / 0.38), 0, 1))
+            love.graphics.draw(
+               warning_screenshot,
+               (width / 2) - (warning_screenshotdata:getWidth() / 2),
+               (height / 2) - (warning_screenshotdata:getHeight() / 2)
+            )
          else
             local font = love.graphics.getFont()
-            love.graphics.setColor(2/255,2/255,2/255,1)
+            font:setFilter("nearest")
+            love.graphics.setColor(2 / 255, 2 / 255, 2 / 255, 1)
             local st = "WARNING - OPEN SOURCE"
-            love.graphics.print(st,(width/2-font:getWidth(st)*4.5/2),height/11.3,0,4.5)
-            love.graphics.setColor(28/255,28/255,28/255,1)
-            st ="     BEFORE USING, CONSULT\n"..
-                "THE LOVE2D SOURCE AND WIKI\n"..
-                " FOR IMPORTANT INFORMATION\n"..
-                "      ABOUT THIS SOFTWARE"
-            love.graphics.print(st,(width/2-font:getWidth(st)*3.5/2),height/4,0,3.5)
+            love.graphics.print(st, (width / 2 - font:getWidth(st) * 4.5 / 2), height / 11.3, 0, 4.5)
+            love.graphics.setColor(28 / 255, 28 / 255, 28 / 255, 1)
+            st = "     BEFORE USING, CONSULT\n"
+               .. "THE LOVE2D SOURCE AND WIKI\n"
+               .. " FOR IMPORTANT INFORMATION\n"
+               .. "      ABOUT THIS SOFTWARE"
+            love.graphics.print(st, (width / 2 - font:getWidth(st) * 3.5 / 2), height / 4, 0, 3.5)
             st = "TO GET A COPY OF THIS SOFTWARE, GO ONLINE AT"
-            love.graphics.print(st,(width/2-font:getWidth(st)*2.4/2),height*.68,0,2.4)
-            love.graphics.setColor(73/255,176/255,1,1)
+            love.graphics.print(st, (width / 2 - font:getWidth(st) * 2.4 / 2), height * 0.68, 0, 2.4)
+            love.graphics.setColor(73 / 255, 176 / 255, 1, 1)
             st = "github.com/bainchild/loft2d"
-            love.graphics.print(st,(width/2-font:getWidth(st)*2.7/2),height*.75,0,2.7)
+            love.graphics.print(st, (width / 2 - font:getWidth(st) * 2.7 / 2), height * 0.75, 0, 2.7)
             if warning_skippable then
                -- oscillating grey, from 85 to 170 (/255)
-               love.graphics.setColor(.1,.1,.1,(waiting_on_screenshot and 1) or (math.sin((love.timer.getTime()-warning_base_time+2)/2*math.pi)+1)/2)
+               love.graphics.setColor(
+                  0.1,
+                  0.1,
+                  0.1,
+                  (waiting_on_screenshot and 1)
+                     or (math.sin((love.timer.getTime() - warning_base_time + 2) / 2 * math.pi) + 1) / 2
+               )
                local getos = (love.system and love.system.getOS)
-               if getos and (getos()=="Android" or getos()=="iOS") then
-                  st="Touch the Touch Screen to continue."
+               if getos and (getos() == "Android" or getos() == "iOS") then
+                  st = "Touch the Touch Screen to continue."
                else
-                  st="Click anywhere or press a button to continue."
+                  st = "Click anywhere or press a button to continue."
                end
-               love.graphics.print(st,(width/2-font:getWidth(st)*2.5/2),height*.86,0,2.5)
+               love.graphics.print(st, (width / 2 - font:getWidth(st) * 2.5 / 2), height * 0.86, 0, 2.5)
             end
          end
       else
-         love.graphics.setColor(255/255,255/255,255/255,1)
-         love.graphics.draw(logo,(width/2)-(logo_data:getWidth()/2),(height/2)-(logo_data:getHeight()/2))
-         -- io.write(love.graphics._getScreen():newImageData():encode("png"):getString())
-         -- os.exit(0)
+         love.graphics.setColor(255 / 255, 255 / 255, 255 / 255, 1)
+         love.graphics.draw(logo, (width / 2) - (logo_data:getWidth() / 2), (height / 2) - (logo_data:getHeight() / 2))
       end
       love.graphics.origin()
+      io.write(love.graphics._getScreen():newImageData():encode("png"):getString())
+      os.exit(0)
    end
    love.keypressed = set_transition
    love.textinput = set_transition
@@ -349,15 +370,16 @@ function love.nogame()
    love.joystickhat = set_transition
    love.joystickpressed = set_transition
    love.touchpressed = set_transition
-   function love.resize(w,h)
-      scale_w = w/800
-      scale_h = h/600
+   function love.resize(w, h)
+      scale_w = w / 800
+      scale_h = h / 600
    end
    function love.quit()
       -- io.write(imgdata:encode("png"):getString())
    end
    function love.conf(n)
-      n.title = "LOFT2d"..(love._loft_version and " v"..love._loft_version.." ("..love._loft_version_code..")" or "")
+      n.title = "LOFT2d"
+         .. (love._loft_version and " v" .. love._loft_version .. " (" .. love._loft_version_code .. ")" or "")
       -- n.window.resizable = true
    end
 end
