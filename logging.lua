@@ -22,6 +22,7 @@
 
 ]]
 
+local unpack = (unpack or table.unpack)
 local pp = (function()
 	--Recursive pretty printer with optional indentation and cycle detection.
 	--Written by Cosmin Apreutesei. Public Domain.
@@ -724,12 +725,35 @@ local function logerror(self, module, event, ...)
 	log(self, 'ERROR', module, event, ...)
 end
 
-local function init(self)
-	self.log      = function(...) return log      (self, ...) end
-	self.note     = function(...) return note     (self, ...) end
-	self.dbg      = function(...) return dbg      (self, ...) end
-	self.warnif   = function(...) return warnif   (self, ...) end
-	self.logerror = function(...) return logerror (self, ...) end
+function logging:clone(module)
+	local new = logging.new(module)
+	new.quiet = self.quiet
+	new.verbose = self.verbose
+	new.debug = self.debug
+	new.flush = self.flush
+	new.censor = self.censor
+	new.max_disk_size = self.max_disk_size
+	new.queue_size = self.queue_size
+	new.timeout = self.timeout
+	return new
+end
+
+local function init(self,mdl)
+	-- probably a good way to do this
+	-- don't want to stack functions cause stack traces
+	if mdl then
+		self.log      = function(...) return log      (self, mdl, ...) end
+		self.note     = function(...) return note     (self, mdl, ...) end
+		self.dbg      = function(...) return dbg      (self, mdl, ...) end
+		self.warnif   = function(...) return warnif   (self, mdl, ...) end
+		self.logerror = function(...) return logerror (self, mdl, ...) end
+	else
+		self.log      = function(...) return log      (self, ...) end
+		self.note     = function(...) return note     (self, ...) end
+		self.dbg      = function(...) return dbg      (self, ...) end
+		self.warnif   = function(...) return warnif   (self, ...) end
+		self.logerror = function(...) return logerror (self, ...) end
+	end
 	return self
 end
 
@@ -737,7 +761,7 @@ init(logging)
 
 logging.__index = logging
 
-function logging.new()
-	return init(setmetatable({}, logging))
+function logging.new(module)
+	return init(setmetatable({}, logging),module)
 end
 return logging

@@ -38,7 +38,7 @@ function Rasterizer:hasGlyphs(...)
    -- local gm = rawget(self, "_glyphmap")
    for _, glyph in next, { ... } do
       if type(glyph) ~= "number" then
-         glyph = utf8.codepoint(glyph)--gm[glyph]
+         glyph = utf8.codepoint(glyph) --gm[glyph]
       end
       if glyph == nil or glyphs[glyph] == nil then
          return false

@@ -1,13 +1,16 @@
 ---@diagnostic disable: unused-local
+-- TODO: rework for module system
 local FileData = require("loft._classes.FileData")
+local ByteData = require("loft._classes.ByteData")
+local File = require('loft._classes.File')
+local log = require("loft._logging"):clone("loft.filesystem")
 local love = require("loft")
-local log = require('loft._logging')
-local vfs = require("loft.filesystem.vfs")()
+local vfs = require("loft.filesystem.rfs")()
 love.filesystem = { _vfs = vfs }
 local identity = "loft"
-local execname = "loft"
+local execname,execpath = "loft", nil
 local fused = false
-local source = nil
+local source,sourcetype = nil, nil
 local function split(a, b, c)
    local m = {}
    for mat in (a .. (c or b)):gmatch("(.-)" .. b) do
@@ -22,14 +25,14 @@ function love.filesystem.append(name, data, size)
    if size then
       data = data:sub(1, size)
    end
-   name = love.arg.normalslashes(name)
+   name = love.path.normalslashes(name)
    return vfs.writefile(name, data)
 end
 function love.filesystem.areSymlinksEnabled()
    return true
 end
 function love.filesystem.createDirectory(name)
-   name = love.arg.normalslashes(name)
+   name = love.path.normalslashes(name)
    local s = split(name, "/")
    local prevp = ""
    for _, v in next, s do
@@ -50,7 +53,7 @@ function love.filesystem.createDirectory(name)
    return true
 end
 function love.filesystem.exists(file)
-   file = love.arg.normalslashes(file)
+   file = love.path.normalslashes(file)
    return vfs.get(file) ~= nil
 end
 function love.filesystem.getAppdataDirectory()
@@ -60,8 +63,8 @@ function love.filesystem.getCRequirePath()
    return ""
 end
 function love.filesystem.getDirectoryItems(dir)
-   dir = love.arg.normalslashes(dir)
-   local s, fold = vfs.get(dir)
+   dir = love.path.normalslashes(dir)
+   local fold = assert(vfs.get(dir),"Couldn't list directory "..dir)
    local files = {}
    for i, v in next, fold.Content do
       files[#files + 1] = v.Name
@@ -141,8 +144,13 @@ end
 function love.filesystem.getWorkingDirectory()
    return vfs.CDirPath
 end
-function love.filesystem.init(appname)
+local inited = false
+function love.filesystem.init(appname,path)
+   if inited then return end
+   inited=true
+   log.dbg("init","%s %s",appname,path)
    execname = appname
+   execpath = path or ("/"..appname)
 end
 -- isDirectory
 -- isFile
@@ -153,7 +161,9 @@ end
 -- lines
 -- load
 -- mount
--- newFile
+function love.filesystem.newFile(name,rwac) -- read, write, append, closed (rwac)
+   return File.new(name,rwac)
+end
 function love.filesystem.newFileData(contents, name)
    if type(contents) == "table" and rawget(contents, "_isAobject") and contents:typeOf("Data") then
       contents = contents:getString()
@@ -175,7 +185,18 @@ function love.filesystem.newFileData(contents, name)
    end
    return new
 end
--- read
+function love.filesystem.read(container, name, size)
+   if name==nil or size==nil then
+      name,size = container, name
+   end
+   local suc,err = vfs.readfile(name)
+   if not suc then return nil, err end
+   local dat = (size and suc:sub(1,size) or suc)
+   if container and container=="data" then
+      return ByteData.new(dat)
+   end
+   return dat
+end
 -- remove
 -- setCRequirePath
 function love.filesystem.setIdentity(name)
@@ -183,8 +204,16 @@ function love.filesystem.setIdentity(name)
 end
 -- setRequirePath
 function love.filesystem.setSource(src)
-   log.note("loft.filesystem","setSource","%s",src)
-   error("this is needed for nogame")
+   log.note("setSource", "%s", src)
+   if vfs.isFolder(src) then
+      sourcetype = "folder"
+      vfs.chdir(src)
+   elseif vfs.readfile(src) then
+      sourcetype = "archive"
+      vfs.setfs(src)
+   else
+      error("Couldn't set source")
+   end
    source = src
 end
 -- setSymlinksEnabled
@@ -194,7 +223,7 @@ end
 ---- internal, not on wiki
 function love.filesystem.getExecutablePath()
    -- absolute path of executable
-   return "/" .. execname -- sure
+   return execpath
 end
 function love.filesystem.setFused(tf)
    fused = tf

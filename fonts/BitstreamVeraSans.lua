@@ -1,8123 +1,8123 @@
 return {
-   [0]='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';
-   ['fnt']={
-      ['page']={
-         {
-            ['file']='BitstreamVeraSans_0.png';
-            ['id']=0;
-            ['charscount']=256;
-         };
-      };
-      ['info']={
-         {
-            ['spacing']='1,1';
-            ['italic']=0;
-            ['stretchH']=100;
-            ['outline']=0;
-            ['padding']='0,0,0,0';
-            ['charset']='';
-            ['bold']=0;
-            ['size']=32;
-            ['smooth']=1;
-            ['aa']=1;
-            ['face']='Bitstream Vera Sans';
-            ['unicode']=1;
-         };
-      };
-      ['char']={
-         {
-            ['yoffset']=30;
-            ['id']=32;
-            ['height']=1;
-            ['xoffset']=-1;
-            ['x']=217;
-            ['y']=94;
-            ['chnl']=15;
-            ['width']=3;
-            ['page']=0;
-            ['xadvance']=9;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=33;
-            ['height']=20;
-            ['xoffset']=4;
-            ['x']=508;
-            ['y']=92;
-            ['chnl']=15;
-            ['width']=3;
-            ['page']=0;
-            ['xadvance']=11;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=34;
-            ['height']=7;
-            ['xoffset']=2;
-            ['x']=315;
-            ['y']=131;
-            ['chnl']=15;
-            ['width']=8;
-            ['page']=0;
-            ['xadvance']=12;
-         };
-         {
-            ['yoffset']=7;
-            ['id']=35;
-            ['height']=18;
-            ['xoffset']=2;
-            ['x']=68;
-            ['y']=119;
-            ['chnl']=15;
-            ['width']=19;
-            ['page']=0;
-            ['xadvance']=23;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=36;
-            ['height']=24;
-            ['xoffset']=2;
-            ['x']=254;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=37;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=167;
-            ['y']=75;
-            ['chnl']=15;
-            ['width']=24;
-            ['page']=0;
-            ['xadvance']=26;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=38;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=282;
-            ['y']=73;
-            ['chnl']=15;
-            ['width']=19;
-            ['page']=0;
-            ['xadvance']=21;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=39;
-            ['height']=7;
-            ['xoffset']=2;
-            ['x']=506;
-            ['y']=113;
-            ['chnl']=15;
-            ['width']=3;
-            ['page']=0;
-            ['xadvance']=7;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=40;
-            ['height']=24;
-            ['xoffset']=2;
-            ['x']=276;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=7;
-            ['page']=0;
-            ['xadvance']=11;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=41;
-            ['height']=24;
-            ['xoffset']=2;
-            ['x']=284;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=7;
-            ['page']=0;
-            ['xadvance']=11;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=42;
-            ['height']=12;
-            ['xoffset']=1;
-            ['x']=125;
-            ['y']=135;
-            ['chnl']=15;
-            ['width']=12;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=9;
-            ['id']=43;
-            ['height']=16;
-            ['xoffset']=2;
-            ['x']=160;
-            ['y']=117;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=23;
-         };
-         {
-            ['yoffset']=22;
-            ['id']=44;
-            ['height']=6;
-            ['xoffset']=2;
-            ['x']=383;
-            ['y']=130;
-            ['chnl']=15;
-            ['width']=4;
-            ['page']=0;
-            ['xadvance']=9;
-         };
-         {
-            ['yoffset']=17;
-            ['id']=45;
-            ['height']=2;
-            ['xoffset']=1;
-            ['x']=115;
-            ['y']=150;
-            ['chnl']=15;
-            ['width']=8;
-            ['page']=0;
-            ['xadvance']=10;
-         };
-         {
-            ['yoffset']=22;
-            ['id']=46;
-            ['height']=3;
-            ['xoffset']=3;
-            ['x']=10;
-            ['y']=156;
-            ['chnl']=15;
-            ['width']=3;
-            ['page']=0;
-            ['xadvance']=9;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=47;
-            ['height']=22;
-            ['xoffset']=0;
-            ['x']=178;
-            ['y']=52;
-            ['chnl']=15;
-            ['width']=9;
-            ['page']=0;
-            ['xadvance']=9;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=48;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=230;
-            ['y']=94;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=49;
-            ['height']=20;
-            ['xoffset']=3;
-            ['x']=490;
-            ['y']=92;
-            ['chnl']=15;
-            ['width']=12;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=50;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=380;
-            ['y']=93;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=51;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=394;
-            ['y']=93;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=52;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=134;
-            ['y']=96;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=53;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=408;
-            ['y']=93;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=54;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=322;
-            ['y']=93;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=55;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=352;
-            ['y']=93;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=56;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=198;
-            ['y']=96;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=57;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=214;
-            ['y']=96;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=11;
-            ['id']=58;
-            ['height']=14;
-            ['xoffset']=3;
-            ['x']=502;
-            ['y']=113;
-            ['chnl']=15;
-            ['width']=3;
-            ['page']=0;
-            ['xadvance']=9;
-         };
-         {
-            ['yoffset']=11;
-            ['id']=59;
-            ['height']=17;
-            ['xoffset']=2;
-            ['x']=136;
-            ['y']=117;
-            ['chnl']=15;
-            ['width']=4;
-            ['page']=0;
-            ['xadvance']=9;
-         };
-         {
-            ['yoffset']=9;
-            ['id']=60;
-            ['height']=14;
-            ['xoffset']=2;
-            ['x']=0;
-            ['y']=141;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=23;
-         };
-         {
-            ['yoffset']=13;
-            ['id']=61;
-            ['height']=7;
-            ['xoffset']=2;
-            ['x']=278;
-            ['y']=131;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=23;
-         };
-         {
-            ['yoffset']=9;
-            ['id']=62;
-            ['height']=14;
-            ['xoffset']=2;
-            ['x']=19;
-            ['y']=141;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=23;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=63;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=0;
-            ['y']=120;
-            ['chnl']=15;
-            ['width']=11;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=6;
-            ['id']=64;
-            ['height']=24;
-            ['xoffset']=1;
-            ['x']=210;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=24;
-            ['page']=0;
-            ['xadvance']=27;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=65;
-            ['height']=20;
-            ['xoffset']=0;
-            ['x']=362;
-            ['y']=72;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=18;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=66;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=182;
-            ['y']=96;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=19;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=67;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=456;
-            ['y']=71;
-            ['chnl']=15;
-            ['width']=17;
-            ['page']=0;
-            ['xadvance']=19;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=68;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=381;
-            ['y']=72;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=21;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=69;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=292;
-            ['y']=94;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=70;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=477;
-            ['y']=92;
-            ['chnl']=15;
-            ['width']=12;
-            ['page']=0;
-            ['xadvance']=16;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=71;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=400;
-            ['y']=72;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=21;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=72;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=17;
-            ['y']=99;
-            ['chnl']=15;
-            ['width']=16;
-            ['page']=0;
-            ['xadvance']=20;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=73;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=503;
-            ['y']=92;
-            ['chnl']=15;
-            ['width']=4;
-            ['page']=0;
-            ['xadvance']=8;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=74;
-            ['height']=25;
-            ['xoffset']=-2;
-            ['x']=175;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=8;
-            ['page']=0;
-            ['xadvance']=8;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=75;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=85;
-            ['y']=98;
-            ['chnl']=15;
-            ['width']=16;
-            ['page']=0;
-            ['xadvance']=18;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=76;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=422;
-            ['y']=92;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=15;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=77;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=342;
-            ['y']=72;
-            ['chnl']=15;
-            ['width']=19;
-            ['page']=0;
-            ['xadvance']=23;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=78;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=51;
-            ['y']=99;
-            ['chnl']=15;
-            ['width']=16;
-            ['page']=0;
-            ['xadvance']=20;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=79;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=322;
-            ['y']=72;
-            ['chnl']=15;
-            ['width']=19;
-            ['page']=0;
-            ['xadvance']=21;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=80;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=262;
-            ['y']=94;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=16;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=81;
-            ['height']=23;
-            ['xoffset']=1;
-            ['x']=303;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=19;
-            ['page']=0;
-            ['xadvance']=21;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=82;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=0;
-            ['y']=99;
-            ['chnl']=15;
-            ['width']=16;
-            ['page']=0;
-            ['xadvance']=19;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=83;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=118;
-            ['y']=96;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=84;
-            ['height']=20;
-            ['xoffset']=0;
-            ['x']=492;
-            ['y']=71;
-            ['chnl']=15;
-            ['width']=17;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=85;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=68;
-            ['y']=98;
-            ['chnl']=15;
-            ['width']=16;
-            ['page']=0;
-            ['xadvance']=20;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=86;
-            ['height']=20;
-            ['xoffset']=0;
-            ['x']=419;
-            ['y']=71;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=18;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=87;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=141;
-            ['y']=75;
-            ['chnl']=15;
-            ['width']=25;
-            ['page']=0;
-            ['xadvance']=27;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=88;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=494;
-            ['y']=49;
-            ['chnl']=15;
-            ['width']=17;
-            ['page']=0;
-            ['xadvance']=19;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=89;
-            ['height']=20;
-            ['xoffset']=0;
-            ['x']=474;
-            ['y']=71;
-            ['chnl']=15;
-            ['width']=17;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=90;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=438;
-            ['y']=71;
-            ['chnl']=15;
-            ['width']=17;
-            ['page']=0;
-            ['xadvance']=19;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=91;
-            ['height']=24;
-            ['xoffset']=2;
-            ['x']=292;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=6;
-            ['page']=0;
-            ['xadvance']=11;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=92;
-            ['height']=22;
-            ['xoffset']=0;
-            ['x']=168;
-            ['y']=52;
-            ['chnl']=15;
-            ['width']=9;
-            ['page']=0;
-            ['xadvance']=9;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=93;
-            ['height']=24;
-            ['xoffset']=2;
-            ['x']=268;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=7;
-            ['page']=0;
-            ['xadvance']=11;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=94;
-            ['height']=7;
-            ['xoffset']=3;
-            ['x']=297;
-            ['y']=131;
-            ['chnl']=15;
-            ['width']=17;
-            ['page']=0;
-            ['xadvance']=23;
-         };
-         {
-            ['yoffset']=29;
-            ['id']=95;
-            ['height']=2;
-            ['xoffset']=-1;
-            ['x']=65;
-            ['y']=154;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=96;
-            ['height']=5;
-            ['xoffset']=2;
-            ['x']=427;
-            ['y']=130;
-            ['chnl']=15;
-            ['width']=7;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=97;
-            ['height']=15;
-            ['xoffset']=1;
-            ['x']=420;
-            ['y']=114;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=98;
-            ['height']=21;
-            ['xoffset']=2;
-            ['x']=308;
-            ['y']=50;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=99;
-            ['height']=15;
-            ['xoffset']=1;
-            ['x']=448;
-            ['y']=113;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=15;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=100;
-            ['height']=21;
-            ['xoffset']=1;
-            ['x']=413;
-            ['y']=49;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=101;
-            ['height']=15;
-            ['xoffset']=1;
-            ['x']=345;
-            ['y']=114;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=102;
-            ['height']=21;
-            ['xoffset']=0;
-            ['x']=470;
-            ['y']=49;
-            ['chnl']=15;
-            ['width']=10;
-            ['page']=0;
-            ['xadvance']=10;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=103;
-            ['height']=21;
-            ['xoffset']=1;
-            ['x']=383;
-            ['y']=50;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=104;
-            ['height']=21;
-            ['xoffset']=2;
-            ['x']=442;
-            ['y']=49;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=105;
-            ['height']=21;
-            ['xoffset']=2;
-            ['x']=490;
-            ['y']=49;
-            ['chnl']=15;
-            ['width']=3;
-            ['page']=0;
-            ['xadvance']=8;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=106;
-            ['height']=27;
-            ['xoffset']=-1;
-            ['x']=77;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=6;
-            ['page']=0;
-            ['xadvance']=8;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=107;
-            ['height']=21;
-            ['xoffset']=2;
-            ['x']=338;
-            ['y']=50;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=16;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=108;
-            ['height']=21;
-            ['xoffset']=2;
-            ['x']=506;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=3;
-            ['page']=0;
-            ['xadvance']=8;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=109;
-            ['height']=15;
-            ['xoffset']=2;
-            ['x']=250;
-            ['y']=115;
-            ['chnl']=15;
-            ['width']=22;
-            ['page']=0;
-            ['xadvance']=26;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=110;
-            ['height']=15;
-            ['xoffset']=2;
-            ['x']=406;
-            ['y']=114;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=111;
-            ['height']=15;
-            ['xoffset']=1;
-            ['x']=361;
-            ['y']=114;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=112;
-            ['height']=21;
-            ['xoffset']=2;
-            ['x']=323;
-            ['y']=50;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=113;
-            ['height']=21;
-            ['xoffset']=1;
-            ['x']=293;
-            ['y']=51;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=114;
-            ['height']=15;
-            ['xoffset']=2;
-            ['x']=488;
-            ['y']=113;
-            ['chnl']=15;
-            ['width']=9;
-            ['page']=0;
-            ['xadvance']=11;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=115;
-            ['height']=15;
-            ['xoffset']=1;
-            ['x']=475;
-            ['y']=113;
-            ['chnl']=15;
-            ['width']=12;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=6;
-            ['id']=116;
-            ['height']=19;
-            ['xoffset']=0;
-            ['x']=57;
-            ['y']=120;
-            ['chnl']=15;
-            ['width']=10;
-            ['page']=0;
-            ['xadvance']=11;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=117;
-            ['height']=15;
-            ['xoffset']=2;
-            ['x']=434;
-            ['y']=113;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=118;
-            ['height']=15;
-            ['xoffset']=1;
-            ['x']=391;
-            ['y']=114;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=16;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=119;
-            ['height']=15;
-            ['xoffset']=1;
-            ['x']=273;
-            ['y']=115;
-            ['chnl']=15;
-            ['width']=20;
-            ['page']=0;
-            ['xadvance']=22;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=120;
-            ['height']=15;
-            ['xoffset']=1;
-            ['x']=376;
-            ['y']=114;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=16;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=121;
-            ['height']=21;
-            ['xoffset']=1;
-            ['x']=278;
-            ['y']=51;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=16;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=122;
-            ['height']=15;
-            ['xoffset']=1;
-            ['x']=462;
-            ['y']=113;
-            ['chnl']=15;
-            ['width']=12;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=123;
-            ['height']=25;
-            ['xoffset']=3;
-            ['x']=142;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=11;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=124;
-            ['height']=27;
-            ['xoffset']=3;
-            ['x']=84;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=3;
-            ['page']=0;
-            ['xadvance']=9;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=125;
-            ['height']=25;
-            ['xoffset']=3;
-            ['x']=154;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=11;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=15;
-            ['id']=126;
-            ['height']=4;
-            ['xoffset']=2;
-            ['x']=449;
-            ['y']=129;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=23;
-         };
-         {
-            ['yoffset']=30;
-            ['id']=160;
-            ['height']=1;
-            ['xoffset']=-1;
-            ['x']=213;
-            ['y']=73;
-            ['chnl']=15;
-            ['width']=3;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=161;
-            ['height']=20;
-            ['xoffset']=4;
-            ['x']=34;
-            ['y']=120;
-            ['chnl']=15;
-            ['width']=3;
-            ['page']=0;
-            ['xadvance']=11;
-         };
-         {
-            ['yoffset']=6;
-            ['id']=162;
-            ['height']=23;
-            ['xoffset']=2;
-            ['x']=392;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=12;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=163;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=277;
-            ['y']=94;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=9;
-            ['id']=164;
-            ['height']=15;
-            ['xoffset']=1;
-            ['x']=313;
-            ['y']=115;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=165;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=150;
-            ['y']=96;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=6;
-            ['id']=166;
-            ['height']=24;
-            ['xoffset']=3;
-            ['x']=299;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=3;
-            ['page']=0;
-            ['xadvance']=9;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=167;
-            ['height']=23;
-            ['xoffset']=1;
-            ['x']=379;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=12;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=168;
-            ['height']=3;
-            ['xoffset']=2;
-            ['x']=0;
-            ['y']=156;
-            ['chnl']=15;
-            ['width']=9;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=169;
-            ['height']=20;
-            ['xoffset']=3;
-            ['x']=239;
-            ['y']=73;
-            ['chnl']=15;
-            ['width']=21;
-            ['page']=0;
-            ['xadvance']=27;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=170;
-            ['height']=13;
-            ['xoffset']=1;
-            ['x']=68;
-            ['y']=138;
-            ['chnl']=15;
-            ['width']=10;
-            ['page']=0;
-            ['xadvance']=13;
-         };
-         {
-            ['yoffset']=11;
-            ['id']=171;
-            ['height']=12;
-            ['xoffset']=2;
-            ['x']=112;
-            ['y']=137;
-            ['chnl']=15;
-            ['width']=12;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=14;
-            ['id']=172;
-            ['height']=8;
-            ['xoffset']=2;
-            ['x']=240;
-            ['y']=133;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=23;
-         };
-         {
-            ['yoffset']=17;
-            ['id']=173;
-            ['height']=2;
-            ['xoffset']=1;
-            ['x']=106;
-            ['y']=150;
-            ['chnl']=15;
-            ['width']=8;
-            ['page']=0;
-            ['xadvance']=10;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=174;
-            ['height']=20;
-            ['xoffset']=3;
-            ['x']=217;
-            ['y']=73;
-            ['chnl']=15;
-            ['width']=21;
-            ['page']=0;
-            ['xadvance']=27;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=175;
-            ['height']=2;
-            ['xoffset']=2;
-            ['x']=96;
-            ['y']=151;
-            ['chnl']=15;
-            ['width']=9;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=176;
-            ['height']=8;
-            ['xoffset']=2;
-            ['x']=259;
-            ['y']=131;
-            ['chnl']=15;
-            ['width']=9;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=8;
-            ['id']=177;
-            ['height']=17;
-            ['xoffset']=2;
-            ['x']=88;
-            ['y']=119;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=23;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=178;
-            ['height']=11;
-            ['xoffset']=1;
-            ['x']=154;
-            ['y']=134;
-            ['chnl']=15;
-            ['width']=9;
-            ['page']=0;
-            ['xadvance']=11;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=179;
-            ['height']=11;
-            ['xoffset']=1;
-            ['x']=174;
-            ['y']=134;
-            ['chnl']=15;
-            ['width']=9;
-            ['page']=0;
-            ['xadvance']=11;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=180;
-            ['height']=5;
-            ['xoffset']=5;
-            ['x']=442;
-            ['y']=129;
-            ['chnl']=15;
-            ['width']=6;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=181;
-            ['height']=21;
-            ['xoffset']=2;
-            ['x']=262;
-            ['y']=51;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=182;
-            ['height']=23;
-            ['xoffset']=2;
-            ['x']=365;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=14;
-            ['id']=183;
-            ['height']=3;
-            ['xoffset']=3;
-            ['x']=506;
-            ['y']=121;
-            ['chnl']=15;
-            ['width']=3;
-            ['page']=0;
-            ['xadvance']=9;
-         };
-         {
-            ['yoffset']=25;
-            ['id']=184;
-            ['height']=5;
-            ['xoffset']=3;
-            ['x']=419;
-            ['y']=130;
-            ['chnl']=15;
-            ['width']=7;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=185;
-            ['height']=11;
-            ['xoffset']=1;
-            ['x']=164;
-            ['y']=134;
-            ['chnl']=15;
-            ['width']=9;
-            ['page']=0;
-            ['xadvance']=11;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=186;
-            ['height']=13;
-            ['xoffset']=1;
-            ['x']=56;
-            ['y']=140;
-            ['chnl']=15;
-            ['width']=11;
-            ['page']=0;
-            ['xadvance']=13;
-         };
-         {
-            ['yoffset']=11;
-            ['id']=187;
-            ['height']=12;
-            ['xoffset']=2;
-            ['x']=98;
-            ['y']=137;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=188;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=89;
-            ['y']=77;
-            ['chnl']=15;
-            ['width']=25;
-            ['page']=0;
-            ['xadvance']=26;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=189;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=192;
-            ['y']=75;
-            ['chnl']=15;
-            ['width']=24;
-            ['page']=0;
-            ['xadvance']=26;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=190;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=63;
-            ['y']=77;
-            ['chnl']=15;
-            ['width']=25;
-            ['page']=0;
-            ['xadvance']=26;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=191;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=12;
-            ['y']=120;
-            ['chnl']=15;
-            ['width']=11;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=192;
-            ['height']=25;
-            ['xoffset']=0;
-            ['x']=203;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=18;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=193;
-            ['height']=25;
-            ['xoffset']=0;
-            ['x']=298;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=18;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=194;
-            ['height']=25;
-            ['xoffset']=0;
-            ['x']=222;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=18;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=195;
-            ['height']=25;
-            ['xoffset']=0;
-            ['x']=241;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=18;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=196;
-            ['height']=25;
-            ['xoffset']=0;
-            ['x']=260;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=18;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=197;
-            ['height']=25;
-            ['xoffset']=0;
-            ['x']=279;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=18;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=198;
-            ['height']=20;
-            ['xoffset']=0;
-            ['x']=115;
-            ['y']=75;
-            ['chnl']=15;
-            ['width']=25;
-            ['page']=0;
-            ['xadvance']=26;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=199;
-            ['height']=25;
-            ['xoffset']=1;
-            ['x']=336;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=17;
-            ['page']=0;
-            ['xadvance']=19;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=200;
-            ['height']=25;
-            ['xoffset']=2;
-            ['x']=82;
-            ['y']=28;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=201;
-            ['height']=25;
-            ['xoffset']=2;
-            ['x']=67;
-            ['y']=28;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=202;
-            ['height']=25;
-            ['xoffset']=2;
-            ['x']=97;
-            ['y']=27;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=203;
-            ['height']=25;
-            ['xoffset']=2;
-            ['x']=112;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=204;
-            ['height']=25;
-            ['xoffset']=1;
-            ['x']=199;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=5;
-            ['page']=0;
-            ['xadvance']=8;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=205;
-            ['height']=25;
-            ['xoffset']=2;
-            ['x']=193;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=5;
-            ['page']=0;
-            ['xadvance']=8;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=206;
-            ['height']=25;
-            ['xoffset']=0;
-            ['x']=184;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=8;
-            ['page']=0;
-            ['xadvance']=8;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=207;
-            ['height']=25;
-            ['xoffset']=0;
-            ['x']=166;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=8;
-            ['page']=0;
-            ['xadvance']=8;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=208;
-            ['height']=20;
-            ['xoffset']=0;
-            ['x']=261;
-            ['y']=73;
-            ['chnl']=15;
-            ['width']=20;
-            ['page']=0;
-            ['xadvance']=21;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=209;
-            ['height']=25;
-            ['xoffset']=2;
-            ['x']=34;
-            ['y']=29;
-            ['chnl']=15;
-            ['width']=16;
-            ['page']=0;
-            ['xadvance']=20;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=210;
-            ['height']=25;
-            ['xoffset']=1;
-            ['x']=183;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=19;
-            ['page']=0;
-            ['xadvance']=21;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=211;
-            ['height']=25;
-            ['xoffset']=1;
-            ['x']=163;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=19;
-            ['page']=0;
-            ['xadvance']=21;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=212;
-            ['height']=25;
-            ['xoffset']=1;
-            ['x']=143;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=19;
-            ['page']=0;
-            ['xadvance']=21;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=213;
-            ['height']=25;
-            ['xoffset']=1;
-            ['x']=123;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=19;
-            ['page']=0;
-            ['xadvance']=21;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=214;
-            ['height']=25;
-            ['xoffset']=1;
-            ['x']=103;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=19;
-            ['page']=0;
-            ['xadvance']=21;
-         };
-         {
-            ['yoffset']=9;
-            ['id']=215;
-            ['height']=15;
-            ['xoffset']=4;
-            ['x']=329;
-            ['y']=114;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=23;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=216;
-            ['height']=22;
-            ['xoffset']=1;
-            ['x']=405;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=19;
-            ['page']=0;
-            ['xadvance']=21;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=217;
-            ['height']=25;
-            ['xoffset']=2;
-            ['x']=17;
-            ['y']=29;
-            ['chnl']=15;
-            ['width']=16;
-            ['page']=0;
-            ['xadvance']=20;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=218;
-            ['height']=25;
-            ['xoffset']=2;
-            ['x']=0;
-            ['y']=29;
-            ['chnl']=15;
-            ['width']=16;
-            ['page']=0;
-            ['xadvance']=20;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=219;
-            ['height']=25;
-            ['xoffset']=2;
-            ['x']=479;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=16;
-            ['page']=0;
-            ['xadvance']=20;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=220;
-            ['height']=25;
-            ['xoffset']=2;
-            ['x']=462;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=16;
-            ['page']=0;
-            ['xadvance']=20;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=221;
-            ['height']=25;
-            ['xoffset']=0;
-            ['x']=408;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=17;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=222;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=337;
-            ['y']=93;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=16;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=223;
-            ['height']=21;
-            ['xoffset']=2;
-            ['x']=398;
-            ['y']=50;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=224;
-            ['height']=22;
-            ['xoffset']=1;
-            ['x']=86;
-            ['y']=54;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=225;
-            ['height']=22;
-            ['xoffset']=1;
-            ['x']=30;
-            ['y']=55;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=226;
-            ['height']=22;
-            ['xoffset']=1;
-            ['x']=44;
-            ['y']=55;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=227;
-            ['height']=21;
-            ['xoffset']=1;
-            ['x']=456;
-            ['y']=49;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=228;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=436;
-            ['y']=92;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=2;
-            ['id']=229;
-            ['height']=23;
-            ['xoffset']=1;
-            ['x']=337;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=230;
-            ['height']=15;
-            ['xoffset']=1;
-            ['x']=225;
-            ['y']=117;
-            ['chnl']=15;
-            ['width']=24;
-            ['page']=0;
-            ['xadvance']=27;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=231;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=366;
-            ['y']=93;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=15;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=232;
-            ['height']=22;
-            ['xoffset']=1;
-            ['x']=459;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=233;
-            ['height']=22;
-            ['xoffset']=1;
-            ['x']=475;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=234;
-            ['height']=22;
-            ['xoffset']=1;
-            ['x']=443;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=235;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=166;
-            ['y']=96;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=236;
-            ['height']=22;
-            ['xoffset']=-1;
-            ['x']=198;
-            ['y']=52;
-            ['chnl']=15;
-            ['width']=7;
-            ['page']=0;
-            ['xadvance']=8;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=237;
-            ['height']=22;
-            ['xoffset']=2;
-            ['x']=206;
-            ['y']=52;
-            ['chnl']=15;
-            ['width']=6;
-            ['page']=0;
-            ['xadvance']=8;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=238;
-            ['height']=22;
-            ['xoffset']=-1;
-            ['x']=188;
-            ['y']=52;
-            ['chnl']=15;
-            ['width']=9;
-            ['page']=0;
-            ['xadvance']=8;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=239;
-            ['height']=20;
-            ['xoffset']=-1;
-            ['x']=24;
-            ['y']=120;
-            ['chnl']=15;
-            ['width']=9;
-            ['page']=0;
-            ['xadvance']=8;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=240;
-            ['height']=21;
-            ['xoffset']=1;
-            ['x']=368;
-            ['y']=50;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=241;
-            ['height']=21;
-            ['xoffset']=2;
-            ['x']=428;
-            ['y']=49;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=242;
-            ['height']=22;
-            ['xoffset']=1;
-            ['x']=15;
-            ['y']=55;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=243;
-            ['height']=22;
-            ['xoffset']=1;
-            ['x']=0;
-            ['y']=55;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=244;
-            ['height']=22;
-            ['xoffset']=1;
-            ['x']=491;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=245;
-            ['height']=21;
-            ['xoffset']=1;
-            ['x']=353;
-            ['y']=50;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=246;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=307;
-            ['y']=94;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=11;
-            ['id']=247;
-            ['height']=12;
-            ['xoffset']=2;
-            ['x']=79;
-            ['y']=138;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=23;
-         };
-         {
-            ['yoffset']=9;
-            ['id']=248;
-            ['height']=17;
-            ['xoffset']=1;
-            ['x']=107;
-            ['y']=119;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=249;
-            ['height']=22;
-            ['xoffset']=2;
-            ['x']=128;
-            ['y']=52;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=250;
-            ['height']=22;
-            ['xoffset']=2;
-            ['x']=114;
-            ['y']=52;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=251;
-            ['height']=22;
-            ['xoffset']=2;
-            ['x']=100;
-            ['y']=53;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=252;
-            ['height']=20;
-            ['xoffset']=2;
-            ['x']=450;
-            ['y']=92;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=253;
-            ['height']=28;
-            ['xoffset']=1;
-            ['x']=0;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=16;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=254;
-            ['height']=27;
-            ['xoffset']=2;
-            ['x']=62;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=255;
-            ['height']=26;
-            ['xoffset']=1;
-            ['x']=88;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=16;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=262;
-            ['height']=25;
-            ['xoffset']=1;
-            ['x']=426;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=17;
-            ['page']=0;
-            ['xadvance']=19;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=263;
-            ['height']=22;
-            ['xoffset']=1;
-            ['x']=72;
-            ['y']=54;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=15;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=268;
-            ['height']=25;
-            ['xoffset']=1;
-            ['x']=444;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=17;
-            ['page']=0;
-            ['xadvance']=19;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=269;
-            ['height']=22;
-            ['xoffset']=1;
-            ['x']=58;
-            ['y']=54;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=15;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=273;
-            ['height']=21;
-            ['xoffset']=1;
-            ['x']=213;
-            ['y']=51;
-            ['chnl']=15;
-            ['width']=16;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=286;
-            ['height']=25;
-            ['xoffset']=1;
-            ['x']=317;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=21;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=287;
-            ['height']=28;
-            ['xoffset']=1;
-            ['x']=15;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=304;
-            ['height']=25;
-            ['xoffset']=2;
-            ['x']=205;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=4;
-            ['page']=0;
-            ['xadvance']=8;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=305;
-            ['height']=15;
-            ['xoffset']=2;
-            ['x']=498;
-            ['y']=113;
-            ['chnl']=15;
-            ['width']=3;
-            ['page']=0;
-            ['xadvance']=8;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=321;
-            ['height']=20;
-            ['xoffset']=0;
-            ['x']=246;
-            ['y']=94;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=15;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=322;
-            ['height']=21;
-            ['xoffset']=0;
-            ['x']=481;
-            ['y']=49;
-            ['chnl']=15;
-            ['width']=8;
-            ['page']=0;
-            ['xadvance']=8;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=338;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=35;
-            ['y']=78;
-            ['chnl']=15;
-            ['width']=27;
-            ['page']=0;
-            ['xadvance']=29;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=339;
-            ['height']=15;
-            ['xoffset']=1;
-            ['x']=198;
-            ['y']=117;
-            ['chnl']=15;
-            ['width']=26;
-            ['page']=0;
-            ['xadvance']=28;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=350;
-            ['height']=25;
-            ['xoffset']=1;
-            ['x']=51;
-            ['y']=28;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=10;
-            ['id']=351;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=464;
-            ['y']=92;
-            ['chnl']=15;
-            ['width']=12;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=352;
-            ['height']=25;
-            ['xoffset']=1;
-            ['x']=496;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=353;
-            ['height']=22;
-            ['xoffset']=1;
-            ['x']=155;
-            ['y']=52;
-            ['chnl']=15;
-            ['width']=12;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=376;
-            ['height']=25;
-            ['xoffset']=0;
-            ['x']=354;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=17;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=0;
-            ['id']=381;
-            ['height']=25;
-            ['xoffset']=1;
-            ['x']=372;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=17;
-            ['page']=0;
-            ['xadvance']=19;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=382;
-            ['height']=22;
-            ['xoffset']=1;
-            ['x']=142;
-            ['y']=52;
-            ['chnl']=15;
-            ['width']=12;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=402;
-            ['height']=27;
-            ['xoffset']=0;
-            ['x']=44;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=17;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=710;
-            ['height']=5;
-            ['xoffset']=2;
-            ['x']=399;
-            ['y']=130;
-            ['chnl']=15;
-            ['width']=9;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=711;
-            ['height']=5;
-            ['xoffset']=2;
-            ['x']=409;
-            ['y']=130;
-            ['chnl']=15;
-            ['width']=9;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=728;
-            ['height']=4;
-            ['xoffset']=2;
-            ['x']=468;
-            ['y']=129;
-            ['chnl']=15;
-            ['width']=9;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=729;
-            ['height']=3;
-            ['xoffset']=5;
-            ['x']=14;
-            ['y']=156;
-            ['chnl']=15;
-            ['width']=3;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=2;
-            ['id']=730;
-            ['height']=7;
-            ['xoffset']=3;
-            ['x']=324;
-            ['y']=131;
-            ['chnl']=15;
-            ['width']=8;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=25;
-            ['id']=731;
-            ['height']=5;
-            ['xoffset']=4;
-            ['x']=435;
-            ['y']=129;
-            ['chnl']=15;
-            ['width']=6;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=732;
-            ['height']=4;
-            ['xoffset']=2;
-            ['x']=478;
-            ['y']=129;
-            ['chnl']=15;
-            ['width']=9;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=733;
-            ['height']=5;
-            ['xoffset']=3;
-            ['x']=388;
-            ['y']=130;
-            ['chnl']=15;
-            ['width']=10;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=937;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=302;
-            ['y']=73;
-            ['chnl']=15;
-            ['width']=19;
-            ['page']=0;
-            ['xadvance']=21;
-         };
-         {
-            ['yoffset']=11;
-            ['id']=960;
-            ['height']=14;
-            ['xoffset']=-1;
-            ['x']=38;
-            ['y']=140;
-            ['chnl']=15;
-            ['width']=17;
-            ['page']=0;
-            ['xadvance']=16;
-         };
-         {
-            ['yoffset']=17;
-            ['id']=8211;
-            ['height']=2;
-            ['xoffset']=0;
-            ['x']=81;
-            ['y']=151;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=17;
-            ['id']=8212;
-            ['height']=2;
-            ['xoffset']=0;
-            ['x']=18;
-            ['y']=156;
-            ['chnl']=15;
-            ['width']=27;
-            ['page']=0;
-            ['xadvance']=27;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=8216;
-            ['height']=6;
-            ['xoffset']=2;
-            ['x']=378;
-            ['y']=130;
-            ['chnl']=15;
-            ['width']=4;
-            ['page']=0;
-            ['xadvance']=9;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=8217;
-            ['height']=6;
-            ['xoffset']=2;
-            ['x']=366;
-            ['y']=130;
-            ['chnl']=15;
-            ['width']=5;
-            ['page']=0;
-            ['xadvance']=9;
-         };
-         {
-            ['yoffset']=22;
-            ['id']=8218;
-            ['height']=6;
-            ['xoffset']=2;
-            ['x']=372;
-            ['y']=130;
-            ['chnl']=15;
-            ['width']=5;
-            ['page']=0;
-            ['xadvance']=9;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=8220;
-            ['height']=6;
-            ['xoffset']=2;
-            ['x']=355;
-            ['y']=130;
-            ['chnl']=15;
-            ['width']=10;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=8221;
-            ['height']=6;
-            ['xoffset']=2;
-            ['x']=344;
-            ['y']=130;
-            ['chnl']=15;
-            ['width']=10;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=22;
-            ['id']=8222;
-            ['height']=6;
-            ['xoffset']=2;
-            ['x']=333;
-            ['y']=130;
-            ['chnl']=15;
-            ['width']=10;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=8224;
-            ['height']=23;
-            ['xoffset']=0;
-            ['x']=351;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=8225;
-            ['height']=23;
-            ['xoffset']=0;
-            ['x']=323;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=11;
-            ['id']=8226;
-            ['height']=8;
-            ['xoffset']=4;
-            ['x']=269;
-            ['y']=131;
-            ['chnl']=15;
-            ['width']=8;
-            ['page']=0;
-            ['xadvance']=16;
-         };
-         {
-            ['yoffset']=22;
-            ['id']=8230;
-            ['height']=3;
-            ['xoffset']=3;
-            ['x']=488;
-            ['y']=129;
-            ['chnl']=15;
-            ['width']=21;
-            ['page']=0;
-            ['xadvance']=27;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=8240;
-            ['height']=20;
-            ['xoffset']=1;
-            ['x']=0;
-            ['y']=78;
-            ['chnl']=15;
-            ['width']=34;
-            ['page']=0;
-            ['xadvance']=36;
-         };
-         {
-            ['yoffset']=11;
-            ['id']=8249;
-            ['height']=12;
-            ['xoffset']=2;
-            ['x']=138;
-            ['y']=135;
-            ['chnl']=15;
-            ['width']=7;
-            ['page']=0;
-            ['xadvance']=11;
-         };
-         {
-            ['yoffset']=11;
-            ['id']=8250;
-            ['height']=12;
-            ['xoffset']=2;
-            ['x']=146;
-            ['y']=134;
-            ['chnl']=15;
-            ['width']=7;
-            ['page']=0;
-            ['xadvance']=11;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=8364;
-            ['height']=20;
-            ['xoffset']=0;
-            ['x']=34;
-            ['y']=99;
-            ['chnl']=15;
-            ['width']=16;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=8482;
-            ['height']=8;
-            ['xoffset']=4;
-            ['x']=221;
-            ['y']=133;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=27;
-         };
-         {
-            ['yoffset']=8;
-            ['id']=8706;
-            ['height']=17;
-            ['xoffset']=1;
-            ['x']=123;
-            ['y']=117;
-            ['chnl']=15;
-            ['width']=12;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=6;
-            ['id']=8710;
-            ['height']=19;
-            ['xoffset']=0;
-            ['x']=38;
-            ['y']=120;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=18;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=8719;
-            ['height']=25;
-            ['xoffset']=2;
-            ['x']=390;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=17;
-            ['page']=0;
-            ['xadvance']=20;
-         };
-         {
-            ['yoffset']=6;
-            ['id']=8721;
-            ['height']=24;
-            ['xoffset']=0;
-            ['x']=235;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=18;
-         };
-         {
-            ['yoffset']=16;
-            ['id']=8722;
-            ['height']=2;
-            ['xoffset']=2;
-            ['x']=46;
-            ['y']=155;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=23;
-         };
-         {
-            ['yoffset']=5;
-            ['id']=8725;
-            ['height']=20;
-            ['xoffset']=-5;
-            ['x']=102;
-            ['y']=98;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=5;
-         };
-         {
-            ['yoffset']=14;
-            ['id']=8729;
-            ['height']=3;
-            ['xoffset']=3;
-            ['x']=506;
-            ['y']=125;
-            ['chnl']=15;
-            ['width']=3;
-            ['page']=0;
-            ['xadvance']=9;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=8730;
-            ['height']=22;
-            ['xoffset']=1;
-            ['x']=425;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=17;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=12;
-            ['id']=8734;
-            ['height']=10;
-            ['xoffset']=3;
-            ['x']=184;
-            ['y']=134;
-            ['chnl']=15;
-            ['width']=17;
-            ['page']=0;
-            ['xadvance']=22;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=8747;
-            ['height']=25;
-            ['xoffset']=0;
-            ['x']=127;
-            ['y']=26;
-            ['chnl']=15;
-            ['width']=14;
-            ['page']=0;
-            ['xadvance']=14;
-         };
-         {
-            ['yoffset']=12;
-            ['id']=8776;
-            ['height']=9;
-            ['xoffset']=2;
-            ['x']=202;
-            ['y']=133;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=23;
-         };
-         {
-            ['yoffset']=9;
-            ['id']=8800;
-            ['height']=15;
-            ['xoffset']=2;
-            ['x']=294;
-            ['y']=115;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=23;
-         };
-         {
-            ['yoffset']=9;
-            ['id']=8804;
-            ['height']=16;
-            ['xoffset']=2;
-            ['x']=179;
-            ['y']=117;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=23;
-         };
-         {
-            ['yoffset']=9;
-            ['id']=8805;
-            ['height']=16;
-            ['xoffset']=2;
-            ['x']=141;
-            ['y']=117;
-            ['chnl']=15;
-            ['width']=18;
-            ['page']=0;
-            ['xadvance']=23;
-         };
-         {
-            ['yoffset']=3;
-            ['id']=9674;
-            ['height']=28;
-            ['xoffset']=0;
-            ['x']=30;
-            ['y']=0;
-            ['chnl']=15;
-            ['width']=13;
-            ['page']=0;
-            ['xadvance']=13;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=64257;
-            ['height']=21;
-            ['xoffset']=0;
-            ['x']=246;
-            ['y']=51;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-         {
-            ['yoffset']=4;
-            ['id']=64258;
-            ['height']=21;
-            ['xoffset']=0;
-            ['x']=230;
-            ['y']=51;
-            ['chnl']=15;
-            ['width']=15;
-            ['page']=0;
-            ['xadvance']=17;
-         };
-      };
-      ['common']={
-         {
-            ['scaleW']=512;
-            ['alphaChnl']=0;
-            ['scaleH']=512;
-            ['redChnl']=0;
-            ['packed']=0;
-            ['base']=25;
-            ['pages']=1;
-            ['blueChnl']=0;
-            ['lineHeight']=31;
-            ['greenChnl']=0;
-         };
-      };
-      ['kerning']={
-         {
-            ['amount']=-1;
-            ['first']=45;
-            ['second']=65;
-         };
-         {
-            ['amount']=-1;
-            ['first']=45;
-            ['second']=66;
-         };
-         {
-            ['amount']=1;
-            ['first']=268;
-            ['second']=8221;
-         };
-         {
-            ['amount']=1;
-            ['first']=262;
-            ['second']=8221;
-         };
-         {
-            ['amount']=1;
-            ['first']=350;
-            ['second']=193;
-         };
-         {
-            ['amount']=1;
-            ['first']=45;
-            ['second']=71;
-         };
-         {
-            ['amount']=1;
-            ['first']=350;
-            ['second']=194;
-         };
-         {
-            ['amount']=2;
-            ['first']=45;
-            ['second']=74;
-         };
-         {
-            ['amount']=1;
-            ['first']=350;
-            ['second']=195;
-         };
-         {
-            ['amount']=1;
-            ['first']=350;
-            ['second']=192;
-         };
-         {
-            ['amount']=1;
-            ['first']=45;
-            ['second']=79;
-         };
-         {
-            ['amount']=1;
-            ['first']=350;
-            ['second']=196;
-         };
-         {
-            ['amount']=1;
-            ['first']=45;
-            ['second']=81;
-         };
-         {
-            ['amount']=1;
-            ['first']=350;
-            ['second']=65;
-         };
-         {
-            ['amount']=-2;
-            ['first']=45;
-            ['second']=84;
-         };
-         {
-            ['amount']=-2;
-            ['first']=45;
-            ['second']=86;
-         };
-         {
-            ['amount']=-1;
-            ['first']=45;
-            ['second']=87;
-         };
-         {
-            ['amount']=-1;
-            ['first']=45;
-            ['second']=88;
-         };
-         {
-            ['amount']=-3;
-            ['first']=45;
-            ['second']=89;
-         };
-         {
-            ['amount']=-1;
-            ['first']=286;
-            ['second']=221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=286;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=286;
-            ['second']=376;
-         };
-         {
-            ['amount']=1;
-            ['first']=45;
-            ['second']=111;
-         };
-         {
-            ['amount']=-1;
-            ['first']=286;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=45;
-            ['second']=118;
-         };
-         {
-            ['amount']=-1;
-            ['first']=286;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=286;
-            ['second']=89;
-         };
-         {
-            ['amount']=-1;
-            ['first']=45;
-            ['second']=196;
-         };
-         {
-            ['amount']=-1;
-            ['first']=286;
-            ['second']=84;
-         };
-         {
-            ['amount']=1;
-            ['first']=45;
-            ['second']=214;
-         };
-         {
-            ['amount']=-2;
-            ['first']=222;
-            ['second']=8222;
-         };
-         {
-            ['amount']=1;
-            ['first']=45;
-            ['second']=243;
-         };
-         {
-            ['amount']=1;
-            ['first']=45;
-            ['second']=242;
-         };
-         {
-            ['amount']=1;
-            ['first']=45;
-            ['second']=244;
-         };
-         {
-            ['amount']=1;
-            ['first']=45;
-            ['second']=246;
-         };
-         {
-            ['amount']=1;
-            ['first']=45;
-            ['second']=245;
-         };
-         {
-            ['amount']=-1;
-            ['first']=222;
-            ['second']=58;
-         };
-         {
-            ['amount']=-2;
-            ['first']=222;
-            ['second']=46;
-         };
-         {
-            ['amount']=-1;
-            ['first']=45;
-            ['second']=192;
-         };
-         {
-            ['amount']=-1;
-            ['first']=45;
-            ['second']=195;
-         };
-         {
-            ['amount']=1;
-            ['first']=45;
-            ['second']=213;
-         };
-         {
-            ['amount']=-4;
-            ['first']=253;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-3;
-            ['first']=45;
-            ['second']=376;
-         };
-         {
-            ['amount']=-1;
-            ['first']=45;
-            ['second']=194;
-         };
-         {
-            ['amount']=-1;
-            ['first']=45;
-            ['second']=193;
-         };
-         {
-            ['amount']=1;
-            ['first']=45;
-            ['second']=211;
-         };
-         {
-            ['amount']=1;
-            ['first']=45;
-            ['second']=212;
-         };
-         {
-            ['amount']=1;
-            ['first']=45;
-            ['second']=210;
-         };
-         {
-            ['amount']=-2;
-            ['first']=253;
-            ['second']=58;
-         };
-         {
-            ['amount']=-4;
-            ['first']=253;
-            ['second']=46;
-         };
-         {
-            ['amount']=-3;
-            ['first']=45;
-            ['second']=221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=221;
-            ['second']=268;
-         };
-         {
-            ['amount']=-1;
-            ['first']=221;
-            ['second']=262;
-         };
-         {
-            ['amount']=1;
-            ['first']=45;
-            ['second']=286;
-         };
-         {
-            ['amount']=-1;
-            ['first']=221;
-            ['second']=210;
-         };
-         {
-            ['amount']=-1;
-            ['first']=221;
-            ['second']=212;
-         };
-         {
-            ['amount']=-1;
-            ['first']=65;
-            ['second']=45;
-         };
-         {
-            ['amount']=-1;
-            ['first']=221;
-            ['second']=211;
-         };
-         {
-            ['amount']=-2;
-            ['first']=221;
-            ['second']=193;
-         };
-         {
-            ['amount']=1;
-            ['first']=65;
-            ['second']=65;
-         };
-         {
-            ['amount']=-2;
-            ['first']=221;
-            ['second']=194;
-         };
-         {
-            ['amount']=-3;
-            ['first']=221;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=221;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=221;
-            ['second']=213;
-         };
-         {
-            ['amount']=-2;
-            ['first']=221;
-            ['second']=195;
-         };
-         {
-            ['amount']=-2;
-            ['first']=65;
-            ['second']=84;
-         };
-         {
-            ['amount']=-2;
-            ['first']=221;
-            ['second']=192;
-         };
-         {
-            ['amount']=-2;
-            ['first']=65;
-            ['second']=86;
-         };
-         {
-            ['amount']=-1;
-            ['first']=65;
-            ['second']=87;
-         };
-         {
-            ['amount']=-2;
-            ['first']=221;
-            ['second']=187;
-         };
-         {
-            ['amount']=-2;
-            ['first']=65;
-            ['second']=89;
-         };
-         {
-            ['amount']=-3;
-            ['first']=221;
-            ['second']=171;
-         };
-         {
-            ['amount']=-3;
-            ['first']=221;
-            ['second']=252;
-         };
-         {
-            ['amount']=-3;
-            ['first']=221;
-            ['second']=251;
-         };
-         {
-            ['amount']=-1;
-            ['first']=65;
-            ['second']=102;
-         };
-         {
-            ['amount']=-3;
-            ['first']=221;
-            ['second']=249;
-         };
-         {
-            ['amount']=-3;
-            ['first']=221;
-            ['second']=250;
-         };
-         {
-            ['amount']=-4;
-            ['first']=221;
-            ['second']=245;
-         };
-         {
-            ['amount']=-4;
-            ['first']=221;
-            ['second']=246;
-         };
-         {
-            ['amount']=-2;
-            ['first']=65;
-            ['second']=118;
-         };
-         {
-            ['amount']=-1;
-            ['first']=65;
-            ['second']=119;
-         };
-         {
-            ['amount']=-2;
-            ['first']=65;
-            ['second']=121;
-         };
-         {
-            ['amount']=1;
-            ['first']=65;
-            ['second']=196;
-         };
-         {
-            ['amount']=-4;
-            ['first']=221;
-            ['second']=244;
-         };
-         {
-            ['amount']=-4;
-            ['first']=221;
-            ['second']=242;
-         };
-         {
-            ['amount']=-4;
-            ['first']=221;
-            ['second']=243;
-         };
-         {
-            ['amount']=-4;
-            ['first']=221;
-            ['second']=235;
-         };
-         {
-            ['amount']=-4;
-            ['first']=221;
-            ['second']=234;
-         };
-         {
-            ['amount']=-4;
-            ['first']=221;
-            ['second']=232;
-         };
-         {
-            ['amount']=-4;
-            ['first']=221;
-            ['second']=233;
-         };
-         {
-            ['amount']=-4;
-            ['first']=221;
-            ['second']=229;
-         };
-         {
-            ['amount']=-4;
-            ['first']=221;
-            ['second']=227;
-         };
-         {
-            ['amount']=-4;
-            ['first']=221;
-            ['second']=228;
-         };
-         {
-            ['amount']=-4;
-            ['first']=221;
-            ['second']=226;
-         };
-         {
-            ['amount']=-4;
-            ['first']=221;
-            ['second']=224;
-         };
-         {
-            ['amount']=-4;
-            ['first']=221;
-            ['second']=225;
-         };
-         {
-            ['amount']=-1;
-            ['first']=221;
-            ['second']=214;
-         };
-         {
-            ['amount']=-1;
-            ['first']=221;
-            ['second']=199;
-         };
-         {
-            ['amount']=-2;
-            ['first']=221;
-            ['second']=196;
-         };
-         {
-            ['amount']=-3;
-            ['first']=221;
-            ['second']=117;
-         };
-         {
-            ['amount']=-1;
-            ['first']=65;
-            ['second']=171;
-         };
-         {
-            ['amount']=-4;
-            ['first']=221;
-            ['second']=111;
-         };
-         {
-            ['amount']=1;
-            ['first']=65;
-            ['second']=192;
-         };
-         {
-            ['amount']=1;
-            ['first']=65;
-            ['second']=195;
-         };
-         {
-            ['amount']=-1;
-            ['first']=221;
-            ['second']=105;
-         };
-         {
-            ['amount']=-3;
-            ['first']=65;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-3;
-            ['first']=65;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-2;
-            ['first']=65;
-            ['second']=255;
-         };
-         {
-            ['amount']=-2;
-            ['first']=65;
-            ['second']=376;
-         };
-         {
-            ['amount']=1;
-            ['first']=65;
-            ['second']=8222;
-         };
-         {
-            ['amount']=1;
-            ['first']=65;
-            ['second']=194;
-         };
-         {
-            ['amount']=1;
-            ['first']=65;
-            ['second']=193;
-         };
-         {
-            ['amount']=-4;
-            ['first']=221;
-            ['second']=101;
-         };
-         {
-            ['amount']=-4;
-            ['first']=221;
-            ['second']=97;
-         };
-         {
-            ['amount']=-1;
-            ['first']=221;
-            ['second']=79;
-         };
-         {
-            ['amount']=-1;
-            ['first']=221;
-            ['second']=67;
-         };
-         {
-            ['amount']=-2;
-            ['first']=221;
-            ['second']=65;
-         };
-         {
-            ['amount']=-4;
-            ['first']=221;
-            ['second']=58;
-         };
-         {
-            ['amount']=-5;
-            ['first']=221;
-            ['second']=46;
-         };
-         {
-            ['amount']=-2;
-            ['first']=65;
-            ['second']=221;
-         };
-         {
-            ['amount']=-2;
-            ['first']=65;
-            ['second']=253;
-         };
-         {
-            ['amount']=-3;
-            ['first']=221;
-            ['second']=45;
-         };
-         {
-            ['amount']=-1;
-            ['first']=240;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=240;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=240;
-            ['second']=8220;
-         };
-         {
-            ['amount']=1;
-            ['first']=352;
-            ['second']=193;
-         };
-         {
-            ['amount']=1;
-            ['first']=352;
-            ['second']=194;
-         };
-         {
-            ['amount']=1;
-            ['first']=352;
-            ['second']=195;
-         };
-         {
-            ['amount']=1;
-            ['first']=352;
-            ['second']=192;
-         };
-         {
-            ['amount']=1;
-            ['first']=352;
-            ['second']=196;
-         };
-         {
-            ['amount']=1;
-            ['first']=352;
-            ['second']=65;
-         };
-         {
-            ['amount']=-1;
-            ['first']=210;
-            ['second']=221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=66;
-            ['second']=86;
-         };
-         {
-            ['amount']=-1;
-            ['first']=66;
-            ['second']=87;
-         };
-         {
-            ['amount']=-1;
-            ['first']=66;
-            ['second']=89;
-         };
-         {
-            ['amount']=-2;
-            ['first']=210;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=210;
-            ['second']=376;
-         };
-         {
-            ['amount']=-1;
-            ['first']=66;
-            ['second']=171;
-         };
-         {
-            ['amount']=-1;
-            ['first']=210;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=210;
-            ['second']=89;
-         };
-         {
-            ['amount']=-1;
-            ['first']=66;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=66;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=66;
-            ['second']=376;
-         };
-         {
-            ['amount']=-1;
-            ['first']=66;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-2;
-            ['first']=210;
-            ['second']=88;
-         };
-         {
-            ['amount']=-1;
-            ['first']=210;
-            ['second']=46;
-         };
-         {
-            ['amount']=1;
-            ['first']=210;
-            ['second']=45;
-         };
-         {
-            ['amount']=-1;
-            ['first']=212;
-            ['second']=221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=66;
-            ['second']=221;
-         };
-         {
-            ['amount']=-2;
-            ['first']=212;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=212;
-            ['second']=376;
-         };
-         {
-            ['amount']=-1;
-            ['first']=212;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=212;
-            ['second']=89;
-         };
-         {
-            ['amount']=-2;
-            ['first']=212;
-            ['second']=88;
-         };
-         {
-            ['amount']=-1;
-            ['first']=212;
-            ['second']=46;
-         };
-         {
-            ['amount']=1;
-            ['first']=212;
-            ['second']=45;
-         };
-         {
-            ['amount']=-1;
-            ['first']=211;
-            ['second']=221;
-         };
-         {
-            ['amount']=-2;
-            ['first']=211;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=211;
-            ['second']=376;
-         };
-         {
-            ['amount']=-1;
-            ['first']=211;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=211;
-            ['second']=89;
-         };
-         {
-            ['amount']=-2;
-            ['first']=211;
-            ['second']=88;
-         };
-         {
-            ['amount']=-1;
-            ['first']=211;
-            ['second']=46;
-         };
-         {
-            ['amount']=1;
-            ['first']=67;
-            ['second']=8221;
-         };
-         {
-            ['amount']=1;
-            ['first']=211;
-            ['second']=45;
-         };
-         {
-            ['amount']=-2;
-            ['first']=193;
-            ['second']=253;
-         };
-         {
-            ['amount']=-2;
-            ['first']=193;
-            ['second']=221;
-         };
-         {
-            ['amount']=1;
-            ['first']=193;
-            ['second']=193;
-         };
-         {
-            ['amount']=1;
-            ['first']=193;
-            ['second']=194;
-         };
-         {
-            ['amount']=1;
-            ['first']=193;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-2;
-            ['first']=193;
-            ['second']=376;
-         };
-         {
-            ['amount']=-2;
-            ['first']=193;
-            ['second']=255;
-         };
-         {
-            ['amount']=-3;
-            ['first']=193;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-3;
-            ['first']=193;
-            ['second']=8220;
-         };
-         {
-            ['amount']=1;
-            ['first']=193;
-            ['second']=195;
-         };
-         {
-            ['amount']=-1;
-            ['first']=68;
-            ['second']=89;
-         };
-         {
-            ['amount']=1;
-            ['first']=193;
-            ['second']=192;
-         };
-         {
-            ['amount']=-1;
-            ['first']=193;
-            ['second']=171;
-         };
-         {
-            ['amount']=1;
-            ['first']=193;
-            ['second']=196;
-         };
-         {
-            ['amount']=-2;
-            ['first']=193;
-            ['second']=121;
-         };
-         {
-            ['amount']=-1;
-            ['first']=193;
-            ['second']=119;
-         };
-         {
-            ['amount']=-1;
-            ['first']=68;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=68;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=68;
-            ['second']=376;
-         };
-         {
-            ['amount']=-2;
-            ['first']=68;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-2;
-            ['first']=193;
-            ['second']=118;
-         };
-         {
-            ['amount']=-1;
-            ['first']=193;
-            ['second']=102;
-         };
-         {
-            ['amount']=-1;
-            ['first']=68;
-            ['second']=221;
-         };
-         {
-            ['amount']=-2;
-            ['first']=193;
-            ['second']=89;
-         };
-         {
-            ['amount']=-4;
-            ['first']=70;
-            ['second']=46;
-         };
-         {
-            ['amount']=-2;
-            ['first']=70;
-            ['second']=58;
-         };
-         {
-            ['amount']=-2;
-            ['first']=70;
-            ['second']=65;
-         };
-         {
-            ['amount']=-1;
-            ['first']=193;
-            ['second']=87;
-         };
-         {
-            ['amount']=-2;
-            ['first']=193;
-            ['second']=86;
-         };
-         {
-            ['amount']=-2;
-            ['first']=70;
-            ['second']=97;
-         };
-         {
-            ['amount']=-1;
-            ['first']=70;
-            ['second']=101;
-         };
-         {
-            ['amount']=-2;
-            ['first']=70;
-            ['second']=105;
-         };
-         {
-            ['amount']=-1;
-            ['first']=70;
-            ['second']=111;
-         };
-         {
-            ['amount']=-2;
-            ['first']=70;
-            ['second']=114;
-         };
-         {
-            ['amount']=-1;
-            ['first']=70;
-            ['second']=117;
-         };
-         {
-            ['amount']=-2;
-            ['first']=70;
-            ['second']=121;
-         };
-         {
-            ['amount']=-2;
-            ['first']=70;
-            ['second']=196;
-         };
-         {
-            ['amount']=-2;
-            ['first']=70;
-            ['second']=225;
-         };
-         {
-            ['amount']=-2;
-            ['first']=70;
-            ['second']=224;
-         };
-         {
-            ['amount']=-2;
-            ['first']=70;
-            ['second']=226;
-         };
-         {
-            ['amount']=-2;
-            ['first']=70;
-            ['second']=228;
-         };
-         {
-            ['amount']=-2;
-            ['first']=70;
-            ['second']=227;
-         };
-         {
-            ['amount']=-2;
-            ['first']=70;
-            ['second']=229;
-         };
-         {
-            ['amount']=-1;
-            ['first']=70;
-            ['second']=233;
-         };
-         {
-            ['amount']=-1;
-            ['first']=70;
-            ['second']=232;
-         };
-         {
-            ['amount']=-1;
-            ['first']=70;
-            ['second']=234;
-         };
-         {
-            ['amount']=-1;
-            ['first']=70;
-            ['second']=235;
-         };
-         {
-            ['amount']=-1;
-            ['first']=70;
-            ['second']=243;
-         };
-         {
-            ['amount']=-1;
-            ['first']=70;
-            ['second']=242;
-         };
-         {
-            ['amount']=-1;
-            ['first']=70;
-            ['second']=244;
-         };
-         {
-            ['amount']=-1;
-            ['first']=70;
-            ['second']=246;
-         };
-         {
-            ['amount']=-1;
-            ['first']=70;
-            ['second']=245;
-         };
-         {
-            ['amount']=-1;
-            ['first']=70;
-            ['second']=250;
-         };
-         {
-            ['amount']=-1;
-            ['first']=70;
-            ['second']=249;
-         };
-         {
-            ['amount']=-1;
-            ['first']=70;
-            ['second']=251;
-         };
-         {
-            ['amount']=-1;
-            ['first']=70;
-            ['second']=252;
-         };
-         {
-            ['amount']=-2;
-            ['first']=193;
-            ['second']=84;
-         };
-         {
-            ['amount']=1;
-            ['first']=193;
-            ['second']=65;
-         };
-         {
-            ['amount']=-2;
-            ['first']=70;
-            ['second']=192;
-         };
-         {
-            ['amount']=-2;
-            ['first']=70;
-            ['second']=195;
-         };
-         {
-            ['amount']=-1;
-            ['first']=70;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=193;
-            ['second']=45;
-         };
-         {
-            ['amount']=-2;
-            ['first']=70;
-            ['second']=255;
-         };
-         {
-            ['amount']=-5;
-            ['first']=70;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-2;
-            ['first']=70;
-            ['second']=194;
-         };
-         {
-            ['amount']=-2;
-            ['first']=70;
-            ['second']=193;
-         };
-         {
-            ['amount']=-2;
-            ['first']=194;
-            ['second']=253;
-         };
-         {
-            ['amount']=-2;
-            ['first']=70;
-            ['second']=253;
-         };
-         {
-            ['amount']=-2;
-            ['first']=194;
-            ['second']=221;
-         };
-         {
-            ['amount']=1;
-            ['first']=194;
-            ['second']=193;
-         };
-         {
-            ['amount']=1;
-            ['first']=194;
-            ['second']=194;
-         };
-         {
-            ['amount']=-1;
-            ['first']=71;
-            ['second']=84;
-         };
-         {
-            ['amount']=1;
-            ['first']=194;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=71;
-            ['second']=89;
-         };
-         {
-            ['amount']=-2;
-            ['first']=194;
-            ['second']=376;
-         };
-         {
-            ['amount']=-2;
-            ['first']=194;
-            ['second']=255;
-         };
-         {
-            ['amount']=-3;
-            ['first']=194;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-3;
-            ['first']=194;
-            ['second']=8220;
-         };
-         {
-            ['amount']=1;
-            ['first']=194;
-            ['second']=195;
-         };
-         {
-            ['amount']=-1;
-            ['first']=71;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=71;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=71;
-            ['second']=376;
-         };
-         {
-            ['amount']=-1;
-            ['first']=71;
-            ['second']=8222;
-         };
-         {
-            ['amount']=1;
-            ['first']=194;
-            ['second']=192;
-         };
-         {
-            ['amount']=-1;
-            ['first']=194;
-            ['second']=171;
-         };
-         {
-            ['amount']=-1;
-            ['first']=71;
-            ['second']=221;
-         };
-         {
-            ['amount']=1;
-            ['first']=194;
-            ['second']=196;
-         };
-         {
-            ['amount']=-2;
-            ['first']=194;
-            ['second']=121;
-         };
-         {
-            ['amount']=-1;
-            ['first']=194;
-            ['second']=119;
-         };
-         {
-            ['amount']=-2;
-            ['first']=194;
-            ['second']=118;
-         };
-         {
-            ['amount']=-1;
-            ['first']=194;
-            ['second']=102;
-         };
-         {
-            ['amount']=-1;
-            ['first']=72;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=72;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=72;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=74;
-            ['second']=45;
-         };
-         {
-            ['amount']=-2;
-            ['first']=194;
-            ['second']=89;
-         };
-         {
-            ['amount']=-1;
-            ['first']=194;
-            ['second']=87;
-         };
-         {
-            ['amount']=-2;
-            ['first']=194;
-            ['second']=86;
-         };
-         {
-            ['amount']=-2;
-            ['first']=194;
-            ['second']=84;
-         };
-         {
-            ['amount']=1;
-            ['first']=194;
-            ['second']=65;
-         };
-         {
-            ['amount']=-1;
-            ['first']=194;
-            ['second']=45;
-         };
-         {
-            ['amount']=-1;
-            ['first']=74;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=74;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=74;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=268;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=262;
-         };
-         {
-            ['amount']=-3;
-            ['first']=75;
-            ['second']=45;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=286;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=67;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=79;
-         };
-         {
-            ['amount']=-2;
-            ['first']=75;
-            ['second']=84;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=85;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=87;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=89;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=101;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=111;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=117;
-         };
-         {
-            ['amount']=-2;
-            ['first']=75;
-            ['second']=121;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=253;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=199;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=214;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=220;
-         };
-         {
-            ['amount']=-5;
-            ['first']=8222;
-            ['second']=221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=240;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=210;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=212;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=211;
-         };
-         {
-            ['amount']=1;
-            ['first']=8222;
-            ['second']=193;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=233;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=232;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=234;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=235;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=243;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=242;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=244;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=246;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=245;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=250;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=249;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=251;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=252;
-         };
-         {
-            ['amount']=-2;
-            ['first']=75;
-            ['second']=171;
-         };
-         {
-            ['amount']=1;
-            ['first']=8222;
-            ['second']=194;
-         };
-         {
-            ['amount']=-5;
-            ['first']=8222;
-            ['second']=376;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=255;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=213;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-2;
-            ['first']=75;
-            ['second']=255;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=376;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=213;
-         };
-         {
-            ['amount']=1;
-            ['first']=8222;
-            ['second']=195;
-         };
-         {
-            ['amount']=1;
-            ['first']=8222;
-            ['second']=192;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=211;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=212;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=210;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=218;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=219;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=217;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=221;
-         };
-         {
-            ['amount']=-2;
-            ['first']=75;
-            ['second']=253;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=262;
-         };
-         {
-            ['amount']=-1;
-            ['first']=75;
-            ['second']=268;
-         };
-         {
-            ['amount']=1;
-            ['first']=8222;
-            ['second']=198;
-         };
-         {
-            ['amount']=1;
-            ['first']=76;
-            ['second']=65;
-         };
-         {
-            ['amount']=-1;
-            ['first']=76;
-            ['second']=79;
-         };
-         {
-            ['amount']=-4;
-            ['first']=76;
-            ['second']=84;
-         };
-         {
-            ['amount']=-1;
-            ['first']=76;
-            ['second']=85;
-         };
-         {
-            ['amount']=-3;
-            ['first']=76;
-            ['second']=86;
-         };
-         {
-            ['amount']=-2;
-            ['first']=76;
-            ['second']=87;
-         };
-         {
-            ['amount']=-4;
-            ['first']=76;
-            ['second']=89;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=223;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=245;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=246;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=244;
-         };
-         {
-            ['amount']=-2;
-            ['first']=76;
-            ['second']=121;
-         };
-         {
-            ['amount']=1;
-            ['first']=76;
-            ['second']=196;
-         };
-         {
-            ['amount']=-1;
-            ['first']=76;
-            ['second']=214;
-         };
-         {
-            ['amount']=-1;
-            ['first']=76;
-            ['second']=220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=242;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=243;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=241;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=214;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=199;
-         };
-         {
-            ['amount']=1;
-            ['first']=8222;
-            ['second']=196;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=121;
-         };
-         {
-            ['amount']=-3;
-            ['first']=8222;
-            ['second']=119;
-         };
-         {
-            ['amount']=-3;
-            ['first']=8222;
-            ['second']=118;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=114;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=111;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=110;
-         };
-         {
-            ['amount']=-5;
-            ['first']=8222;
-            ['second']=89;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=88;
-         };
-         {
-            ['amount']=-3;
-            ['first']=8222;
-            ['second']=87;
-         };
-         {
-            ['amount']=-5;
-            ['first']=8222;
-            ['second']=86;
-         };
-         {
-            ['amount']=-4;
-            ['first']=8222;
-            ['second']=84;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=82;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=81;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=80;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=79;
-         };
-         {
-            ['amount']=1;
-            ['first']=76;
-            ['second']=192;
-         };
-         {
-            ['amount']=1;
-            ['first']=76;
-            ['second']=195;
-         };
-         {
-            ['amount']=-1;
-            ['first']=76;
-            ['second']=213;
-         };
-         {
-            ['amount']=-5;
-            ['first']=76;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-7;
-            ['first']=76;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-2;
-            ['first']=76;
-            ['second']=255;
-         };
-         {
-            ['amount']=-4;
-            ['first']=76;
-            ['second']=376;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=76;
-         };
-         {
-            ['amount']=1;
-            ['first']=76;
-            ['second']=194;
-         };
-         {
-            ['amount']=1;
-            ['first']=76;
-            ['second']=193;
-         };
-         {
-            ['amount']=-1;
-            ['first']=76;
-            ['second']=211;
-         };
-         {
-            ['amount']=-1;
-            ['first']=76;
-            ['second']=212;
-         };
-         {
-            ['amount']=-1;
-            ['first']=76;
-            ['second']=210;
-         };
-         {
-            ['amount']=-1;
-            ['first']=76;
-            ['second']=218;
-         };
-         {
-            ['amount']=-1;
-            ['first']=76;
-            ['second']=219;
-         };
-         {
-            ['amount']=-1;
-            ['first']=76;
-            ['second']=217;
-         };
-         {
-            ['amount']=-4;
-            ['first']=76;
-            ['second']=221;
-         };
-         {
-            ['amount']=-2;
-            ['first']=76;
-            ['second']=253;
-         };
-         {
-            ['amount']=1;
-            ['first']=79;
-            ['second']=45;
-         };
-         {
-            ['amount']=-1;
-            ['first']=79;
-            ['second']=46;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=75;
-         };
-         {
-            ['amount']=1;
-            ['first']=8222;
-            ['second']=74;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=72;
-         };
-         {
-            ['amount']=-2;
-            ['first']=79;
-            ['second']=88;
-         };
-         {
-            ['amount']=-1;
-            ['first']=79;
-            ['second']=89;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=71;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=70;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=68;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=67;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8222;
-            ['second']=66;
-         };
-         {
-            ['amount']=-1;
-            ['first']=79;
-            ['second']=8220;
-         };
-         {
-            ['amount']=1;
-            ['first']=8222;
-            ['second']=65;
-         };
-         {
-            ['amount']=-1;
-            ['first']=79;
-            ['second']=376;
-         };
-         {
-            ['amount']=-2;
-            ['first']=79;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=376;
-            ['second']=268;
-         };
-         {
-            ['amount']=-1;
-            ['first']=376;
-            ['second']=262;
-         };
-         {
-            ['amount']=-1;
-            ['first']=79;
-            ['second']=221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=45;
-         };
-         {
-            ['amount']=-4;
-            ['first']=80;
-            ['second']=46;
-         };
-         {
-            ['amount']=-1;
-            ['first']=376;
-            ['second']=210;
-         };
-         {
-            ['amount']=-2;
-            ['first']=80;
-            ['second']=65;
-         };
-         {
-            ['amount']=-1;
-            ['first']=376;
-            ['second']=212;
-         };
-         {
-            ['amount']=-1;
-            ['first']=376;
-            ['second']=211;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=89;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=97;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=101;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=105;
-         };
-         {
-            ['amount']=-2;
-            ['first']=376;
-            ['second']=193;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=111;
-         };
-         {
-            ['amount']=-2;
-            ['first']=376;
-            ['second']=194;
-         };
-         {
-            ['amount']=-3;
-            ['first']=376;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=376;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=376;
-            ['second']=213;
-         };
-         {
-            ['amount']=-2;
-            ['first']=80;
-            ['second']=196;
-         };
-         {
-            ['amount']=-2;
-            ['first']=376;
-            ['second']=195;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=225;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=224;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=226;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=228;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=227;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=229;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=233;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=232;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=234;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=235;
-         };
-         {
-            ['amount']=-2;
-            ['first']=376;
-            ['second']=192;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=243;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=242;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=244;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=246;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=245;
-         };
-         {
-            ['amount']=-2;
-            ['first']=376;
-            ['second']=187;
-         };
-         {
-            ['amount']=-3;
-            ['first']=376;
-            ['second']=171;
-         };
-         {
-            ['amount']=-3;
-            ['first']=376;
-            ['second']=252;
-         };
-         {
-            ['amount']=-3;
-            ['first']=376;
-            ['second']=251;
-         };
-         {
-            ['amount']=-3;
-            ['first']=376;
-            ['second']=249;
-         };
-         {
-            ['amount']=-3;
-            ['first']=376;
-            ['second']=250;
-         };
-         {
-            ['amount']=-2;
-            ['first']=80;
-            ['second']=192;
-         };
-         {
-            ['amount']=-2;
-            ['first']=80;
-            ['second']=195;
-         };
-         {
-            ['amount']=1;
-            ['first']=80;
-            ['second']=8220;
-         };
-         {
-            ['amount']=1;
-            ['first']=80;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-4;
-            ['first']=376;
-            ['second']=245;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=376;
-         };
-         {
-            ['amount']=-4;
-            ['first']=80;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-2;
-            ['first']=80;
-            ['second']=194;
-         };
-         {
-            ['amount']=-2;
-            ['first']=80;
-            ['second']=193;
-         };
-         {
-            ['amount']=-4;
-            ['first']=376;
-            ['second']=246;
-         };
-         {
-            ['amount']=-4;
-            ['first']=376;
-            ['second']=244;
-         };
-         {
-            ['amount']=-4;
-            ['first']=376;
-            ['second']=242;
-         };
-         {
-            ['amount']=-4;
-            ['first']=376;
-            ['second']=243;
-         };
-         {
-            ['amount']=-1;
-            ['first']=80;
-            ['second']=221;
-         };
-         {
-            ['amount']=-4;
-            ['first']=376;
-            ['second']=235;
-         };
-         {
-            ['amount']=-4;
-            ['first']=376;
-            ['second']=234;
-         };
-         {
-            ['amount']=1;
-            ['first']=81;
-            ['second']=45;
-         };
-         {
-            ['amount']=-4;
-            ['first']=376;
-            ['second']=232;
-         };
-         {
-            ['amount']=-4;
-            ['first']=376;
-            ['second']=233;
-         };
-         {
-            ['amount']=-1;
-            ['first']=81;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-4;
-            ['first']=376;
-            ['second']=229;
-         };
-         {
-            ['amount']=-2;
-            ['first']=81;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=45;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=46;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=58;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=65;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=67;
-         };
-         {
-            ['amount']=-2;
-            ['first']=82;
-            ['second']=84;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=86;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=87;
-         };
-         {
-            ['amount']=-2;
-            ['first']=82;
-            ['second']=89;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=97;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=101;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=111;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=117;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=121;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=196;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=199;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=225;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=224;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=226;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=228;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=227;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=229;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=233;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=232;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=234;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=235;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=243;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=242;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=244;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=246;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=245;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=250;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=249;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=251;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=252;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=171;
-         };
-         {
-            ['amount']=-4;
-            ['first']=376;
-            ['second']=227;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=192;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=195;
-         };
-         {
-            ['amount']=-2;
-            ['first']=82;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-2;
-            ['first']=82;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=255;
-         };
-         {
-            ['amount']=-2;
-            ['first']=82;
-            ['second']=376;
-         };
-         {
-            ['amount']=-4;
-            ['first']=376;
-            ['second']=228;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=194;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=193;
-         };
-         {
-            ['amount']=-2;
-            ['first']=82;
-            ['second']=221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=253;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=262;
-         };
-         {
-            ['amount']=-1;
-            ['first']=82;
-            ['second']=268;
-         };
-         {
-            ['amount']=1;
-            ['first']=83;
-            ['second']=65;
-         };
-         {
-            ['amount']=-4;
-            ['first']=376;
-            ['second']=226;
-         };
-         {
-            ['amount']=-4;
-            ['first']=376;
-            ['second']=224;
-         };
-         {
-            ['amount']=-4;
-            ['first']=376;
-            ['second']=225;
-         };
-         {
-            ['amount']=-1;
-            ['first']=376;
-            ['second']=214;
-         };
-         {
-            ['amount']=-1;
-            ['first']=376;
-            ['second']=199;
-         };
-         {
-            ['amount']=1;
-            ['first']=83;
-            ['second']=196;
-         };
-         {
-            ['amount']=-2;
-            ['first']=376;
-            ['second']=196;
-         };
-         {
-            ['amount']=-3;
-            ['first']=376;
-            ['second']=117;
-         };
-         {
-            ['amount']=1;
-            ['first']=83;
-            ['second']=192;
-         };
-         {
-            ['amount']=1;
-            ['first']=83;
-            ['second']=195;
-         };
-         {
-            ['amount']=-4;
-            ['first']=376;
-            ['second']=111;
-         };
-         {
-            ['amount']=1;
-            ['first']=83;
-            ['second']=194;
-         };
-         {
-            ['amount']=1;
-            ['first']=83;
-            ['second']=193;
-         };
-         {
-            ['amount']=-1;
-            ['first']=376;
-            ['second']=105;
-         };
-         {
-            ['amount']=-4;
-            ['first']=376;
-            ['second']=101;
-         };
-         {
-            ['amount']=-4;
-            ['first']=376;
-            ['second']=97;
-         };
-         {
-            ['amount']=-1;
-            ['first']=376;
-            ['second']=79;
-         };
-         {
-            ['amount']=-1;
-            ['first']=376;
-            ['second']=67;
-         };
-         {
-            ['amount']=-2;
-            ['first']=376;
-            ['second']=65;
-         };
-         {
-            ['amount']=-4;
-            ['first']=376;
-            ['second']=58;
-         };
-         {
-            ['amount']=-5;
-            ['first']=376;
-            ['second']=46;
-         };
-         {
-            ['amount']=-2;
-            ['first']=84;
-            ['second']=45;
-         };
-         {
-            ['amount']=-3;
-            ['first']=84;
-            ['second']=46;
-         };
-         {
-            ['amount']=-3;
-            ['first']=84;
-            ['second']=58;
-         };
-         {
-            ['amount']=-2;
-            ['first']=84;
-            ['second']=65;
-         };
-         {
-            ['amount']=-2;
-            ['first']=84;
-            ['second']=67;
-         };
-         {
-            ['amount']=-3;
-            ['first']=376;
-            ['second']=45;
-         };
-         {
-            ['amount']=-4;
-            ['first']=84;
-            ['second']=97;
-         };
-         {
-            ['amount']=-5;
-            ['first']=84;
-            ['second']=99;
-         };
-         {
-            ['amount']=-5;
-            ['first']=84;
-            ['second']=101;
-         };
-         {
-            ['amount']=-1;
-            ['first']=84;
-            ['second']=105;
-         };
-         {
-            ['amount']=-5;
-            ['first']=84;
-            ['second']=111;
-         };
-         {
-            ['amount']=-4;
-            ['first']=84;
-            ['second']=114;
-         };
-         {
-            ['amount']=-4;
-            ['first']=84;
-            ['second']=115;
-         };
-         {
-            ['amount']=-4;
-            ['first']=84;
-            ['second']=117;
-         };
-         {
-            ['amount']=-4;
-            ['first']=84;
-            ['second']=119;
-         };
-         {
-            ['amount']=-4;
-            ['first']=84;
-            ['second']=121;
-         };
-         {
-            ['amount']=-2;
-            ['first']=84;
-            ['second']=196;
-         };
-         {
-            ['amount']=-2;
-            ['first']=84;
-            ['second']=199;
-         };
-         {
-            ['amount']=-4;
-            ['first']=84;
-            ['second']=225;
-         };
-         {
-            ['amount']=-4;
-            ['first']=84;
-            ['second']=224;
-         };
-         {
-            ['amount']=-4;
-            ['first']=84;
-            ['second']=226;
-         };
-         {
-            ['amount']=-4;
-            ['first']=84;
-            ['second']=228;
-         };
-         {
-            ['amount']=-4;
-            ['first']=84;
-            ['second']=227;
-         };
-         {
-            ['amount']=-4;
-            ['first']=84;
-            ['second']=229;
-         };
-         {
-            ['amount']=-5;
-            ['first']=84;
-            ['second']=231;
-         };
-         {
-            ['amount']=-5;
-            ['first']=84;
-            ['second']=233;
-         };
-         {
-            ['amount']=-5;
-            ['first']=84;
-            ['second']=232;
-         };
-         {
-            ['amount']=-5;
-            ['first']=84;
-            ['second']=234;
-         };
-         {
-            ['amount']=-5;
-            ['first']=84;
-            ['second']=235;
-         };
-         {
-            ['amount']=-5;
-            ['first']=84;
-            ['second']=243;
-         };
-         {
-            ['amount']=-5;
-            ['first']=84;
-            ['second']=242;
-         };
-         {
-            ['amount']=-5;
-            ['first']=84;
-            ['second']=244;
-         };
-         {
-            ['amount']=-5;
-            ['first']=84;
-            ['second']=246;
-         };
-         {
-            ['amount']=-5;
-            ['first']=84;
-            ['second']=245;
-         };
-         {
-            ['amount']=-4;
-            ['first']=84;
-            ['second']=250;
-         };
-         {
-            ['amount']=-4;
-            ['first']=84;
-            ['second']=249;
-         };
-         {
-            ['amount']=-4;
-            ['first']=84;
-            ['second']=251;
-         };
-         {
-            ['amount']=-4;
-            ['first']=84;
-            ['second']=252;
-         };
-         {
-            ['amount']=-2;
-            ['first']=84;
-            ['second']=171;
-         };
-         {
-            ['amount']=-1;
-            ['first']=84;
-            ['second']=187;
-         };
-         {
-            ['amount']=-2;
-            ['first']=84;
-            ['second']=192;
-         };
-         {
-            ['amount']=-2;
-            ['first']=84;
-            ['second']=195;
-         };
-         {
-            ['amount']=-4;
-            ['first']=255;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=84;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-4;
-            ['first']=84;
-            ['second']=255;
-         };
-         {
-            ['amount']=-3;
-            ['first']=84;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-2;
-            ['first']=84;
-            ['second']=194;
-         };
-         {
-            ['amount']=-2;
-            ['first']=84;
-            ['second']=193;
-         };
-         {
-            ['amount']=-4;
-            ['first']=84;
-            ['second']=353;
-         };
-         {
-            ['amount']=-4;
-            ['first']=84;
-            ['second']=253;
-         };
-         {
-            ['amount']=-4;
-            ['first']=84;
-            ['second']=351;
-         };
-         {
-            ['amount']=-2;
-            ['first']=84;
-            ['second']=262;
-         };
-         {
-            ['amount']=-5;
-            ['first']=84;
-            ['second']=263;
-         };
-         {
-            ['amount']=-2;
-            ['first']=84;
-            ['second']=268;
-         };
-         {
-            ['amount']=-5;
-            ['first']=84;
-            ['second']=269;
-         };
-         {
-            ['amount']=-2;
-            ['first']=255;
-            ['second']=58;
-         };
-         {
-            ['amount']=-4;
-            ['first']=255;
-            ['second']=46;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=268;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=262;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=286;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=253;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=240;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=210;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=45;
-         };
-         {
-            ['amount']=-3;
-            ['first']=86;
-            ['second']=46;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=58;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=65;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=212;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=97;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=101;
-         };
-         {
-            ['amount']=-1;
-            ['first']=86;
-            ['second']=105;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=111;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=117;
-         };
-         {
-            ['amount']=-1;
-            ['first']=86;
-            ['second']=121;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=196;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=211;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=225;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=224;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=226;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=228;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=227;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=229;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=233;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=232;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=234;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=235;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=243;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=242;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=244;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=246;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=245;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=250;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=249;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=251;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=252;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=171;
-         };
-         {
-            ['amount']=-1;
-            ['first']=86;
-            ['second']=187;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=192;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=195;
-         };
-         {
-            ['amount']=-3;
-            ['first']=8220;
-            ['second']=193;
-         };
-         {
-            ['amount']=-3;
-            ['first']=8220;
-            ['second']=194;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=255;
-         };
-         {
-            ['amount']=-1;
-            ['first']=86;
-            ['second']=255;
-         };
-         {
-            ['amount']=-4;
-            ['first']=86;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=194;
-         };
-         {
-            ['amount']=-2;
-            ['first']=86;
-            ['second']=193;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=213;
-         };
-         {
-            ['amount']=-3;
-            ['first']=8220;
-            ['second']=195;
-         };
-         {
-            ['amount']=-3;
-            ['first']=8220;
-            ['second']=192;
-         };
-         {
-            ['amount']=-1;
-            ['first']=86;
-            ['second']=253;
-         };
-         {
-            ['amount']=-1;
-            ['first']=87;
-            ['second']=45;
-         };
-         {
-            ['amount']=-3;
-            ['first']=87;
-            ['second']=46;
-         };
-         {
-            ['amount']=-2;
-            ['first']=87;
-            ['second']=58;
-         };
-         {
-            ['amount']=-1;
-            ['first']=87;
-            ['second']=65;
-         };
-         {
-            ['amount']=-2;
-            ['first']=87;
-            ['second']=97;
-         };
-         {
-            ['amount']=-2;
-            ['first']=87;
-            ['second']=101;
-         };
-         {
-            ['amount']=-1;
-            ['first']=87;
-            ['second']=105;
-         };
-         {
-            ['amount']=-2;
-            ['first']=87;
-            ['second']=111;
-         };
-         {
-            ['amount']=-1;
-            ['first']=87;
-            ['second']=114;
-         };
-         {
-            ['amount']=-1;
-            ['first']=87;
-            ['second']=117;
-         };
-         {
-            ['amount']=-5;
-            ['first']=8220;
-            ['second']=198;
-         };
-         {
-            ['amount']=-1;
-            ['first']=87;
-            ['second']=196;
-         };
-         {
-            ['amount']=-2;
-            ['first']=87;
-            ['second']=225;
-         };
-         {
-            ['amount']=-2;
-            ['first']=87;
-            ['second']=224;
-         };
-         {
-            ['amount']=-2;
-            ['first']=87;
-            ['second']=226;
-         };
-         {
-            ['amount']=-2;
-            ['first']=87;
-            ['second']=228;
-         };
-         {
-            ['amount']=-2;
-            ['first']=87;
-            ['second']=227;
-         };
-         {
-            ['amount']=-2;
-            ['first']=87;
-            ['second']=229;
-         };
-         {
-            ['amount']=-2;
-            ['first']=87;
-            ['second']=233;
-         };
-         {
-            ['amount']=-2;
-            ['first']=87;
-            ['second']=232;
-         };
-         {
-            ['amount']=-2;
-            ['first']=87;
-            ['second']=234;
-         };
-         {
-            ['amount']=-2;
-            ['first']=87;
-            ['second']=235;
-         };
-         {
-            ['amount']=-2;
-            ['first']=87;
-            ['second']=243;
-         };
-         {
-            ['amount']=-2;
-            ['first']=87;
-            ['second']=242;
-         };
-         {
-            ['amount']=-2;
-            ['first']=87;
-            ['second']=244;
-         };
-         {
-            ['amount']=-2;
-            ['first']=87;
-            ['second']=246;
-         };
-         {
-            ['amount']=-2;
-            ['first']=87;
-            ['second']=245;
-         };
-         {
-            ['amount']=-1;
-            ['first']=87;
-            ['second']=250;
-         };
-         {
-            ['amount']=-1;
-            ['first']=87;
-            ['second']=249;
-         };
-         {
-            ['amount']=-1;
-            ['first']=87;
-            ['second']=251;
-         };
-         {
-            ['amount']=-1;
-            ['first']=87;
-            ['second']=252;
-         };
-         {
-            ['amount']=-1;
-            ['first']=87;
-            ['second']=171;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=223;
-         };
-         {
-            ['amount']=-1;
-            ['first']=87;
-            ['second']=192;
-         };
-         {
-            ['amount']=-1;
-            ['first']=87;
-            ['second']=195;
-         };
-         {
-            ['amount']=-2;
-            ['first']=8220;
-            ['second']=245;
-         };
-         {
-            ['amount']=-2;
-            ['first']=8220;
-            ['second']=246;
-         };
-         {
-            ['amount']=-2;
-            ['first']=8220;
-            ['second']=244;
-         };
-         {
-            ['amount']=-3;
-            ['first']=87;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=87;
-            ['second']=194;
-         };
-         {
-            ['amount']=-1;
-            ['first']=87;
-            ['second']=193;
-         };
-         {
-            ['amount']=-2;
-            ['first']=8220;
-            ['second']=242;
-         };
-         {
-            ['amount']=-1;
-            ['first']=88;
-            ['second']=45;
-         };
-         {
-            ['amount']=-2;
-            ['first']=8220;
-            ['second']=243;
-         };
-         {
-            ['amount']=-2;
-            ['first']=88;
-            ['second']=67;
-         };
-         {
-            ['amount']=-2;
-            ['first']=88;
-            ['second']=79;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=241;
-         };
-         {
-            ['amount']=-1;
-            ['first']=88;
-            ['second']=101;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=214;
-         };
-         {
-            ['amount']=-2;
-            ['first']=88;
-            ['second']=199;
-         };
-         {
-            ['amount']=-2;
-            ['first']=88;
-            ['second']=214;
-         };
-         {
-            ['amount']=-1;
-            ['first']=88;
-            ['second']=233;
-         };
-         {
-            ['amount']=-1;
-            ['first']=88;
-            ['second']=232;
-         };
-         {
-            ['amount']=-1;
-            ['first']=88;
-            ['second']=234;
-         };
-         {
-            ['amount']=-1;
-            ['first']=88;
-            ['second']=235;
-         };
-         {
-            ['amount']=-1;
-            ['first']=88;
-            ['second']=171;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=199;
-         };
-         {
-            ['amount']=-3;
-            ['first']=8220;
-            ['second']=196;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=121;
-         };
-         {
-            ['amount']=-2;
-            ['first']=88;
-            ['second']=213;
-         };
-         {
-            ['amount']=-2;
-            ['first']=88;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=88;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=88;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=119;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=118;
-         };
-         {
-            ['amount']=-2;
-            ['first']=88;
-            ['second']=211;
-         };
-         {
-            ['amount']=-2;
-            ['first']=88;
-            ['second']=212;
-         };
-         {
-            ['amount']=-2;
-            ['first']=88;
-            ['second']=210;
-         };
-         {
-            ['amount']=-2;
-            ['first']=88;
-            ['second']=262;
-         };
-         {
-            ['amount']=-2;
-            ['first']=88;
-            ['second']=268;
-         };
-         {
-            ['amount']=-3;
-            ['first']=89;
-            ['second']=45;
-         };
-         {
-            ['amount']=-5;
-            ['first']=89;
-            ['second']=46;
-         };
-         {
-            ['amount']=-4;
-            ['first']=89;
-            ['second']=58;
-         };
-         {
-            ['amount']=-2;
-            ['first']=89;
-            ['second']=65;
-         };
-         {
-            ['amount']=-1;
-            ['first']=89;
-            ['second']=67;
-         };
-         {
-            ['amount']=-1;
-            ['first']=89;
-            ['second']=79;
-         };
-         {
-            ['amount']=-4;
-            ['first']=89;
-            ['second']=97;
-         };
-         {
-            ['amount']=-4;
-            ['first']=89;
-            ['second']=101;
-         };
-         {
-            ['amount']=-1;
-            ['first']=89;
-            ['second']=105;
-         };
-         {
-            ['amount']=-4;
-            ['first']=89;
-            ['second']=111;
-         };
-         {
-            ['amount']=-3;
-            ['first']=89;
-            ['second']=117;
-         };
-         {
-            ['amount']=-2;
-            ['first']=89;
-            ['second']=196;
-         };
-         {
-            ['amount']=-1;
-            ['first']=89;
-            ['second']=199;
-         };
-         {
-            ['amount']=-1;
-            ['first']=89;
-            ['second']=214;
-         };
-         {
-            ['amount']=-4;
-            ['first']=89;
-            ['second']=225;
-         };
-         {
-            ['amount']=-4;
-            ['first']=89;
-            ['second']=224;
-         };
-         {
-            ['amount']=-4;
-            ['first']=89;
-            ['second']=226;
-         };
-         {
-            ['amount']=-4;
-            ['first']=89;
-            ['second']=228;
-         };
-         {
-            ['amount']=-4;
-            ['first']=89;
-            ['second']=227;
-         };
-         {
-            ['amount']=-4;
-            ['first']=89;
-            ['second']=229;
-         };
-         {
-            ['amount']=-4;
-            ['first']=89;
-            ['second']=233;
-         };
-         {
-            ['amount']=-4;
-            ['first']=89;
-            ['second']=232;
-         };
-         {
-            ['amount']=-4;
-            ['first']=89;
-            ['second']=234;
-         };
-         {
-            ['amount']=-4;
-            ['first']=89;
-            ['second']=235;
-         };
-         {
-            ['amount']=-4;
-            ['first']=89;
-            ['second']=243;
-         };
-         {
-            ['amount']=-4;
-            ['first']=89;
-            ['second']=242;
-         };
-         {
-            ['amount']=-4;
-            ['first']=89;
-            ['second']=244;
-         };
-         {
-            ['amount']=-4;
-            ['first']=89;
-            ['second']=246;
-         };
-         {
-            ['amount']=-4;
-            ['first']=89;
-            ['second']=245;
-         };
-         {
-            ['amount']=-3;
-            ['first']=89;
-            ['second']=250;
-         };
-         {
-            ['amount']=-3;
-            ['first']=89;
-            ['second']=249;
-         };
-         {
-            ['amount']=-3;
-            ['first']=89;
-            ['second']=251;
-         };
-         {
-            ['amount']=-3;
-            ['first']=89;
-            ['second']=252;
-         };
-         {
-            ['amount']=-3;
-            ['first']=89;
-            ['second']=171;
-         };
-         {
-            ['amount']=-2;
-            ['first']=89;
-            ['second']=187;
-         };
-         {
-            ['amount']=-2;
-            ['first']=89;
-            ['second']=192;
-         };
-         {
-            ['amount']=-2;
-            ['first']=89;
-            ['second']=195;
-         };
-         {
-            ['amount']=-1;
-            ['first']=89;
-            ['second']=213;
-         };
-         {
-            ['amount']=-1;
-            ['first']=89;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=114;
-         };
-         {
-            ['amount']=-3;
-            ['first']=89;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-2;
-            ['first']=89;
-            ['second']=194;
-         };
-         {
-            ['amount']=-2;
-            ['first']=89;
-            ['second']=193;
-         };
-         {
-            ['amount']=-1;
-            ['first']=89;
-            ['second']=211;
-         };
-         {
-            ['amount']=-1;
-            ['first']=89;
-            ['second']=212;
-         };
-         {
-            ['amount']=-1;
-            ['first']=89;
-            ['second']=210;
-         };
-         {
-            ['amount']=-1;
-            ['first']=89;
-            ['second']=262;
-         };
-         {
-            ['amount']=-1;
-            ['first']=89;
-            ['second']=268;
-         };
-         {
-            ['amount']=-2;
-            ['first']=8220;
-            ['second']=111;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=110;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=102;
-         };
-         {
-            ['amount']=-2;
-            ['first']=8220;
-            ['second']=88;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=82;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=81;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=80;
-         };
-         {
-            ['amount']=-1;
-            ['first']=102;
-            ['second']=45;
-         };
-         {
-            ['amount']=-2;
-            ['first']=102;
-            ['second']=46;
-         };
-         {
-            ['amount']=-1;
-            ['first']=102;
-            ['second']=58;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=79;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=76;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=75;
-         };
-         {
-            ['amount']=-1;
-            ['first']=102;
-            ['second']=171;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=74;
-         };
-         {
-            ['amount']=1;
-            ['first']=102;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=72;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=71;
-         };
-         {
-            ['amount']=-3;
-            ['first']=102;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=70;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=68;
-         };
-         {
-            ['amount']=-1;
-            ['first']=107;
-            ['second']=101;
-         };
-         {
-            ['amount']=-1;
-            ['first']=107;
-            ['second']=111;
-         };
-         {
-            ['amount']=-1;
-            ['first']=107;
-            ['second']=117;
-         };
-         {
-            ['amount']=-1;
-            ['first']=107;
-            ['second']=121;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=67;
-         };
-         {
-            ['amount']=-1;
-            ['first']=8220;
-            ['second']=66;
-         };
-         {
-            ['amount']=-3;
-            ['first']=8220;
-            ['second']=65;
-         };
-         {
-            ['amount']=-1;
-            ['first']=213;
-            ['second']=221;
-         };
-         {
-            ['amount']=-2;
-            ['first']=213;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=213;
-            ['second']=376;
-         };
-         {
-            ['amount']=-1;
-            ['first']=107;
-            ['second']=233;
-         };
-         {
-            ['amount']=-1;
-            ['first']=107;
-            ['second']=232;
-         };
-         {
-            ['amount']=-1;
-            ['first']=107;
-            ['second']=234;
-         };
-         {
-            ['amount']=-1;
-            ['first']=107;
-            ['second']=235;
-         };
-         {
-            ['amount']=-1;
-            ['first']=107;
-            ['second']=243;
-         };
-         {
-            ['amount']=-1;
-            ['first']=107;
-            ['second']=242;
-         };
-         {
-            ['amount']=-1;
-            ['first']=107;
-            ['second']=244;
-         };
-         {
-            ['amount']=-1;
-            ['first']=107;
-            ['second']=246;
-         };
-         {
-            ['amount']=-1;
-            ['first']=107;
-            ['second']=245;
-         };
-         {
-            ['amount']=-1;
-            ['first']=107;
-            ['second']=250;
-         };
-         {
-            ['amount']=-1;
-            ['first']=107;
-            ['second']=249;
-         };
-         {
-            ['amount']=-1;
-            ['first']=107;
-            ['second']=251;
-         };
-         {
-            ['amount']=-1;
-            ['first']=107;
-            ['second']=252;
-         };
-         {
-            ['amount']=-1;
-            ['first']=107;
-            ['second']=255;
-         };
-         {
-            ['amount']=-1;
-            ['first']=107;
-            ['second']=253;
-         };
-         {
-            ['amount']=-1;
-            ['first']=213;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=213;
-            ['second']=89;
-         };
-         {
-            ['amount']=-2;
-            ['first']=213;
-            ['second']=88;
-         };
-         {
-            ['amount']=-1;
-            ['first']=213;
-            ['second']=46;
-         };
-         {
-            ['amount']=1;
-            ['first']=213;
-            ['second']=45;
-         };
-         {
-            ['amount']=-2;
-            ['first']=110;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=110;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=110;
-            ['second']=8222;
-         };
-         {
-            ['amount']=1;
-            ['first']=111;
-            ['second']=45;
-         };
-         {
-            ['amount']=-2;
-            ['first']=195;
-            ['second']=253;
-         };
-         {
-            ['amount']=-2;
-            ['first']=195;
-            ['second']=221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=111;
-            ['second']=120;
-         };
-         {
-            ['amount']=1;
-            ['first']=195;
-            ['second']=193;
-         };
-         {
-            ['amount']=1;
-            ['first']=195;
-            ['second']=194;
-         };
-         {
-            ['amount']=-2;
-            ['first']=111;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=111;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-2;
-            ['first']=111;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-2;
-            ['first']=114;
-            ['second']=45;
-         };
-         {
-            ['amount']=-2;
-            ['first']=114;
-            ['second']=46;
-         };
-         {
-            ['amount']=1;
-            ['first']=195;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=114;
-            ['second']=99;
-         };
-         {
-            ['amount']=-2;
-            ['first']=195;
-            ['second']=376;
-         };
-         {
-            ['amount']=-1;
-            ['first']=114;
-            ['second']=101;
-         };
-         {
-            ['amount']=-2;
-            ['first']=195;
-            ['second']=255;
-         };
-         {
-            ['amount']=-3;
-            ['first']=195;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-3;
-            ['first']=195;
-            ['second']=8220;
-         };
-         {
-            ['amount']=1;
-            ['first']=195;
-            ['second']=195;
-         };
-         {
-            ['amount']=1;
-            ['first']=195;
-            ['second']=192;
-         };
-         {
-            ['amount']=-1;
-            ['first']=114;
-            ['second']=111;
-         };
-         {
-            ['amount']=-1;
-            ['first']=195;
-            ['second']=171;
-         };
-         {
-            ['amount']=1;
-            ['first']=195;
-            ['second']=196;
-         };
-         {
-            ['amount']=-2;
-            ['first']=195;
-            ['second']=121;
-         };
-         {
-            ['amount']=-1;
-            ['first']=195;
-            ['second']=119;
-         };
-         {
-            ['amount']=-2;
-            ['first']=195;
-            ['second']=118;
-         };
-         {
-            ['amount']=-1;
-            ['first']=114;
-            ['second']=120;
-         };
-         {
-            ['amount']=-1;
-            ['first']=195;
-            ['second']=102;
-         };
-         {
-            ['amount']=-2;
-            ['first']=195;
-            ['second']=89;
-         };
-         {
-            ['amount']=-1;
-            ['first']=114;
-            ['second']=231;
-         };
-         {
-            ['amount']=-1;
-            ['first']=114;
-            ['second']=233;
-         };
-         {
-            ['amount']=-1;
-            ['first']=114;
-            ['second']=232;
-         };
-         {
-            ['amount']=-1;
-            ['first']=114;
-            ['second']=234;
-         };
-         {
-            ['amount']=-1;
-            ['first']=114;
-            ['second']=235;
-         };
-         {
-            ['amount']=-1;
-            ['first']=195;
-            ['second']=87;
-         };
-         {
-            ['amount']=-1;
-            ['first']=114;
-            ['second']=243;
-         };
-         {
-            ['amount']=-1;
-            ['first']=114;
-            ['second']=242;
-         };
-         {
-            ['amount']=-1;
-            ['first']=114;
-            ['second']=244;
-         };
-         {
-            ['amount']=-1;
-            ['first']=114;
-            ['second']=246;
-         };
-         {
-            ['amount']=-1;
-            ['first']=114;
-            ['second']=245;
-         };
-         {
-            ['amount']=-2;
-            ['first']=195;
-            ['second']=86;
-         };
-         {
-            ['amount']=-2;
-            ['first']=195;
-            ['second']=84;
-         };
-         {
-            ['amount']=1;
-            ['first']=195;
-            ['second']=65;
-         };
-         {
-            ['amount']=-1;
-            ['first']=195;
-            ['second']=45;
-         };
-         {
-            ['amount']=-1;
-            ['first']=114;
-            ['second']=171;
-         };
-         {
-            ['amount']=-2;
-            ['first']=192;
-            ['second']=253;
-         };
-         {
-            ['amount']=-2;
-            ['first']=192;
-            ['second']=221;
-         };
-         {
-            ['amount']=1;
-            ['first']=114;
-            ['second']=8221;
-         };
-         {
-            ['amount']=1;
-            ['first']=192;
-            ['second']=193;
-         };
-         {
-            ['amount']=-4;
-            ['first']=114;
-            ['second']=8222;
-         };
-         {
-            ['amount']=1;
-            ['first']=192;
-            ['second']=194;
-         };
-         {
-            ['amount']=1;
-            ['first']=192;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-2;
-            ['first']=192;
-            ['second']=376;
-         };
-         {
-            ['amount']=-1;
-            ['first']=114;
-            ['second']=263;
-         };
-         {
-            ['amount']=-1;
-            ['first']=114;
-            ['second']=269;
-         };
-         {
-            ['amount']=-1;
-            ['first']=118;
-            ['second']=45;
-         };
-         {
-            ['amount']=-2;
-            ['first']=118;
-            ['second']=46;
-         };
-         {
-            ['amount']=-1;
-            ['first']=118;
-            ['second']=58;
-         };
-         {
-            ['amount']=-2;
-            ['first']=192;
-            ['second']=255;
-         };
-         {
-            ['amount']=-3;
-            ['first']=192;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-3;
-            ['first']=192;
-            ['second']=8220;
-         };
-         {
-            ['amount']=1;
-            ['first']=192;
-            ['second']=195;
-         };
-         {
-            ['amount']=-4;
-            ['first']=118;
-            ['second']=8222;
-         };
-         {
-            ['amount']=1;
-            ['first']=192;
-            ['second']=192;
-         };
-         {
-            ['amount']=-2;
-            ['first']=119;
-            ['second']=46;
-         };
-         {
-            ['amount']=-1;
-            ['first']=119;
-            ['second']=58;
-         };
-         {
-            ['amount']=-1;
-            ['first']=192;
-            ['second']=171;
-         };
-         {
-            ['amount']=1;
-            ['first']=192;
-            ['second']=196;
-         };
-         {
-            ['amount']=-2;
-            ['first']=192;
-            ['second']=121;
-         };
-         {
-            ['amount']=-1;
-            ['first']=192;
-            ['second']=119;
-         };
-         {
-            ['amount']=-3;
-            ['first']=119;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-2;
-            ['first']=192;
-            ['second']=118;
-         };
-         {
-            ['amount']=-1;
-            ['first']=120;
-            ['second']=101;
-         };
-         {
-            ['amount']=-1;
-            ['first']=120;
-            ['second']=111;
-         };
-         {
-            ['amount']=-1;
-            ['first']=192;
-            ['second']=102;
-         };
-         {
-            ['amount']=-1;
-            ['first']=120;
-            ['second']=233;
-         };
-         {
-            ['amount']=-1;
-            ['first']=120;
-            ['second']=232;
-         };
-         {
-            ['amount']=-1;
-            ['first']=120;
-            ['second']=234;
-         };
-         {
-            ['amount']=-1;
-            ['first']=120;
-            ['second']=235;
-         };
-         {
-            ['amount']=-1;
-            ['first']=120;
-            ['second']=243;
-         };
-         {
-            ['amount']=-1;
-            ['first']=120;
-            ['second']=242;
-         };
-         {
-            ['amount']=-1;
-            ['first']=120;
-            ['second']=244;
-         };
-         {
-            ['amount']=-1;
-            ['first']=120;
-            ['second']=246;
-         };
-         {
-            ['amount']=-1;
-            ['first']=120;
-            ['second']=245;
-         };
-         {
-            ['amount']=-2;
-            ['first']=192;
-            ['second']=89;
-         };
-         {
-            ['amount']=-1;
-            ['first']=192;
-            ['second']=87;
-         };
-         {
-            ['amount']=-2;
-            ['first']=192;
-            ['second']=86;
-         };
-         {
-            ['amount']=-4;
-            ['first']=121;
-            ['second']=46;
-         };
-         {
-            ['amount']=-2;
-            ['first']=121;
-            ['second']=58;
-         };
-         {
-            ['amount']=-2;
-            ['first']=192;
-            ['second']=84;
-         };
-         {
-            ['amount']=1;
-            ['first']=192;
-            ['second']=65;
-         };
-         {
-            ['amount']=-1;
-            ['first']=192;
-            ['second']=45;
-         };
-         {
-            ['amount']=-3;
-            ['first']=187;
-            ['second']=221;
-         };
-         {
-            ['amount']=-4;
-            ['first']=121;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=196;
-            ['second']=45;
-         };
-         {
-            ['amount']=-1;
-            ['first']=187;
-            ['second']=193;
-         };
-         {
-            ['amount']=-1;
-            ['first']=187;
-            ['second']=194;
-         };
-         {
-            ['amount']=1;
-            ['first']=196;
-            ['second']=65;
-         };
-         {
-            ['amount']=-3;
-            ['first']=187;
-            ['second']=376;
-         };
-         {
-            ['amount']=-1;
-            ['first']=187;
-            ['second']=195;
-         };
-         {
-            ['amount']=-1;
-            ['first']=187;
-            ['second']=192;
-         };
-         {
-            ['amount']=-1;
-            ['first']=187;
-            ['second']=196;
-         };
-         {
-            ['amount']=-3;
-            ['first']=187;
-            ['second']=89;
-         };
-         {
-            ['amount']=-2;
-            ['first']=196;
-            ['second']=84;
-         };
-         {
-            ['amount']=-1;
-            ['first']=187;
-            ['second']=88;
-         };
-         {
-            ['amount']=-2;
-            ['first']=196;
-            ['second']=86;
-         };
-         {
-            ['amount']=-1;
-            ['first']=196;
-            ['second']=87;
-         };
-         {
-            ['amount']=-1;
-            ['first']=187;
-            ['second']=87;
-         };
-         {
-            ['amount']=-2;
-            ['first']=196;
-            ['second']=89;
-         };
-         {
-            ['amount']=-2;
-            ['first']=187;
-            ['second']=86;
-         };
-         {
-            ['amount']=-2;
-            ['first']=187;
-            ['second']=84;
-         };
-         {
-            ['amount']=-1;
-            ['first']=187;
-            ['second']=66;
-         };
-         {
-            ['amount']=-1;
-            ['first']=196;
-            ['second']=102;
-         };
-         {
-            ['amount']=-1;
-            ['first']=187;
-            ['second']=65;
-         };
-         {
-            ['amount']=-2;
-            ['first']=171;
-            ['second']=221;
-         };
-         {
-            ['amount']=-2;
-            ['first']=171;
-            ['second']=376;
-         };
-         {
-            ['amount']=2;
-            ['first']=171;
-            ['second']=198;
-         };
-         {
-            ['amount']=-2;
-            ['first']=196;
-            ['second']=118;
-         };
-         {
-            ['amount']=-1;
-            ['first']=196;
-            ['second']=119;
-         };
-         {
-            ['amount']=-2;
-            ['first']=196;
-            ['second']=121;
-         };
-         {
-            ['amount']=1;
-            ['first']=196;
-            ['second']=196;
-         };
-         {
-            ['amount']=-2;
-            ['first']=171;
-            ['second']=89;
-         };
-         {
-            ['amount']=-1;
-            ['first']=171;
-            ['second']=86;
-         };
-         {
-            ['amount']=-1;
-            ['first']=171;
-            ['second']=84;
-         };
-         {
-            ['amount']=-1;
-            ['first']=198;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=198;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=198;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=223;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=223;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=223;
-            ['second']=8220;
-         };
-         {
-            ['amount']=1;
-            ['first']=223;
-            ['second']=45;
-         };
-         {
-            ['amount']=-2;
-            ['first']=245;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=245;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-2;
-            ['first']=245;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=245;
-            ['second']=120;
-         };
-         {
-            ['amount']=1;
-            ['first']=245;
-            ['second']=45;
-         };
-         {
-            ['amount']=-2;
-            ['first']=246;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=246;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=196;
-            ['second']=171;
-         };
-         {
-            ['amount']=-2;
-            ['first']=246;
-            ['second']=8220;
-         };
-         {
-            ['amount']=1;
-            ['first']=196;
-            ['second']=192;
-         };
-         {
-            ['amount']=1;
-            ['first']=196;
-            ['second']=195;
-         };
-         {
-            ['amount']=-1;
-            ['first']=246;
-            ['second']=120;
-         };
-         {
-            ['amount']=-3;
-            ['first']=196;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-3;
-            ['first']=196;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-2;
-            ['first']=196;
-            ['second']=255;
-         };
-         {
-            ['amount']=-2;
-            ['first']=196;
-            ['second']=376;
-         };
-         {
-            ['amount']=1;
-            ['first']=196;
-            ['second']=8222;
-         };
-         {
-            ['amount']=1;
-            ['first']=196;
-            ['second']=194;
-         };
-         {
-            ['amount']=1;
-            ['first']=196;
-            ['second']=193;
-         };
-         {
-            ['amount']=1;
-            ['first']=246;
-            ['second']=45;
-         };
-         {
-            ['amount']=-2;
-            ['first']=244;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=244;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-2;
-            ['first']=244;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=244;
-            ['second']=120;
-         };
-         {
-            ['amount']=1;
-            ['first']=244;
-            ['second']=45;
-         };
-         {
-            ['amount']=-2;
-            ['first']=242;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-2;
-            ['first']=196;
-            ['second']=221;
-         };
-         {
-            ['amount']=-2;
-            ['first']=196;
-            ['second']=253;
-         };
-         {
-            ['amount']=-1;
-            ['first']=242;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-2;
-            ['first']=242;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=242;
-            ['second']=120;
-         };
-         {
-            ['amount']=1;
-            ['first']=242;
-            ['second']=45;
-         };
-         {
-            ['amount']=-2;
-            ['first']=243;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=243;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-2;
-            ['first']=243;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=243;
-            ['second']=120;
-         };
-         {
-            ['amount']=1;
-            ['first']=243;
-            ['second']=45;
-         };
-         {
-            ['amount']=-1;
-            ['first']=241;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=241;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-2;
-            ['first']=241;
-            ['second']=8220;
-         };
-         {
-            ['amount']=-1;
-            ['first']=214;
-            ['second']=221;
-         };
-         {
-            ['amount']=-2;
-            ['first']=214;
-            ['second']=8222;
-         };
-         {
-            ['amount']=-1;
-            ['first']=214;
-            ['second']=376;
-         };
-         {
-            ['amount']=-1;
-            ['first']=214;
-            ['second']=8220;
-         };
-         {
-            ['amount']=1;
-            ['first']=199;
-            ['second']=8221;
-         };
-         {
-            ['amount']=-1;
-            ['first']=214;
-            ['second']=89;
-         };
-         {
-            ['amount']=-2;
-            ['first']=214;
-            ['second']=88;
-         };
-         {
-            ['amount']=-1;
-            ['first']=214;
-            ['second']=46;
-         };
-         {
-            ['amount']=1;
-            ['first']=214;
-            ['second']=45;
-         };
-      };
-      ['kernings']={
-         {
-            ['count']=1000;
-         };
-      };
-   };
+   [0] = "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",
+   ["fnt"] = {
+      ["page"] = {
+         {
+            ["file"] = "BitstreamVeraSans_0.png",
+            ["id"] = 0,
+            ["charscount"] = 256,
+         },
+      },
+      ["info"] = {
+         {
+            ["spacing"] = "1,1",
+            ["italic"] = 0,
+            ["stretchH"] = 100,
+            ["outline"] = 0,
+            ["padding"] = "0,0,0,0",
+            ["charset"] = "",
+            ["bold"] = 0,
+            ["size"] = 32,
+            ["smooth"] = 1,
+            ["aa"] = 1,
+            ["face"] = "Bitstream Vera Sans",
+            ["unicode"] = 1,
+         },
+      },
+      ["char"] = {
+         {
+            ["yoffset"] = 30,
+            ["id"] = 32,
+            ["height"] = 1,
+            ["xoffset"] = -1,
+            ["x"] = 217,
+            ["y"] = 94,
+            ["chnl"] = 15,
+            ["width"] = 3,
+            ["page"] = 0,
+            ["xadvance"] = 9,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 33,
+            ["height"] = 20,
+            ["xoffset"] = 4,
+            ["x"] = 508,
+            ["y"] = 92,
+            ["chnl"] = 15,
+            ["width"] = 3,
+            ["page"] = 0,
+            ["xadvance"] = 11,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 34,
+            ["height"] = 7,
+            ["xoffset"] = 2,
+            ["x"] = 315,
+            ["y"] = 131,
+            ["chnl"] = 15,
+            ["width"] = 8,
+            ["page"] = 0,
+            ["xadvance"] = 12,
+         },
+         {
+            ["yoffset"] = 7,
+            ["id"] = 35,
+            ["height"] = 18,
+            ["xoffset"] = 2,
+            ["x"] = 68,
+            ["y"] = 119,
+            ["chnl"] = 15,
+            ["width"] = 19,
+            ["page"] = 0,
+            ["xadvance"] = 23,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 36,
+            ["height"] = 24,
+            ["xoffset"] = 2,
+            ["x"] = 254,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 37,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 167,
+            ["y"] = 75,
+            ["chnl"] = 15,
+            ["width"] = 24,
+            ["page"] = 0,
+            ["xadvance"] = 26,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 38,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 282,
+            ["y"] = 73,
+            ["chnl"] = 15,
+            ["width"] = 19,
+            ["page"] = 0,
+            ["xadvance"] = 21,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 39,
+            ["height"] = 7,
+            ["xoffset"] = 2,
+            ["x"] = 506,
+            ["y"] = 113,
+            ["chnl"] = 15,
+            ["width"] = 3,
+            ["page"] = 0,
+            ["xadvance"] = 7,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 40,
+            ["height"] = 24,
+            ["xoffset"] = 2,
+            ["x"] = 276,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 7,
+            ["page"] = 0,
+            ["xadvance"] = 11,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 41,
+            ["height"] = 24,
+            ["xoffset"] = 2,
+            ["x"] = 284,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 7,
+            ["page"] = 0,
+            ["xadvance"] = 11,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 42,
+            ["height"] = 12,
+            ["xoffset"] = 1,
+            ["x"] = 125,
+            ["y"] = 135,
+            ["chnl"] = 15,
+            ["width"] = 12,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 9,
+            ["id"] = 43,
+            ["height"] = 16,
+            ["xoffset"] = 2,
+            ["x"] = 160,
+            ["y"] = 117,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 23,
+         },
+         {
+            ["yoffset"] = 22,
+            ["id"] = 44,
+            ["height"] = 6,
+            ["xoffset"] = 2,
+            ["x"] = 383,
+            ["y"] = 130,
+            ["chnl"] = 15,
+            ["width"] = 4,
+            ["page"] = 0,
+            ["xadvance"] = 9,
+         },
+         {
+            ["yoffset"] = 17,
+            ["id"] = 45,
+            ["height"] = 2,
+            ["xoffset"] = 1,
+            ["x"] = 115,
+            ["y"] = 150,
+            ["chnl"] = 15,
+            ["width"] = 8,
+            ["page"] = 0,
+            ["xadvance"] = 10,
+         },
+         {
+            ["yoffset"] = 22,
+            ["id"] = 46,
+            ["height"] = 3,
+            ["xoffset"] = 3,
+            ["x"] = 10,
+            ["y"] = 156,
+            ["chnl"] = 15,
+            ["width"] = 3,
+            ["page"] = 0,
+            ["xadvance"] = 9,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 47,
+            ["height"] = 22,
+            ["xoffset"] = 0,
+            ["x"] = 178,
+            ["y"] = 52,
+            ["chnl"] = 15,
+            ["width"] = 9,
+            ["page"] = 0,
+            ["xadvance"] = 9,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 48,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 230,
+            ["y"] = 94,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 49,
+            ["height"] = 20,
+            ["xoffset"] = 3,
+            ["x"] = 490,
+            ["y"] = 92,
+            ["chnl"] = 15,
+            ["width"] = 12,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 50,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 380,
+            ["y"] = 93,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 51,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 394,
+            ["y"] = 93,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 52,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 134,
+            ["y"] = 96,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 53,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 408,
+            ["y"] = 93,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 54,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 322,
+            ["y"] = 93,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 55,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 352,
+            ["y"] = 93,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 56,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 198,
+            ["y"] = 96,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 57,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 214,
+            ["y"] = 96,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 11,
+            ["id"] = 58,
+            ["height"] = 14,
+            ["xoffset"] = 3,
+            ["x"] = 502,
+            ["y"] = 113,
+            ["chnl"] = 15,
+            ["width"] = 3,
+            ["page"] = 0,
+            ["xadvance"] = 9,
+         },
+         {
+            ["yoffset"] = 11,
+            ["id"] = 59,
+            ["height"] = 17,
+            ["xoffset"] = 2,
+            ["x"] = 136,
+            ["y"] = 117,
+            ["chnl"] = 15,
+            ["width"] = 4,
+            ["page"] = 0,
+            ["xadvance"] = 9,
+         },
+         {
+            ["yoffset"] = 9,
+            ["id"] = 60,
+            ["height"] = 14,
+            ["xoffset"] = 2,
+            ["x"] = 0,
+            ["y"] = 141,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 23,
+         },
+         {
+            ["yoffset"] = 13,
+            ["id"] = 61,
+            ["height"] = 7,
+            ["xoffset"] = 2,
+            ["x"] = 278,
+            ["y"] = 131,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 23,
+         },
+         {
+            ["yoffset"] = 9,
+            ["id"] = 62,
+            ["height"] = 14,
+            ["xoffset"] = 2,
+            ["x"] = 19,
+            ["y"] = 141,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 23,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 63,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 0,
+            ["y"] = 120,
+            ["chnl"] = 15,
+            ["width"] = 11,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 6,
+            ["id"] = 64,
+            ["height"] = 24,
+            ["xoffset"] = 1,
+            ["x"] = 210,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 24,
+            ["page"] = 0,
+            ["xadvance"] = 27,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 65,
+            ["height"] = 20,
+            ["xoffset"] = 0,
+            ["x"] = 362,
+            ["y"] = 72,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 18,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 66,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 182,
+            ["y"] = 96,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 19,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 67,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 456,
+            ["y"] = 71,
+            ["chnl"] = 15,
+            ["width"] = 17,
+            ["page"] = 0,
+            ["xadvance"] = 19,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 68,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 381,
+            ["y"] = 72,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 21,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 69,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 292,
+            ["y"] = 94,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 70,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 477,
+            ["y"] = 92,
+            ["chnl"] = 15,
+            ["width"] = 12,
+            ["page"] = 0,
+            ["xadvance"] = 16,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 71,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 400,
+            ["y"] = 72,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 21,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 72,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 17,
+            ["y"] = 99,
+            ["chnl"] = 15,
+            ["width"] = 16,
+            ["page"] = 0,
+            ["xadvance"] = 20,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 73,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 503,
+            ["y"] = 92,
+            ["chnl"] = 15,
+            ["width"] = 4,
+            ["page"] = 0,
+            ["xadvance"] = 8,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 74,
+            ["height"] = 25,
+            ["xoffset"] = -2,
+            ["x"] = 175,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 8,
+            ["page"] = 0,
+            ["xadvance"] = 8,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 75,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 85,
+            ["y"] = 98,
+            ["chnl"] = 15,
+            ["width"] = 16,
+            ["page"] = 0,
+            ["xadvance"] = 18,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 76,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 422,
+            ["y"] = 92,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 15,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 77,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 342,
+            ["y"] = 72,
+            ["chnl"] = 15,
+            ["width"] = 19,
+            ["page"] = 0,
+            ["xadvance"] = 23,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 78,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 51,
+            ["y"] = 99,
+            ["chnl"] = 15,
+            ["width"] = 16,
+            ["page"] = 0,
+            ["xadvance"] = 20,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 79,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 322,
+            ["y"] = 72,
+            ["chnl"] = 15,
+            ["width"] = 19,
+            ["page"] = 0,
+            ["xadvance"] = 21,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 80,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 262,
+            ["y"] = 94,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 16,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 81,
+            ["height"] = 23,
+            ["xoffset"] = 1,
+            ["x"] = 303,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 19,
+            ["page"] = 0,
+            ["xadvance"] = 21,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 82,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 0,
+            ["y"] = 99,
+            ["chnl"] = 15,
+            ["width"] = 16,
+            ["page"] = 0,
+            ["xadvance"] = 19,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 83,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 118,
+            ["y"] = 96,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 84,
+            ["height"] = 20,
+            ["xoffset"] = 0,
+            ["x"] = 492,
+            ["y"] = 71,
+            ["chnl"] = 15,
+            ["width"] = 17,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 85,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 68,
+            ["y"] = 98,
+            ["chnl"] = 15,
+            ["width"] = 16,
+            ["page"] = 0,
+            ["xadvance"] = 20,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 86,
+            ["height"] = 20,
+            ["xoffset"] = 0,
+            ["x"] = 419,
+            ["y"] = 71,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 18,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 87,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 141,
+            ["y"] = 75,
+            ["chnl"] = 15,
+            ["width"] = 25,
+            ["page"] = 0,
+            ["xadvance"] = 27,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 88,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 494,
+            ["y"] = 49,
+            ["chnl"] = 15,
+            ["width"] = 17,
+            ["page"] = 0,
+            ["xadvance"] = 19,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 89,
+            ["height"] = 20,
+            ["xoffset"] = 0,
+            ["x"] = 474,
+            ["y"] = 71,
+            ["chnl"] = 15,
+            ["width"] = 17,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 90,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 438,
+            ["y"] = 71,
+            ["chnl"] = 15,
+            ["width"] = 17,
+            ["page"] = 0,
+            ["xadvance"] = 19,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 91,
+            ["height"] = 24,
+            ["xoffset"] = 2,
+            ["x"] = 292,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 6,
+            ["page"] = 0,
+            ["xadvance"] = 11,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 92,
+            ["height"] = 22,
+            ["xoffset"] = 0,
+            ["x"] = 168,
+            ["y"] = 52,
+            ["chnl"] = 15,
+            ["width"] = 9,
+            ["page"] = 0,
+            ["xadvance"] = 9,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 93,
+            ["height"] = 24,
+            ["xoffset"] = 2,
+            ["x"] = 268,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 7,
+            ["page"] = 0,
+            ["xadvance"] = 11,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 94,
+            ["height"] = 7,
+            ["xoffset"] = 3,
+            ["x"] = 297,
+            ["y"] = 131,
+            ["chnl"] = 15,
+            ["width"] = 17,
+            ["page"] = 0,
+            ["xadvance"] = 23,
+         },
+         {
+            ["yoffset"] = 29,
+            ["id"] = 95,
+            ["height"] = 2,
+            ["xoffset"] = -1,
+            ["x"] = 65,
+            ["y"] = 154,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 96,
+            ["height"] = 5,
+            ["xoffset"] = 2,
+            ["x"] = 427,
+            ["y"] = 130,
+            ["chnl"] = 15,
+            ["width"] = 7,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 97,
+            ["height"] = 15,
+            ["xoffset"] = 1,
+            ["x"] = 420,
+            ["y"] = 114,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 98,
+            ["height"] = 21,
+            ["xoffset"] = 2,
+            ["x"] = 308,
+            ["y"] = 50,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 99,
+            ["height"] = 15,
+            ["xoffset"] = 1,
+            ["x"] = 448,
+            ["y"] = 113,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 15,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 100,
+            ["height"] = 21,
+            ["xoffset"] = 1,
+            ["x"] = 413,
+            ["y"] = 49,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 101,
+            ["height"] = 15,
+            ["xoffset"] = 1,
+            ["x"] = 345,
+            ["y"] = 114,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 102,
+            ["height"] = 21,
+            ["xoffset"] = 0,
+            ["x"] = 470,
+            ["y"] = 49,
+            ["chnl"] = 15,
+            ["width"] = 10,
+            ["page"] = 0,
+            ["xadvance"] = 10,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 103,
+            ["height"] = 21,
+            ["xoffset"] = 1,
+            ["x"] = 383,
+            ["y"] = 50,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 104,
+            ["height"] = 21,
+            ["xoffset"] = 2,
+            ["x"] = 442,
+            ["y"] = 49,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 105,
+            ["height"] = 21,
+            ["xoffset"] = 2,
+            ["x"] = 490,
+            ["y"] = 49,
+            ["chnl"] = 15,
+            ["width"] = 3,
+            ["page"] = 0,
+            ["xadvance"] = 8,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 106,
+            ["height"] = 27,
+            ["xoffset"] = -1,
+            ["x"] = 77,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 6,
+            ["page"] = 0,
+            ["xadvance"] = 8,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 107,
+            ["height"] = 21,
+            ["xoffset"] = 2,
+            ["x"] = 338,
+            ["y"] = 50,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 16,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 108,
+            ["height"] = 21,
+            ["xoffset"] = 2,
+            ["x"] = 506,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 3,
+            ["page"] = 0,
+            ["xadvance"] = 8,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 109,
+            ["height"] = 15,
+            ["xoffset"] = 2,
+            ["x"] = 250,
+            ["y"] = 115,
+            ["chnl"] = 15,
+            ["width"] = 22,
+            ["page"] = 0,
+            ["xadvance"] = 26,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 110,
+            ["height"] = 15,
+            ["xoffset"] = 2,
+            ["x"] = 406,
+            ["y"] = 114,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 111,
+            ["height"] = 15,
+            ["xoffset"] = 1,
+            ["x"] = 361,
+            ["y"] = 114,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 112,
+            ["height"] = 21,
+            ["xoffset"] = 2,
+            ["x"] = 323,
+            ["y"] = 50,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 113,
+            ["height"] = 21,
+            ["xoffset"] = 1,
+            ["x"] = 293,
+            ["y"] = 51,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 114,
+            ["height"] = 15,
+            ["xoffset"] = 2,
+            ["x"] = 488,
+            ["y"] = 113,
+            ["chnl"] = 15,
+            ["width"] = 9,
+            ["page"] = 0,
+            ["xadvance"] = 11,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 115,
+            ["height"] = 15,
+            ["xoffset"] = 1,
+            ["x"] = 475,
+            ["y"] = 113,
+            ["chnl"] = 15,
+            ["width"] = 12,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 6,
+            ["id"] = 116,
+            ["height"] = 19,
+            ["xoffset"] = 0,
+            ["x"] = 57,
+            ["y"] = 120,
+            ["chnl"] = 15,
+            ["width"] = 10,
+            ["page"] = 0,
+            ["xadvance"] = 11,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 117,
+            ["height"] = 15,
+            ["xoffset"] = 2,
+            ["x"] = 434,
+            ["y"] = 113,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 118,
+            ["height"] = 15,
+            ["xoffset"] = 1,
+            ["x"] = 391,
+            ["y"] = 114,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 16,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 119,
+            ["height"] = 15,
+            ["xoffset"] = 1,
+            ["x"] = 273,
+            ["y"] = 115,
+            ["chnl"] = 15,
+            ["width"] = 20,
+            ["page"] = 0,
+            ["xadvance"] = 22,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 120,
+            ["height"] = 15,
+            ["xoffset"] = 1,
+            ["x"] = 376,
+            ["y"] = 114,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 16,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 121,
+            ["height"] = 21,
+            ["xoffset"] = 1,
+            ["x"] = 278,
+            ["y"] = 51,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 16,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 122,
+            ["height"] = 15,
+            ["xoffset"] = 1,
+            ["x"] = 462,
+            ["y"] = 113,
+            ["chnl"] = 15,
+            ["width"] = 12,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 123,
+            ["height"] = 25,
+            ["xoffset"] = 3,
+            ["x"] = 142,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 11,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 124,
+            ["height"] = 27,
+            ["xoffset"] = 3,
+            ["x"] = 84,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 3,
+            ["page"] = 0,
+            ["xadvance"] = 9,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 125,
+            ["height"] = 25,
+            ["xoffset"] = 3,
+            ["x"] = 154,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 11,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 15,
+            ["id"] = 126,
+            ["height"] = 4,
+            ["xoffset"] = 2,
+            ["x"] = 449,
+            ["y"] = 129,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 23,
+         },
+         {
+            ["yoffset"] = 30,
+            ["id"] = 160,
+            ["height"] = 1,
+            ["xoffset"] = -1,
+            ["x"] = 213,
+            ["y"] = 73,
+            ["chnl"] = 15,
+            ["width"] = 3,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 161,
+            ["height"] = 20,
+            ["xoffset"] = 4,
+            ["x"] = 34,
+            ["y"] = 120,
+            ["chnl"] = 15,
+            ["width"] = 3,
+            ["page"] = 0,
+            ["xadvance"] = 11,
+         },
+         {
+            ["yoffset"] = 6,
+            ["id"] = 162,
+            ["height"] = 23,
+            ["xoffset"] = 2,
+            ["x"] = 392,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 12,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 163,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 277,
+            ["y"] = 94,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 9,
+            ["id"] = 164,
+            ["height"] = 15,
+            ["xoffset"] = 1,
+            ["x"] = 313,
+            ["y"] = 115,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 165,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 150,
+            ["y"] = 96,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 6,
+            ["id"] = 166,
+            ["height"] = 24,
+            ["xoffset"] = 3,
+            ["x"] = 299,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 3,
+            ["page"] = 0,
+            ["xadvance"] = 9,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 167,
+            ["height"] = 23,
+            ["xoffset"] = 1,
+            ["x"] = 379,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 12,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 168,
+            ["height"] = 3,
+            ["xoffset"] = 2,
+            ["x"] = 0,
+            ["y"] = 156,
+            ["chnl"] = 15,
+            ["width"] = 9,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 169,
+            ["height"] = 20,
+            ["xoffset"] = 3,
+            ["x"] = 239,
+            ["y"] = 73,
+            ["chnl"] = 15,
+            ["width"] = 21,
+            ["page"] = 0,
+            ["xadvance"] = 27,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 170,
+            ["height"] = 13,
+            ["xoffset"] = 1,
+            ["x"] = 68,
+            ["y"] = 138,
+            ["chnl"] = 15,
+            ["width"] = 10,
+            ["page"] = 0,
+            ["xadvance"] = 13,
+         },
+         {
+            ["yoffset"] = 11,
+            ["id"] = 171,
+            ["height"] = 12,
+            ["xoffset"] = 2,
+            ["x"] = 112,
+            ["y"] = 137,
+            ["chnl"] = 15,
+            ["width"] = 12,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 14,
+            ["id"] = 172,
+            ["height"] = 8,
+            ["xoffset"] = 2,
+            ["x"] = 240,
+            ["y"] = 133,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 23,
+         },
+         {
+            ["yoffset"] = 17,
+            ["id"] = 173,
+            ["height"] = 2,
+            ["xoffset"] = 1,
+            ["x"] = 106,
+            ["y"] = 150,
+            ["chnl"] = 15,
+            ["width"] = 8,
+            ["page"] = 0,
+            ["xadvance"] = 10,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 174,
+            ["height"] = 20,
+            ["xoffset"] = 3,
+            ["x"] = 217,
+            ["y"] = 73,
+            ["chnl"] = 15,
+            ["width"] = 21,
+            ["page"] = 0,
+            ["xadvance"] = 27,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 175,
+            ["height"] = 2,
+            ["xoffset"] = 2,
+            ["x"] = 96,
+            ["y"] = 151,
+            ["chnl"] = 15,
+            ["width"] = 9,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 176,
+            ["height"] = 8,
+            ["xoffset"] = 2,
+            ["x"] = 259,
+            ["y"] = 131,
+            ["chnl"] = 15,
+            ["width"] = 9,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 8,
+            ["id"] = 177,
+            ["height"] = 17,
+            ["xoffset"] = 2,
+            ["x"] = 88,
+            ["y"] = 119,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 23,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 178,
+            ["height"] = 11,
+            ["xoffset"] = 1,
+            ["x"] = 154,
+            ["y"] = 134,
+            ["chnl"] = 15,
+            ["width"] = 9,
+            ["page"] = 0,
+            ["xadvance"] = 11,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 179,
+            ["height"] = 11,
+            ["xoffset"] = 1,
+            ["x"] = 174,
+            ["y"] = 134,
+            ["chnl"] = 15,
+            ["width"] = 9,
+            ["page"] = 0,
+            ["xadvance"] = 11,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 180,
+            ["height"] = 5,
+            ["xoffset"] = 5,
+            ["x"] = 442,
+            ["y"] = 129,
+            ["chnl"] = 15,
+            ["width"] = 6,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 181,
+            ["height"] = 21,
+            ["xoffset"] = 2,
+            ["x"] = 262,
+            ["y"] = 51,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 182,
+            ["height"] = 23,
+            ["xoffset"] = 2,
+            ["x"] = 365,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 14,
+            ["id"] = 183,
+            ["height"] = 3,
+            ["xoffset"] = 3,
+            ["x"] = 506,
+            ["y"] = 121,
+            ["chnl"] = 15,
+            ["width"] = 3,
+            ["page"] = 0,
+            ["xadvance"] = 9,
+         },
+         {
+            ["yoffset"] = 25,
+            ["id"] = 184,
+            ["height"] = 5,
+            ["xoffset"] = 3,
+            ["x"] = 419,
+            ["y"] = 130,
+            ["chnl"] = 15,
+            ["width"] = 7,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 185,
+            ["height"] = 11,
+            ["xoffset"] = 1,
+            ["x"] = 164,
+            ["y"] = 134,
+            ["chnl"] = 15,
+            ["width"] = 9,
+            ["page"] = 0,
+            ["xadvance"] = 11,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 186,
+            ["height"] = 13,
+            ["xoffset"] = 1,
+            ["x"] = 56,
+            ["y"] = 140,
+            ["chnl"] = 15,
+            ["width"] = 11,
+            ["page"] = 0,
+            ["xadvance"] = 13,
+         },
+         {
+            ["yoffset"] = 11,
+            ["id"] = 187,
+            ["height"] = 12,
+            ["xoffset"] = 2,
+            ["x"] = 98,
+            ["y"] = 137,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 188,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 89,
+            ["y"] = 77,
+            ["chnl"] = 15,
+            ["width"] = 25,
+            ["page"] = 0,
+            ["xadvance"] = 26,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 189,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 192,
+            ["y"] = 75,
+            ["chnl"] = 15,
+            ["width"] = 24,
+            ["page"] = 0,
+            ["xadvance"] = 26,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 190,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 63,
+            ["y"] = 77,
+            ["chnl"] = 15,
+            ["width"] = 25,
+            ["page"] = 0,
+            ["xadvance"] = 26,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 191,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 12,
+            ["y"] = 120,
+            ["chnl"] = 15,
+            ["width"] = 11,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 192,
+            ["height"] = 25,
+            ["xoffset"] = 0,
+            ["x"] = 203,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 18,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 193,
+            ["height"] = 25,
+            ["xoffset"] = 0,
+            ["x"] = 298,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 18,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 194,
+            ["height"] = 25,
+            ["xoffset"] = 0,
+            ["x"] = 222,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 18,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 195,
+            ["height"] = 25,
+            ["xoffset"] = 0,
+            ["x"] = 241,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 18,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 196,
+            ["height"] = 25,
+            ["xoffset"] = 0,
+            ["x"] = 260,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 18,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 197,
+            ["height"] = 25,
+            ["xoffset"] = 0,
+            ["x"] = 279,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 18,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 198,
+            ["height"] = 20,
+            ["xoffset"] = 0,
+            ["x"] = 115,
+            ["y"] = 75,
+            ["chnl"] = 15,
+            ["width"] = 25,
+            ["page"] = 0,
+            ["xadvance"] = 26,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 199,
+            ["height"] = 25,
+            ["xoffset"] = 1,
+            ["x"] = 336,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 17,
+            ["page"] = 0,
+            ["xadvance"] = 19,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 200,
+            ["height"] = 25,
+            ["xoffset"] = 2,
+            ["x"] = 82,
+            ["y"] = 28,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 201,
+            ["height"] = 25,
+            ["xoffset"] = 2,
+            ["x"] = 67,
+            ["y"] = 28,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 202,
+            ["height"] = 25,
+            ["xoffset"] = 2,
+            ["x"] = 97,
+            ["y"] = 27,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 203,
+            ["height"] = 25,
+            ["xoffset"] = 2,
+            ["x"] = 112,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 204,
+            ["height"] = 25,
+            ["xoffset"] = 1,
+            ["x"] = 199,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 5,
+            ["page"] = 0,
+            ["xadvance"] = 8,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 205,
+            ["height"] = 25,
+            ["xoffset"] = 2,
+            ["x"] = 193,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 5,
+            ["page"] = 0,
+            ["xadvance"] = 8,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 206,
+            ["height"] = 25,
+            ["xoffset"] = 0,
+            ["x"] = 184,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 8,
+            ["page"] = 0,
+            ["xadvance"] = 8,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 207,
+            ["height"] = 25,
+            ["xoffset"] = 0,
+            ["x"] = 166,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 8,
+            ["page"] = 0,
+            ["xadvance"] = 8,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 208,
+            ["height"] = 20,
+            ["xoffset"] = 0,
+            ["x"] = 261,
+            ["y"] = 73,
+            ["chnl"] = 15,
+            ["width"] = 20,
+            ["page"] = 0,
+            ["xadvance"] = 21,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 209,
+            ["height"] = 25,
+            ["xoffset"] = 2,
+            ["x"] = 34,
+            ["y"] = 29,
+            ["chnl"] = 15,
+            ["width"] = 16,
+            ["page"] = 0,
+            ["xadvance"] = 20,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 210,
+            ["height"] = 25,
+            ["xoffset"] = 1,
+            ["x"] = 183,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 19,
+            ["page"] = 0,
+            ["xadvance"] = 21,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 211,
+            ["height"] = 25,
+            ["xoffset"] = 1,
+            ["x"] = 163,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 19,
+            ["page"] = 0,
+            ["xadvance"] = 21,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 212,
+            ["height"] = 25,
+            ["xoffset"] = 1,
+            ["x"] = 143,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 19,
+            ["page"] = 0,
+            ["xadvance"] = 21,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 213,
+            ["height"] = 25,
+            ["xoffset"] = 1,
+            ["x"] = 123,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 19,
+            ["page"] = 0,
+            ["xadvance"] = 21,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 214,
+            ["height"] = 25,
+            ["xoffset"] = 1,
+            ["x"] = 103,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 19,
+            ["page"] = 0,
+            ["xadvance"] = 21,
+         },
+         {
+            ["yoffset"] = 9,
+            ["id"] = 215,
+            ["height"] = 15,
+            ["xoffset"] = 4,
+            ["x"] = 329,
+            ["y"] = 114,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 23,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 216,
+            ["height"] = 22,
+            ["xoffset"] = 1,
+            ["x"] = 405,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 19,
+            ["page"] = 0,
+            ["xadvance"] = 21,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 217,
+            ["height"] = 25,
+            ["xoffset"] = 2,
+            ["x"] = 17,
+            ["y"] = 29,
+            ["chnl"] = 15,
+            ["width"] = 16,
+            ["page"] = 0,
+            ["xadvance"] = 20,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 218,
+            ["height"] = 25,
+            ["xoffset"] = 2,
+            ["x"] = 0,
+            ["y"] = 29,
+            ["chnl"] = 15,
+            ["width"] = 16,
+            ["page"] = 0,
+            ["xadvance"] = 20,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 219,
+            ["height"] = 25,
+            ["xoffset"] = 2,
+            ["x"] = 479,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 16,
+            ["page"] = 0,
+            ["xadvance"] = 20,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 220,
+            ["height"] = 25,
+            ["xoffset"] = 2,
+            ["x"] = 462,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 16,
+            ["page"] = 0,
+            ["xadvance"] = 20,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 221,
+            ["height"] = 25,
+            ["xoffset"] = 0,
+            ["x"] = 408,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 17,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 222,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 337,
+            ["y"] = 93,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 16,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 223,
+            ["height"] = 21,
+            ["xoffset"] = 2,
+            ["x"] = 398,
+            ["y"] = 50,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 224,
+            ["height"] = 22,
+            ["xoffset"] = 1,
+            ["x"] = 86,
+            ["y"] = 54,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 225,
+            ["height"] = 22,
+            ["xoffset"] = 1,
+            ["x"] = 30,
+            ["y"] = 55,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 226,
+            ["height"] = 22,
+            ["xoffset"] = 1,
+            ["x"] = 44,
+            ["y"] = 55,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 227,
+            ["height"] = 21,
+            ["xoffset"] = 1,
+            ["x"] = 456,
+            ["y"] = 49,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 228,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 436,
+            ["y"] = 92,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 2,
+            ["id"] = 229,
+            ["height"] = 23,
+            ["xoffset"] = 1,
+            ["x"] = 337,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 230,
+            ["height"] = 15,
+            ["xoffset"] = 1,
+            ["x"] = 225,
+            ["y"] = 117,
+            ["chnl"] = 15,
+            ["width"] = 24,
+            ["page"] = 0,
+            ["xadvance"] = 27,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 231,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 366,
+            ["y"] = 93,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 15,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 232,
+            ["height"] = 22,
+            ["xoffset"] = 1,
+            ["x"] = 459,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 233,
+            ["height"] = 22,
+            ["xoffset"] = 1,
+            ["x"] = 475,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 234,
+            ["height"] = 22,
+            ["xoffset"] = 1,
+            ["x"] = 443,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 235,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 166,
+            ["y"] = 96,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 236,
+            ["height"] = 22,
+            ["xoffset"] = -1,
+            ["x"] = 198,
+            ["y"] = 52,
+            ["chnl"] = 15,
+            ["width"] = 7,
+            ["page"] = 0,
+            ["xadvance"] = 8,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 237,
+            ["height"] = 22,
+            ["xoffset"] = 2,
+            ["x"] = 206,
+            ["y"] = 52,
+            ["chnl"] = 15,
+            ["width"] = 6,
+            ["page"] = 0,
+            ["xadvance"] = 8,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 238,
+            ["height"] = 22,
+            ["xoffset"] = -1,
+            ["x"] = 188,
+            ["y"] = 52,
+            ["chnl"] = 15,
+            ["width"] = 9,
+            ["page"] = 0,
+            ["xadvance"] = 8,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 239,
+            ["height"] = 20,
+            ["xoffset"] = -1,
+            ["x"] = 24,
+            ["y"] = 120,
+            ["chnl"] = 15,
+            ["width"] = 9,
+            ["page"] = 0,
+            ["xadvance"] = 8,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 240,
+            ["height"] = 21,
+            ["xoffset"] = 1,
+            ["x"] = 368,
+            ["y"] = 50,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 241,
+            ["height"] = 21,
+            ["xoffset"] = 2,
+            ["x"] = 428,
+            ["y"] = 49,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 242,
+            ["height"] = 22,
+            ["xoffset"] = 1,
+            ["x"] = 15,
+            ["y"] = 55,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 243,
+            ["height"] = 22,
+            ["xoffset"] = 1,
+            ["x"] = 0,
+            ["y"] = 55,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 244,
+            ["height"] = 22,
+            ["xoffset"] = 1,
+            ["x"] = 491,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 245,
+            ["height"] = 21,
+            ["xoffset"] = 1,
+            ["x"] = 353,
+            ["y"] = 50,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 246,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 307,
+            ["y"] = 94,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 11,
+            ["id"] = 247,
+            ["height"] = 12,
+            ["xoffset"] = 2,
+            ["x"] = 79,
+            ["y"] = 138,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 23,
+         },
+         {
+            ["yoffset"] = 9,
+            ["id"] = 248,
+            ["height"] = 17,
+            ["xoffset"] = 1,
+            ["x"] = 107,
+            ["y"] = 119,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 249,
+            ["height"] = 22,
+            ["xoffset"] = 2,
+            ["x"] = 128,
+            ["y"] = 52,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 250,
+            ["height"] = 22,
+            ["xoffset"] = 2,
+            ["x"] = 114,
+            ["y"] = 52,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 251,
+            ["height"] = 22,
+            ["xoffset"] = 2,
+            ["x"] = 100,
+            ["y"] = 53,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 252,
+            ["height"] = 20,
+            ["xoffset"] = 2,
+            ["x"] = 450,
+            ["y"] = 92,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 253,
+            ["height"] = 28,
+            ["xoffset"] = 1,
+            ["x"] = 0,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 16,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 254,
+            ["height"] = 27,
+            ["xoffset"] = 2,
+            ["x"] = 62,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 255,
+            ["height"] = 26,
+            ["xoffset"] = 1,
+            ["x"] = 88,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 16,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 262,
+            ["height"] = 25,
+            ["xoffset"] = 1,
+            ["x"] = 426,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 17,
+            ["page"] = 0,
+            ["xadvance"] = 19,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 263,
+            ["height"] = 22,
+            ["xoffset"] = 1,
+            ["x"] = 72,
+            ["y"] = 54,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 15,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 268,
+            ["height"] = 25,
+            ["xoffset"] = 1,
+            ["x"] = 444,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 17,
+            ["page"] = 0,
+            ["xadvance"] = 19,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 269,
+            ["height"] = 22,
+            ["xoffset"] = 1,
+            ["x"] = 58,
+            ["y"] = 54,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 15,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 273,
+            ["height"] = 21,
+            ["xoffset"] = 1,
+            ["x"] = 213,
+            ["y"] = 51,
+            ["chnl"] = 15,
+            ["width"] = 16,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 286,
+            ["height"] = 25,
+            ["xoffset"] = 1,
+            ["x"] = 317,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 21,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 287,
+            ["height"] = 28,
+            ["xoffset"] = 1,
+            ["x"] = 15,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 304,
+            ["height"] = 25,
+            ["xoffset"] = 2,
+            ["x"] = 205,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 4,
+            ["page"] = 0,
+            ["xadvance"] = 8,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 305,
+            ["height"] = 15,
+            ["xoffset"] = 2,
+            ["x"] = 498,
+            ["y"] = 113,
+            ["chnl"] = 15,
+            ["width"] = 3,
+            ["page"] = 0,
+            ["xadvance"] = 8,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 321,
+            ["height"] = 20,
+            ["xoffset"] = 0,
+            ["x"] = 246,
+            ["y"] = 94,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 15,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 322,
+            ["height"] = 21,
+            ["xoffset"] = 0,
+            ["x"] = 481,
+            ["y"] = 49,
+            ["chnl"] = 15,
+            ["width"] = 8,
+            ["page"] = 0,
+            ["xadvance"] = 8,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 338,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 35,
+            ["y"] = 78,
+            ["chnl"] = 15,
+            ["width"] = 27,
+            ["page"] = 0,
+            ["xadvance"] = 29,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 339,
+            ["height"] = 15,
+            ["xoffset"] = 1,
+            ["x"] = 198,
+            ["y"] = 117,
+            ["chnl"] = 15,
+            ["width"] = 26,
+            ["page"] = 0,
+            ["xadvance"] = 28,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 350,
+            ["height"] = 25,
+            ["xoffset"] = 1,
+            ["x"] = 51,
+            ["y"] = 28,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 10,
+            ["id"] = 351,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 464,
+            ["y"] = 92,
+            ["chnl"] = 15,
+            ["width"] = 12,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 352,
+            ["height"] = 25,
+            ["xoffset"] = 1,
+            ["x"] = 496,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 353,
+            ["height"] = 22,
+            ["xoffset"] = 1,
+            ["x"] = 155,
+            ["y"] = 52,
+            ["chnl"] = 15,
+            ["width"] = 12,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 376,
+            ["height"] = 25,
+            ["xoffset"] = 0,
+            ["x"] = 354,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 17,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 0,
+            ["id"] = 381,
+            ["height"] = 25,
+            ["xoffset"] = 1,
+            ["x"] = 372,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 17,
+            ["page"] = 0,
+            ["xadvance"] = 19,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 382,
+            ["height"] = 22,
+            ["xoffset"] = 1,
+            ["x"] = 142,
+            ["y"] = 52,
+            ["chnl"] = 15,
+            ["width"] = 12,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 402,
+            ["height"] = 27,
+            ["xoffset"] = 0,
+            ["x"] = 44,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 17,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 710,
+            ["height"] = 5,
+            ["xoffset"] = 2,
+            ["x"] = 399,
+            ["y"] = 130,
+            ["chnl"] = 15,
+            ["width"] = 9,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 711,
+            ["height"] = 5,
+            ["xoffset"] = 2,
+            ["x"] = 409,
+            ["y"] = 130,
+            ["chnl"] = 15,
+            ["width"] = 9,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 728,
+            ["height"] = 4,
+            ["xoffset"] = 2,
+            ["x"] = 468,
+            ["y"] = 129,
+            ["chnl"] = 15,
+            ["width"] = 9,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 729,
+            ["height"] = 3,
+            ["xoffset"] = 5,
+            ["x"] = 14,
+            ["y"] = 156,
+            ["chnl"] = 15,
+            ["width"] = 3,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 2,
+            ["id"] = 730,
+            ["height"] = 7,
+            ["xoffset"] = 3,
+            ["x"] = 324,
+            ["y"] = 131,
+            ["chnl"] = 15,
+            ["width"] = 8,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 25,
+            ["id"] = 731,
+            ["height"] = 5,
+            ["xoffset"] = 4,
+            ["x"] = 435,
+            ["y"] = 129,
+            ["chnl"] = 15,
+            ["width"] = 6,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 732,
+            ["height"] = 4,
+            ["xoffset"] = 2,
+            ["x"] = 478,
+            ["y"] = 129,
+            ["chnl"] = 15,
+            ["width"] = 9,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 733,
+            ["height"] = 5,
+            ["xoffset"] = 3,
+            ["x"] = 388,
+            ["y"] = 130,
+            ["chnl"] = 15,
+            ["width"] = 10,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 937,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 302,
+            ["y"] = 73,
+            ["chnl"] = 15,
+            ["width"] = 19,
+            ["page"] = 0,
+            ["xadvance"] = 21,
+         },
+         {
+            ["yoffset"] = 11,
+            ["id"] = 960,
+            ["height"] = 14,
+            ["xoffset"] = -1,
+            ["x"] = 38,
+            ["y"] = 140,
+            ["chnl"] = 15,
+            ["width"] = 17,
+            ["page"] = 0,
+            ["xadvance"] = 16,
+         },
+         {
+            ["yoffset"] = 17,
+            ["id"] = 8211,
+            ["height"] = 2,
+            ["xoffset"] = 0,
+            ["x"] = 81,
+            ["y"] = 151,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 17,
+            ["id"] = 8212,
+            ["height"] = 2,
+            ["xoffset"] = 0,
+            ["x"] = 18,
+            ["y"] = 156,
+            ["chnl"] = 15,
+            ["width"] = 27,
+            ["page"] = 0,
+            ["xadvance"] = 27,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 8216,
+            ["height"] = 6,
+            ["xoffset"] = 2,
+            ["x"] = 378,
+            ["y"] = 130,
+            ["chnl"] = 15,
+            ["width"] = 4,
+            ["page"] = 0,
+            ["xadvance"] = 9,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 8217,
+            ["height"] = 6,
+            ["xoffset"] = 2,
+            ["x"] = 366,
+            ["y"] = 130,
+            ["chnl"] = 15,
+            ["width"] = 5,
+            ["page"] = 0,
+            ["xadvance"] = 9,
+         },
+         {
+            ["yoffset"] = 22,
+            ["id"] = 8218,
+            ["height"] = 6,
+            ["xoffset"] = 2,
+            ["x"] = 372,
+            ["y"] = 130,
+            ["chnl"] = 15,
+            ["width"] = 5,
+            ["page"] = 0,
+            ["xadvance"] = 9,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 8220,
+            ["height"] = 6,
+            ["xoffset"] = 2,
+            ["x"] = 355,
+            ["y"] = 130,
+            ["chnl"] = 15,
+            ["width"] = 10,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 8221,
+            ["height"] = 6,
+            ["xoffset"] = 2,
+            ["x"] = 344,
+            ["y"] = 130,
+            ["chnl"] = 15,
+            ["width"] = 10,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 22,
+            ["id"] = 8222,
+            ["height"] = 6,
+            ["xoffset"] = 2,
+            ["x"] = 333,
+            ["y"] = 130,
+            ["chnl"] = 15,
+            ["width"] = 10,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 8224,
+            ["height"] = 23,
+            ["xoffset"] = 0,
+            ["x"] = 351,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 8225,
+            ["height"] = 23,
+            ["xoffset"] = 0,
+            ["x"] = 323,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 11,
+            ["id"] = 8226,
+            ["height"] = 8,
+            ["xoffset"] = 4,
+            ["x"] = 269,
+            ["y"] = 131,
+            ["chnl"] = 15,
+            ["width"] = 8,
+            ["page"] = 0,
+            ["xadvance"] = 16,
+         },
+         {
+            ["yoffset"] = 22,
+            ["id"] = 8230,
+            ["height"] = 3,
+            ["xoffset"] = 3,
+            ["x"] = 488,
+            ["y"] = 129,
+            ["chnl"] = 15,
+            ["width"] = 21,
+            ["page"] = 0,
+            ["xadvance"] = 27,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 8240,
+            ["height"] = 20,
+            ["xoffset"] = 1,
+            ["x"] = 0,
+            ["y"] = 78,
+            ["chnl"] = 15,
+            ["width"] = 34,
+            ["page"] = 0,
+            ["xadvance"] = 36,
+         },
+         {
+            ["yoffset"] = 11,
+            ["id"] = 8249,
+            ["height"] = 12,
+            ["xoffset"] = 2,
+            ["x"] = 138,
+            ["y"] = 135,
+            ["chnl"] = 15,
+            ["width"] = 7,
+            ["page"] = 0,
+            ["xadvance"] = 11,
+         },
+         {
+            ["yoffset"] = 11,
+            ["id"] = 8250,
+            ["height"] = 12,
+            ["xoffset"] = 2,
+            ["x"] = 146,
+            ["y"] = 134,
+            ["chnl"] = 15,
+            ["width"] = 7,
+            ["page"] = 0,
+            ["xadvance"] = 11,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 8364,
+            ["height"] = 20,
+            ["xoffset"] = 0,
+            ["x"] = 34,
+            ["y"] = 99,
+            ["chnl"] = 15,
+            ["width"] = 16,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 8482,
+            ["height"] = 8,
+            ["xoffset"] = 4,
+            ["x"] = 221,
+            ["y"] = 133,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 27,
+         },
+         {
+            ["yoffset"] = 8,
+            ["id"] = 8706,
+            ["height"] = 17,
+            ["xoffset"] = 1,
+            ["x"] = 123,
+            ["y"] = 117,
+            ["chnl"] = 15,
+            ["width"] = 12,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 6,
+            ["id"] = 8710,
+            ["height"] = 19,
+            ["xoffset"] = 0,
+            ["x"] = 38,
+            ["y"] = 120,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 18,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 8719,
+            ["height"] = 25,
+            ["xoffset"] = 2,
+            ["x"] = 390,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 17,
+            ["page"] = 0,
+            ["xadvance"] = 20,
+         },
+         {
+            ["yoffset"] = 6,
+            ["id"] = 8721,
+            ["height"] = 24,
+            ["xoffset"] = 0,
+            ["x"] = 235,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 18,
+         },
+         {
+            ["yoffset"] = 16,
+            ["id"] = 8722,
+            ["height"] = 2,
+            ["xoffset"] = 2,
+            ["x"] = 46,
+            ["y"] = 155,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 23,
+         },
+         {
+            ["yoffset"] = 5,
+            ["id"] = 8725,
+            ["height"] = 20,
+            ["xoffset"] = -5,
+            ["x"] = 102,
+            ["y"] = 98,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 5,
+         },
+         {
+            ["yoffset"] = 14,
+            ["id"] = 8729,
+            ["height"] = 3,
+            ["xoffset"] = 3,
+            ["x"] = 506,
+            ["y"] = 125,
+            ["chnl"] = 15,
+            ["width"] = 3,
+            ["page"] = 0,
+            ["xadvance"] = 9,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 8730,
+            ["height"] = 22,
+            ["xoffset"] = 1,
+            ["x"] = 425,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 17,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 12,
+            ["id"] = 8734,
+            ["height"] = 10,
+            ["xoffset"] = 3,
+            ["x"] = 184,
+            ["y"] = 134,
+            ["chnl"] = 15,
+            ["width"] = 17,
+            ["page"] = 0,
+            ["xadvance"] = 22,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 8747,
+            ["height"] = 25,
+            ["xoffset"] = 0,
+            ["x"] = 127,
+            ["y"] = 26,
+            ["chnl"] = 15,
+            ["width"] = 14,
+            ["page"] = 0,
+            ["xadvance"] = 14,
+         },
+         {
+            ["yoffset"] = 12,
+            ["id"] = 8776,
+            ["height"] = 9,
+            ["xoffset"] = 2,
+            ["x"] = 202,
+            ["y"] = 133,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 23,
+         },
+         {
+            ["yoffset"] = 9,
+            ["id"] = 8800,
+            ["height"] = 15,
+            ["xoffset"] = 2,
+            ["x"] = 294,
+            ["y"] = 115,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 23,
+         },
+         {
+            ["yoffset"] = 9,
+            ["id"] = 8804,
+            ["height"] = 16,
+            ["xoffset"] = 2,
+            ["x"] = 179,
+            ["y"] = 117,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 23,
+         },
+         {
+            ["yoffset"] = 9,
+            ["id"] = 8805,
+            ["height"] = 16,
+            ["xoffset"] = 2,
+            ["x"] = 141,
+            ["y"] = 117,
+            ["chnl"] = 15,
+            ["width"] = 18,
+            ["page"] = 0,
+            ["xadvance"] = 23,
+         },
+         {
+            ["yoffset"] = 3,
+            ["id"] = 9674,
+            ["height"] = 28,
+            ["xoffset"] = 0,
+            ["x"] = 30,
+            ["y"] = 0,
+            ["chnl"] = 15,
+            ["width"] = 13,
+            ["page"] = 0,
+            ["xadvance"] = 13,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 64257,
+            ["height"] = 21,
+            ["xoffset"] = 0,
+            ["x"] = 246,
+            ["y"] = 51,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+         {
+            ["yoffset"] = 4,
+            ["id"] = 64258,
+            ["height"] = 21,
+            ["xoffset"] = 0,
+            ["x"] = 230,
+            ["y"] = 51,
+            ["chnl"] = 15,
+            ["width"] = 15,
+            ["page"] = 0,
+            ["xadvance"] = 17,
+         },
+      },
+      ["common"] = {
+         {
+            ["scaleW"] = 512,
+            ["alphaChnl"] = 0,
+            ["scaleH"] = 512,
+            ["redChnl"] = 0,
+            ["packed"] = 0,
+            ["base"] = 25,
+            ["pages"] = 1,
+            ["blueChnl"] = 0,
+            ["lineHeight"] = 31,
+            ["greenChnl"] = 0,
+         },
+      },
+      ["kerning"] = {
+         {
+            ["amount"] = -1,
+            ["first"] = 45,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 45,
+            ["second"] = 66,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 268,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 262,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 350,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 45,
+            ["second"] = 71,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 350,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = 2,
+            ["first"] = 45,
+            ["second"] = 74,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 350,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 350,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 45,
+            ["second"] = 79,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 350,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 45,
+            ["second"] = 81,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 350,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 45,
+            ["second"] = 84,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 45,
+            ["second"] = 86,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 45,
+            ["second"] = 87,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 45,
+            ["second"] = 88,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 45,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 286,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 286,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 286,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 45,
+            ["second"] = 111,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 286,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 45,
+            ["second"] = 118,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 286,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 286,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 45,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 286,
+            ["second"] = 84,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 45,
+            ["second"] = 214,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 222,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 45,
+            ["second"] = 243,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 45,
+            ["second"] = 242,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 45,
+            ["second"] = 244,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 45,
+            ["second"] = 246,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 45,
+            ["second"] = 245,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 222,
+            ["second"] = 58,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 222,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 45,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 45,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 45,
+            ["second"] = 213,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 253,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 45,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 45,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 45,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 45,
+            ["second"] = 211,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 45,
+            ["second"] = 212,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 45,
+            ["second"] = 210,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 253,
+            ["second"] = 58,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 253,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 45,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 221,
+            ["second"] = 268,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 221,
+            ["second"] = 262,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 45,
+            ["second"] = 286,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 221,
+            ["second"] = 210,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 221,
+            ["second"] = 212,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 65,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 221,
+            ["second"] = 211,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 221,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 65,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 221,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 221,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 221,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 221,
+            ["second"] = 213,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 221,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 65,
+            ["second"] = 84,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 221,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 65,
+            ["second"] = 86,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 65,
+            ["second"] = 87,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 221,
+            ["second"] = 187,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 65,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 221,
+            ["second"] = 171,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 221,
+            ["second"] = 252,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 221,
+            ["second"] = 251,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 65,
+            ["second"] = 102,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 221,
+            ["second"] = 249,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 221,
+            ["second"] = 250,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 221,
+            ["second"] = 245,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 221,
+            ["second"] = 246,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 65,
+            ["second"] = 118,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 65,
+            ["second"] = 119,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 65,
+            ["second"] = 121,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 65,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 221,
+            ["second"] = 244,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 221,
+            ["second"] = 242,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 221,
+            ["second"] = 243,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 221,
+            ["second"] = 235,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 221,
+            ["second"] = 234,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 221,
+            ["second"] = 232,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 221,
+            ["second"] = 233,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 221,
+            ["second"] = 229,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 221,
+            ["second"] = 227,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 221,
+            ["second"] = 228,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 221,
+            ["second"] = 226,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 221,
+            ["second"] = 224,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 221,
+            ["second"] = 225,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 221,
+            ["second"] = 214,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 221,
+            ["second"] = 199,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 221,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 221,
+            ["second"] = 117,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 65,
+            ["second"] = 171,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 221,
+            ["second"] = 111,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 65,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 65,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 221,
+            ["second"] = 105,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 65,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 65,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 65,
+            ["second"] = 255,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 65,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 65,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 65,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 65,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 221,
+            ["second"] = 101,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 221,
+            ["second"] = 97,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 221,
+            ["second"] = 79,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 221,
+            ["second"] = 67,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 221,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 221,
+            ["second"] = 58,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 221,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 65,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 65,
+            ["second"] = 253,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 221,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 240,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 240,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 240,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 352,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 352,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 352,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 352,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 352,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 352,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 210,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 66,
+            ["second"] = 86,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 66,
+            ["second"] = 87,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 66,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 210,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 210,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 66,
+            ["second"] = 171,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 210,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 210,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 66,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 66,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 66,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 66,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 210,
+            ["second"] = 88,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 210,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 210,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 212,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 66,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 212,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 212,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 212,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 212,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 212,
+            ["second"] = 88,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 212,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 212,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 211,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 211,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 211,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 211,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 211,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 211,
+            ["second"] = 88,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 211,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 67,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 211,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 193,
+            ["second"] = 253,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 193,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 193,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 193,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 193,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 193,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 193,
+            ["second"] = 255,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 193,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 193,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 193,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 68,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 193,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 193,
+            ["second"] = 171,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 193,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 193,
+            ["second"] = 121,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 193,
+            ["second"] = 119,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 68,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 68,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 68,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 68,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 193,
+            ["second"] = 118,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 193,
+            ["second"] = 102,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 68,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 193,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 70,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 70,
+            ["second"] = 58,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 70,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 193,
+            ["second"] = 87,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 193,
+            ["second"] = 86,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 70,
+            ["second"] = 97,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 70,
+            ["second"] = 101,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 70,
+            ["second"] = 105,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 70,
+            ["second"] = 111,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 70,
+            ["second"] = 114,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 70,
+            ["second"] = 117,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 70,
+            ["second"] = 121,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 70,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 70,
+            ["second"] = 225,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 70,
+            ["second"] = 224,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 70,
+            ["second"] = 226,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 70,
+            ["second"] = 228,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 70,
+            ["second"] = 227,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 70,
+            ["second"] = 229,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 70,
+            ["second"] = 233,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 70,
+            ["second"] = 232,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 70,
+            ["second"] = 234,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 70,
+            ["second"] = 235,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 70,
+            ["second"] = 243,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 70,
+            ["second"] = 242,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 70,
+            ["second"] = 244,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 70,
+            ["second"] = 246,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 70,
+            ["second"] = 245,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 70,
+            ["second"] = 250,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 70,
+            ["second"] = 249,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 70,
+            ["second"] = 251,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 70,
+            ["second"] = 252,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 193,
+            ["second"] = 84,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 193,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 70,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 70,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 70,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 193,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 70,
+            ["second"] = 255,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 70,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 70,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 70,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 194,
+            ["second"] = 253,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 70,
+            ["second"] = 253,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 194,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 194,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 194,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 71,
+            ["second"] = 84,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 194,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 71,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 194,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 194,
+            ["second"] = 255,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 194,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 194,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 194,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 71,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 71,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 71,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 71,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 194,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 194,
+            ["second"] = 171,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 71,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 194,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 194,
+            ["second"] = 121,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 194,
+            ["second"] = 119,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 194,
+            ["second"] = 118,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 194,
+            ["second"] = 102,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 72,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 72,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 72,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 74,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 194,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 194,
+            ["second"] = 87,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 194,
+            ["second"] = 86,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 194,
+            ["second"] = 84,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 194,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 194,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 74,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 74,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 74,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 268,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 262,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 75,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 286,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 67,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 79,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 75,
+            ["second"] = 84,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 85,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 87,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 101,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 111,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 117,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 75,
+            ["second"] = 121,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 253,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 199,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 214,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 220,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 8222,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 240,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 210,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 212,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 211,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 8222,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 233,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 232,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 234,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 235,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 243,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 242,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 244,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 246,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 245,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 250,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 249,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 251,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 252,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 75,
+            ["second"] = 171,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 8222,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 8222,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 255,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 213,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 75,
+            ["second"] = 255,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 213,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 8222,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 8222,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 211,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 212,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 210,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 218,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 219,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 217,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 75,
+            ["second"] = 253,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 262,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 75,
+            ["second"] = 268,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 8222,
+            ["second"] = 198,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 76,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 76,
+            ["second"] = 79,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 76,
+            ["second"] = 84,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 76,
+            ["second"] = 85,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 76,
+            ["second"] = 86,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 76,
+            ["second"] = 87,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 76,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 223,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 245,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 246,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 244,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 76,
+            ["second"] = 121,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 76,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 76,
+            ["second"] = 214,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 76,
+            ["second"] = 220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 242,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 243,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 241,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 214,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 199,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 8222,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 121,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 8222,
+            ["second"] = 119,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 8222,
+            ["second"] = 118,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 114,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 111,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 110,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 8222,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 88,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 8222,
+            ["second"] = 87,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 8222,
+            ["second"] = 86,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 8222,
+            ["second"] = 84,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 82,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 81,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 80,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 79,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 76,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 76,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 76,
+            ["second"] = 213,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 76,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -7,
+            ["first"] = 76,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 76,
+            ["second"] = 255,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 76,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 76,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 76,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 76,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 76,
+            ["second"] = 211,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 76,
+            ["second"] = 212,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 76,
+            ["second"] = 210,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 76,
+            ["second"] = 218,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 76,
+            ["second"] = 219,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 76,
+            ["second"] = 217,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 76,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 76,
+            ["second"] = 253,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 79,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 79,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 75,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 8222,
+            ["second"] = 74,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 72,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 79,
+            ["second"] = 88,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 79,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 71,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 70,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 68,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 67,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8222,
+            ["second"] = 66,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 79,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 8222,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 79,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 79,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 376,
+            ["second"] = 268,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 376,
+            ["second"] = 262,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 79,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 80,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 376,
+            ["second"] = 210,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 80,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 376,
+            ["second"] = 212,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 376,
+            ["second"] = 211,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 97,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 101,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 105,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 376,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 111,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 376,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 376,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 376,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 376,
+            ["second"] = 213,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 80,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 376,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 225,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 224,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 226,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 228,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 227,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 229,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 233,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 232,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 234,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 235,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 376,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 243,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 242,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 244,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 246,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 245,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 376,
+            ["second"] = 187,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 376,
+            ["second"] = 171,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 376,
+            ["second"] = 252,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 376,
+            ["second"] = 251,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 376,
+            ["second"] = 249,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 376,
+            ["second"] = 250,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 80,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 80,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 80,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 80,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 376,
+            ["second"] = 245,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 80,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 80,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 80,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 376,
+            ["second"] = 246,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 376,
+            ["second"] = 244,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 376,
+            ["second"] = 242,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 376,
+            ["second"] = 243,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 80,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 376,
+            ["second"] = 235,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 376,
+            ["second"] = 234,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 81,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 376,
+            ["second"] = 232,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 376,
+            ["second"] = 233,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 81,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 376,
+            ["second"] = 229,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 81,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 58,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 67,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 82,
+            ["second"] = 84,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 86,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 87,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 82,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 97,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 101,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 111,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 117,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 121,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 199,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 225,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 224,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 226,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 228,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 227,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 229,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 233,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 232,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 234,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 235,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 243,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 242,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 244,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 246,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 245,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 250,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 249,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 251,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 252,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 171,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 376,
+            ["second"] = 227,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 82,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 82,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 255,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 82,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 376,
+            ["second"] = 228,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 82,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 253,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 262,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 82,
+            ["second"] = 268,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 83,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 376,
+            ["second"] = 226,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 376,
+            ["second"] = 224,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 376,
+            ["second"] = 225,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 376,
+            ["second"] = 214,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 376,
+            ["second"] = 199,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 83,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 376,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 376,
+            ["second"] = 117,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 83,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 83,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 376,
+            ["second"] = 111,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 83,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 83,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 376,
+            ["second"] = 105,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 376,
+            ["second"] = 101,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 376,
+            ["second"] = 97,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 376,
+            ["second"] = 79,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 376,
+            ["second"] = 67,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 376,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 376,
+            ["second"] = 58,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 376,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 84,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 84,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 84,
+            ["second"] = 58,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 84,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 84,
+            ["second"] = 67,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 376,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 84,
+            ["second"] = 97,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 84,
+            ["second"] = 99,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 84,
+            ["second"] = 101,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 84,
+            ["second"] = 105,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 84,
+            ["second"] = 111,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 84,
+            ["second"] = 114,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 84,
+            ["second"] = 115,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 84,
+            ["second"] = 117,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 84,
+            ["second"] = 119,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 84,
+            ["second"] = 121,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 84,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 84,
+            ["second"] = 199,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 84,
+            ["second"] = 225,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 84,
+            ["second"] = 224,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 84,
+            ["second"] = 226,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 84,
+            ["second"] = 228,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 84,
+            ["second"] = 227,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 84,
+            ["second"] = 229,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 84,
+            ["second"] = 231,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 84,
+            ["second"] = 233,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 84,
+            ["second"] = 232,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 84,
+            ["second"] = 234,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 84,
+            ["second"] = 235,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 84,
+            ["second"] = 243,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 84,
+            ["second"] = 242,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 84,
+            ["second"] = 244,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 84,
+            ["second"] = 246,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 84,
+            ["second"] = 245,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 84,
+            ["second"] = 250,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 84,
+            ["second"] = 249,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 84,
+            ["second"] = 251,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 84,
+            ["second"] = 252,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 84,
+            ["second"] = 171,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 84,
+            ["second"] = 187,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 84,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 84,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 255,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 84,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 84,
+            ["second"] = 255,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 84,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 84,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 84,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 84,
+            ["second"] = 353,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 84,
+            ["second"] = 253,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 84,
+            ["second"] = 351,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 84,
+            ["second"] = 262,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 84,
+            ["second"] = 263,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 84,
+            ["second"] = 268,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 84,
+            ["second"] = 269,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 255,
+            ["second"] = 58,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 255,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 268,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 262,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 286,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 253,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 240,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 210,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 86,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 58,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 212,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 97,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 101,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 86,
+            ["second"] = 105,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 111,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 117,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 86,
+            ["second"] = 121,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 211,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 225,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 224,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 226,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 228,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 227,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 229,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 233,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 232,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 234,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 235,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 243,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 242,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 244,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 246,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 245,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 250,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 249,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 251,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 252,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 171,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 86,
+            ["second"] = 187,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 8220,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 8220,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 255,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 86,
+            ["second"] = 255,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 86,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 86,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 213,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 8220,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 8220,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 86,
+            ["second"] = 253,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 87,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 87,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 87,
+            ["second"] = 58,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 87,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 87,
+            ["second"] = 97,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 87,
+            ["second"] = 101,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 87,
+            ["second"] = 105,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 87,
+            ["second"] = 111,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 87,
+            ["second"] = 114,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 87,
+            ["second"] = 117,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 8220,
+            ["second"] = 198,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 87,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 87,
+            ["second"] = 225,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 87,
+            ["second"] = 224,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 87,
+            ["second"] = 226,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 87,
+            ["second"] = 228,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 87,
+            ["second"] = 227,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 87,
+            ["second"] = 229,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 87,
+            ["second"] = 233,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 87,
+            ["second"] = 232,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 87,
+            ["second"] = 234,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 87,
+            ["second"] = 235,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 87,
+            ["second"] = 243,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 87,
+            ["second"] = 242,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 87,
+            ["second"] = 244,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 87,
+            ["second"] = 246,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 87,
+            ["second"] = 245,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 87,
+            ["second"] = 250,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 87,
+            ["second"] = 249,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 87,
+            ["second"] = 251,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 87,
+            ["second"] = 252,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 87,
+            ["second"] = 171,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 223,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 87,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 87,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 8220,
+            ["second"] = 245,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 8220,
+            ["second"] = 246,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 8220,
+            ["second"] = 244,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 87,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 87,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 87,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 8220,
+            ["second"] = 242,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 88,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 8220,
+            ["second"] = 243,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 88,
+            ["second"] = 67,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 88,
+            ["second"] = 79,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 241,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 88,
+            ["second"] = 101,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 214,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 88,
+            ["second"] = 199,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 88,
+            ["second"] = 214,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 88,
+            ["second"] = 233,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 88,
+            ["second"] = 232,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 88,
+            ["second"] = 234,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 88,
+            ["second"] = 235,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 88,
+            ["second"] = 171,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 199,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 8220,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 121,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 88,
+            ["second"] = 213,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 88,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 88,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 88,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 119,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 118,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 88,
+            ["second"] = 211,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 88,
+            ["second"] = 212,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 88,
+            ["second"] = 210,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 88,
+            ["second"] = 262,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 88,
+            ["second"] = 268,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 89,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -5,
+            ["first"] = 89,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 89,
+            ["second"] = 58,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 89,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 89,
+            ["second"] = 67,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 89,
+            ["second"] = 79,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 89,
+            ["second"] = 97,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 89,
+            ["second"] = 101,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 89,
+            ["second"] = 105,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 89,
+            ["second"] = 111,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 89,
+            ["second"] = 117,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 89,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 89,
+            ["second"] = 199,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 89,
+            ["second"] = 214,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 89,
+            ["second"] = 225,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 89,
+            ["second"] = 224,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 89,
+            ["second"] = 226,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 89,
+            ["second"] = 228,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 89,
+            ["second"] = 227,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 89,
+            ["second"] = 229,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 89,
+            ["second"] = 233,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 89,
+            ["second"] = 232,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 89,
+            ["second"] = 234,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 89,
+            ["second"] = 235,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 89,
+            ["second"] = 243,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 89,
+            ["second"] = 242,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 89,
+            ["second"] = 244,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 89,
+            ["second"] = 246,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 89,
+            ["second"] = 245,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 89,
+            ["second"] = 250,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 89,
+            ["second"] = 249,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 89,
+            ["second"] = 251,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 89,
+            ["second"] = 252,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 89,
+            ["second"] = 171,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 89,
+            ["second"] = 187,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 89,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 89,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 89,
+            ["second"] = 213,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 89,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 114,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 89,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 89,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 89,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 89,
+            ["second"] = 211,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 89,
+            ["second"] = 212,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 89,
+            ["second"] = 210,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 89,
+            ["second"] = 262,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 89,
+            ["second"] = 268,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 8220,
+            ["second"] = 111,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 110,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 102,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 8220,
+            ["second"] = 88,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 82,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 81,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 80,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 102,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 102,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 102,
+            ["second"] = 58,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 79,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 76,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 75,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 102,
+            ["second"] = 171,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 74,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 102,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 72,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 71,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 102,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 70,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 68,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 107,
+            ["second"] = 101,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 107,
+            ["second"] = 111,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 107,
+            ["second"] = 117,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 107,
+            ["second"] = 121,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 67,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 8220,
+            ["second"] = 66,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 8220,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 213,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 213,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 213,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 107,
+            ["second"] = 233,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 107,
+            ["second"] = 232,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 107,
+            ["second"] = 234,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 107,
+            ["second"] = 235,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 107,
+            ["second"] = 243,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 107,
+            ["second"] = 242,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 107,
+            ["second"] = 244,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 107,
+            ["second"] = 246,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 107,
+            ["second"] = 245,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 107,
+            ["second"] = 250,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 107,
+            ["second"] = 249,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 107,
+            ["second"] = 251,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 107,
+            ["second"] = 252,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 107,
+            ["second"] = 255,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 107,
+            ["second"] = 253,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 213,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 213,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 213,
+            ["second"] = 88,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 213,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 213,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 110,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 110,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 110,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 111,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 195,
+            ["second"] = 253,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 195,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 111,
+            ["second"] = 120,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 195,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 195,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 111,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 111,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 111,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 114,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 114,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 195,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 114,
+            ["second"] = 99,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 195,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 114,
+            ["second"] = 101,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 195,
+            ["second"] = 255,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 195,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 195,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 195,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 195,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 114,
+            ["second"] = 111,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 195,
+            ["second"] = 171,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 195,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 195,
+            ["second"] = 121,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 195,
+            ["second"] = 119,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 195,
+            ["second"] = 118,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 114,
+            ["second"] = 120,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 195,
+            ["second"] = 102,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 195,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 114,
+            ["second"] = 231,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 114,
+            ["second"] = 233,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 114,
+            ["second"] = 232,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 114,
+            ["second"] = 234,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 114,
+            ["second"] = 235,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 195,
+            ["second"] = 87,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 114,
+            ["second"] = 243,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 114,
+            ["second"] = 242,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 114,
+            ["second"] = 244,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 114,
+            ["second"] = 246,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 114,
+            ["second"] = 245,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 195,
+            ["second"] = 86,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 195,
+            ["second"] = 84,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 195,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 195,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 114,
+            ["second"] = 171,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 192,
+            ["second"] = 253,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 192,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 114,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 192,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 114,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 192,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 192,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 192,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 114,
+            ["second"] = 263,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 114,
+            ["second"] = 269,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 118,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 118,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 118,
+            ["second"] = 58,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 192,
+            ["second"] = 255,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 192,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 192,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 192,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 118,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 192,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 119,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 119,
+            ["second"] = 58,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 192,
+            ["second"] = 171,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 192,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 192,
+            ["second"] = 121,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 192,
+            ["second"] = 119,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 119,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 192,
+            ["second"] = 118,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 120,
+            ["second"] = 101,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 120,
+            ["second"] = 111,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 192,
+            ["second"] = 102,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 120,
+            ["second"] = 233,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 120,
+            ["second"] = 232,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 120,
+            ["second"] = 234,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 120,
+            ["second"] = 235,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 120,
+            ["second"] = 243,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 120,
+            ["second"] = 242,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 120,
+            ["second"] = 244,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 120,
+            ["second"] = 246,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 120,
+            ["second"] = 245,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 192,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 192,
+            ["second"] = 87,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 192,
+            ["second"] = 86,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 121,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 121,
+            ["second"] = 58,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 192,
+            ["second"] = 84,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 192,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 192,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 187,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = -4,
+            ["first"] = 121,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 196,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 187,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 187,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 196,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 187,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 187,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 187,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 187,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 187,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 196,
+            ["second"] = 84,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 187,
+            ["second"] = 88,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 196,
+            ["second"] = 86,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 196,
+            ["second"] = 87,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 187,
+            ["second"] = 87,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 196,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 187,
+            ["second"] = 86,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 187,
+            ["second"] = 84,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 187,
+            ["second"] = 66,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 196,
+            ["second"] = 102,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 187,
+            ["second"] = 65,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 171,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 171,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = 2,
+            ["first"] = 171,
+            ["second"] = 198,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 196,
+            ["second"] = 118,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 196,
+            ["second"] = 119,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 196,
+            ["second"] = 121,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 196,
+            ["second"] = 196,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 171,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 171,
+            ["second"] = 86,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 171,
+            ["second"] = 84,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 198,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 198,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 198,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 223,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 223,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 223,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 223,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 245,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 245,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 245,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 245,
+            ["second"] = 120,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 245,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 246,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 246,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 196,
+            ["second"] = 171,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 246,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 196,
+            ["second"] = 192,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 196,
+            ["second"] = 195,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 246,
+            ["second"] = 120,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 196,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -3,
+            ["first"] = 196,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 196,
+            ["second"] = 255,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 196,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 196,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 196,
+            ["second"] = 194,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 196,
+            ["second"] = 193,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 246,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 244,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 244,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 244,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 244,
+            ["second"] = 120,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 244,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 242,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 196,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 196,
+            ["second"] = 253,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 242,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 242,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 242,
+            ["second"] = 120,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 242,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 243,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 243,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 243,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 243,
+            ["second"] = 120,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 243,
+            ["second"] = 45,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 241,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 241,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 241,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 214,
+            ["second"] = 221,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 214,
+            ["second"] = 8222,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 214,
+            ["second"] = 376,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 214,
+            ["second"] = 8220,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 199,
+            ["second"] = 8221,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 214,
+            ["second"] = 89,
+         },
+         {
+            ["amount"] = -2,
+            ["first"] = 214,
+            ["second"] = 88,
+         },
+         {
+            ["amount"] = -1,
+            ["first"] = 214,
+            ["second"] = 46,
+         },
+         {
+            ["amount"] = 1,
+            ["first"] = 214,
+            ["second"] = 45,
+         },
+      },
+      ["kernings"] = {
+         {
+            ["count"] = 1000,
+         },
+      },
+   },
 }

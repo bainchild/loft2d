@@ -1,6 +1,4 @@
-local Object = require("loft._classes.Object")
-local Data = { _classname = "Data" }
-Object:_inherit(Data)
+local Data = require("loft._classes.Object"):_inherit({ _classname = "Data" })
 function Data:getPointer()
    return nil
 end

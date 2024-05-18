@@ -3,22 +3,22 @@ local Image = require("loft._classes.Texture"):_inherit({ _classname = "Image" }
 local function convert(format, r, g, b, a)
    local max
    if format:sub(-1) == "8" then
-      max=255
+      max = 255
    elseif format:sub(-2) == "16" or format:sub(-3) == "16f" then
-      max=65535
+      max = 65535
    elseif format:sub(-2) == "32" or format:sub(-3) == "32f" then
       max = 2 ^ 31
    end
    r, g, b, a = r or 0, g or 0, b or 0, a or max
-   if format=="r8" then
-      g,b=r,r
+   if format == "r8" then
+      g, b = r, r
    end
    return r / max, g / max, b / max, a / max
 end
 local function unconvert(format, r, g, b, a)
    r, g, b, a = r or 0, g or 0, b or 0, a or 1
-   if format=="r8" then
-      g,b=r,r
+   if format == "r8" then
+      g, b = r, r
    end
    if format:sub(-1) == "8" then
       return math.floor(r * 255), math.floor(g * 255), math.floor(b * 255), math.floor(a * 255)

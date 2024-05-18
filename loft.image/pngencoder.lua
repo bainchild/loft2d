@@ -14,6 +14,9 @@ function Png:writeBytes(data, index, len)
    index = index or 1
    len = len or #data
    for i = index, index + len - 1 do
+      if data[i] % 1 ~= 0 or data[i] < 0 or data[i] > 255 then
+         io.stderr:write("BAD BYTE: " .. data[i] .. "\n")
+      end
       table.insert(self.output, string.char(data[i]))
    end
 end

@@ -36,6 +36,13 @@ function love.event.pump()
          v.loft_step()
       end
    end
+   if love._steps then
+      for _, v in next, love._steps do
+         if type(v) == "function" then
+            v()
+         end
+      end
+   end
    if love._step then
       love._step()
    end

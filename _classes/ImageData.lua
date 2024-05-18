@@ -112,6 +112,7 @@ function ImageData:mapPixel(func, x, y, width, height)
    assert(s, r)
 end
 function ImageData:setPixel(x, y, r, g, b, a)
+   x,y=x+1,y+1
    if rawget(self, "_mutable") == false then
       if love.timer and love.timer.sleep then
          repeat
@@ -121,10 +122,13 @@ function ImageData:setPixel(x, y, r, g, b, a)
          error("Locked imagedata! (unable to sleep until unlocked)")
       end
    end
+   if x>rawget(self,"_width") or y>rawget(self,"_height") or x<1 or y<1 then
+      error("out of bounds imagedata write")
+   end
    rawget(self, "_pixels")[x][y] = { unconvert(rawget(self, "_format"), r, g, b, a) }
 end
-function ImageData:_window(x,y,xs,ys)
-   local opx = rawget(self,"_pixels")
+function ImageData:_window(x, y, xs, ys)
+   local opx = rawget(self, "_pixels")
    local px = {}
    local n = {}
    for i, v in next, self do
@@ -134,11 +138,11 @@ function ImageData:_window(x,y,xs,ys)
    n._pixels = px
    n._width = xs
    n._height = ys
-   for nx=xs,1,-1 do
+   for nx = xs, 1, -1 do
       px[nx] = {}
-      for ny=ys,1,-1 do
+      for ny = ys, 1, -1 do
          -- print(nx,ny,'->',nx+x,ny+y,' = ',opx[nx+x][ny+y])
-         px[nx][ny] = opx[nx+x][ny+y]
+         px[nx][ny] = opx[nx + x][ny + y]
       end
    end
    return n

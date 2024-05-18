@@ -1,11 +1,13 @@
 ---@diagnostic disable: unused-local
+local flags = require('loft._flags')
 local log = require('loft._logging')
-log.env = "prod"
-log.debug = false
-log.quiet = true
+log.env = flags.env or 'prod'
+log.debug = flags.debug or false
+log.quiet = flags.quiet or false
 ---@diagnostic disable-next-line: lowercase-global
 love = {
    _version = "11.5",
+   _loft_version = "scm",
    _provider = {},
    _providers = {},
 }
@@ -39,11 +41,23 @@ love._providers.thread = {
 for i, v in next, love._providers do
    if love._provider[i] == nil then
       for i2, v2 in next, v do
+         log.dbg("loft","init","%s: %s %s",i2,v2.check==nil,v2.check~=nil and v2.check())
          if v2.check == nil or v2.check() then
             love._provider[i] = v2.get()
-            log.dbg("loft","init","Using %s provider %s",i,i2)
+            log.note("loft","init","Using %s provider %s",i,i2)
             -- print("LOFT: Using "..i2.." as a "..i.." provider")
             break
+         end
+      end
+   elseif i=="input" then
+      local pro = love._provider[i]
+      if pro==nil then pro={}; love._provider[i]=pro end
+      for i2, v2 in next, v do
+         log.dbg("loft","init","%s: %s %s",i2,v2.check==nil,v2.check~=nil and v2.check())
+         if v2.check == nil or v2.check() then
+            pro[#pro+1] = v2.get()
+            log.note("loft","init","Using %s provider %s",i,i2)
+            -- print("LOFT: Using "..i2.." as a "..i.." provider")
          end
       end
       -- elseif i=="display" and display_priority[love._provider.display.renderingInteface or "unknown"] < satisfactory_display_priority then

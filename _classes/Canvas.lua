@@ -2,7 +2,9 @@
 local Canvas = require("loft._classes.Texture"):_inherit({ _classname = "Canvas" })
 local ImageData = require("loft._classes.ImageData")
 local love = require("loft")
-local function convert(format, r, g, b, a)
+local log = require("loft._logging"):clone("px")
+local flags = require("loft._flags")
+local function pxv_unit(format, r, g, b, a)
    r, g, b, a = r or 0, g or 0, b or 0, a or 0
    if format:sub(-1) == "8" then
       return r / 255, g / 255, b / 255, a / 255
@@ -14,7 +16,7 @@ local function convert(format, r, g, b, a)
    end
    return r, g, b, a
 end
-local function unconvert(format, r, g, b, a)
+local function pxv_notunit(format, r, g, b, a)
    r, g, b, a = r or 0, g or 0, b or 0, a or 0
    if format:sub(-1) == "8" then
       return math.floor(r * 255), math.floor(g * 255), math.floor(b * 255), math.floor(a * 255)
@@ -119,6 +121,36 @@ function Canvas:_new(width, height, dpi, format, px, fill_pixel)
       _pxformat = format,
       _pxarray = px,
    }
+   if flags.dbg_pixels then
+      local function handler(x)
+         return function(self2,y,px2)
+            rawset(self2,y,px2)
+            log.dbg("ow("..x..","..y..")","%d %d = %d %d: %s",x,y,px2[1],px2[4],debug.traceback())
+         end
+      end
+      local function handlejr(x,y)
+         return function(self2,i,v)
+            rawset(self2,i,v)
+            if i==1 or i==4 then
+               log.dbg("plc("..x..","..y..")","%d=%d: %s",i,v,debug.traceback())
+            end
+         end
+      end
+      for x = flags.dbg_pixels_selection_start[1],flags.dbg_pixels_selection_end[1] do
+         if px[x] then
+            setmetatable(px[x],{
+               __newindex=handler(x);
+            })
+            for y = flags.dbg_pixels_selection_start[2],flags.dbg_pixels_selection_end[2] do
+               if px[x][y] then
+                  setmetatable(px[x][y],{
+                     __newindex=handlejr(x,y)
+                  })
+               end
+            end
+         end
+      end
+   end
    for i, v in next, self do
       n[i] = v
    end
@@ -138,9 +170,9 @@ function Canvas:_getpxarray(form)
             -- divides to make it 0-1 range
             if type(p) == "table" then
                ---@diagnostic disable-next-line: deprecated
-               n[x][y] = { convert(format, (unpack or table.unpack)(p)) }
+               n[x][y] = { pxv_unit(format, (unpack or table.unpack)(p)) }
             else
-               n[x][y] = convert(format, p)
+               n[x][y] = pxv_unit(format, p)
             end
          end
       end
@@ -158,10 +190,26 @@ function Canvas:_getpxarray(form)
             local p = px[x][y]
             if type(p) == "table" then
                ---@diagnostic disable-next-line: deprecated
-               n[x][y] = { unconvert(form, convert(format, (unpack or table.unpack)(p))) }
+               n[x][y] = { pxv_notunit(form, pxv_unit(format, (unpack or table.unpack)(p))) }
             else
-               n[x][y] = unconvert(form, convert(format, p))
+               n[x][y] = pxv_notunit(form, pxv_unit(format, p))
             end
+         end
+      end
+   end
+   if false then
+      for x = 1, w do
+         if type(px[x][1])=="table" then
+            n[x][1] = { pxv_notunit(form, 1, 0, 1) }
+         else
+            n[x][1] = pxv_notunit(form, 1, 0, 1)
+         end
+      end
+      for y = 1, h do
+         if type(px[1][y])=="table" then
+            n[1][y] = { pxv_notunit(form, 1, 0, 1) }
+         else
+            n[1][y] = pxv_notunit(form, 1, 0, 1)
          end
       end
    end

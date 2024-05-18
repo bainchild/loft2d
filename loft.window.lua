@@ -87,8 +87,9 @@ function love.window.setMode(width, height, flags)
       local cur = mode.flags
       for i, v in next, flags do
          if i ~= "stencil" and i ~= "depth" and i ~= "usedpiscale" and cur[i] ~= v then
-            print("mismatching value:", i, cur[i], v)
+            -- print("mismatching value:", i, cur[i], v)
             bad = true
+            break
          end
       end
       if not bad then

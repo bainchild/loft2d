@@ -1,5 +1,5 @@
 local file = assert(io.open(assert((...), "Pass a .fnt file"), "r"))
-local base64 = require('base64')
+local base64 = require("base64")
 local bmfont = require("bmfont")
 local nding = file:seek("end")
 file:seek("set", 0)
@@ -22,7 +22,7 @@ while file:seek("cur") < nding do
    cmd.type = nil
    cmds[typ][#cmds[typ] + 1] = cmd
    if typ == "page" then
-      pages[cmd.id] = base64.encode(io.open(cmd.file,"rb"):read("*a"))
+      pages[cmd.id] = base64.encode(io.open(cmd.file, "rb"):read("*a"))
    end
 end
 pages.fnt = cmds

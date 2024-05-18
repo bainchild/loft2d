@@ -38,11 +38,11 @@ local main_file = "main.lua"
 
 -- This can't be overridden.
 function love.boot(...)
-   local arg = { ... }
+   local arg2 = { ... }
    -- This is absolutely needed.
    require("loft.filesystem")
 
-   love.rawGameArguments = arg
+   love.rawGameArguments = arg2
 
    local arg0 = love.arg.getLow(love.rawGameArguments)
    love.filesystem.init(arg0)
@@ -312,9 +312,10 @@ function love.init()
       -- "thread",
       "timer",
       "event",
+      "input",
       -- "keyboard",
       -- "joystick",
-      -- "mouse",
+      "mouse",
       -- "touch",
       -- "sound",
       "system",
@@ -416,7 +417,7 @@ function love.init()
 
    if no_game_code then
       local opts = love.arg.options
-      local gamepath = opts.game.set and opts.game.arg[1] or ""
+      local gamepath = opts.game.set and opts.game.arg and opts.game.arg[1] or ""
       local gamestr = gamepath == "" and "" or " at " .. gamepath
       error(
          "No code to run"
@@ -441,7 +442,7 @@ end
 -----------------------------------------------------------
 
 return function(...)
-   local arg = { ... }
+   local arg2 = { ... }
    local func
    local inerror = false
 
@@ -455,7 +456,7 @@ return function(...)
    local function earlyinit()
       -- If love.boot fails, return 1 and finish immediately
       local result = xpcall(function()
-         return love.boot((unpack or table.unpack)(arg))
+         return love.boot((unpack or table.unpack)(arg2))
       end, error_printer)
       if not result then
          return 1

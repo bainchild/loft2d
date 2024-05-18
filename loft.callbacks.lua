@@ -19,6 +19,7 @@ freely, subject to the following restrictions:
 --]]
 
 local love = require("loft")
+local utf8 = utf8 or require("utf8")
 
 function love.createhandlers()
    -- Standard callback handlers.

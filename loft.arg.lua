@@ -129,14 +129,14 @@ function love.arg.parseOption(m, i)
    return m.a
 end
 
-function love.arg.parseOptions(arg)
+function love.arg.parseOptions(arg2)
    local game
-   local argc = #arg
+   local argc = #arg2
 
    local i = 1
    while i <= argc do
       -- Look for options.
-      local m = arg[i]:match("^%-%-(.*)")
+      local m = arg2[i]:match("^%-%-(.*)")
 
       if m and m ~= "" and love.arg.options[m] and not love.arg.options[m].set then
          love.arg.optionIndices[i] = true

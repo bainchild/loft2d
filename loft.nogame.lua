@@ -360,8 +360,10 @@ function love.nogame()
          love.graphics.draw(logo, (width / 2) - (logo_data:getWidth() / 2), (height / 2) - (logo_data:getHeight() / 2))
       end
       love.graphics.origin()
-      io.write(love.graphics._getScreen():newImageData():encode("png"):getString())
-      os.exit(0)
+      if love._provider and not love._provider.display then
+         io.write(love.graphics._getScreen():newImageData():encode("png"):getString())
+         os.exit(0)
+      end
    end
    love.keypressed = set_transition
    love.textinput = set_transition
