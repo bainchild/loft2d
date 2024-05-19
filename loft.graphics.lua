@@ -10,9 +10,10 @@ local dc_r, dc_g, dc_b, dc_a = 1, 1, 1, 1
 local bg_r, bg_g, bg_b, bg_a = 0, 0, 0, 1
 local unpack = unpack or table.unpack
 local default_filter_mode = "nearest"
-local scissor, blendmode, ccm, wireframe = nil, "alphamultiply", { true, true, true, true }, false
+local scissor, blendmode, color_component_mask, wireframe = nil, "alphamultiply", { true, true, true, true }, false
 local transform_ox, transform_oy, transform_sx, transform_sy, transform_rot = 0, 0, 1, 1, 0
 local line_mode, point_size, line_size = "smooth", 1, 0.25
+local graph_stack = {}
 local cg_works = false
 -- local cg_works = pcall(function()
 --    collectgarbage("stop")
@@ -78,6 +79,15 @@ local function clampf(a, b, c)
       return b
    end
    return round(a)
+end
+local function clampc(a, b, c)
+   if a > c then
+      return c
+   end
+   if a < b then
+      return b
+   end
+   return floor(a+.5)
 end
 local function clamp(a, b, c)
    if a > c then
@@ -534,7 +544,7 @@ function love.graphics.reset()
    assert(love.graphics.isActive(), "not active...")
    dc_r, dc_g, dc_b, dc_a = 1, 1, 1, 1
    bg_r, bg_g, bg_b, bg_a = 0, 0, 0, 0
-   scissor, blendmode, ccm, wireframe = nil, "alphamultiply", { true, true, true, true }, false
+   scissor, blendmode, color_component_mask, wireframe = nil, "alphamultiply", { true, true, true, true }, false
    transform_ox, transform_oy, transform_sx, transform_sy, transform_rot = 0, 0, 1, 1, 0
    line_mode, point_size, line_size = "smooth", 1, 0.25
 end
@@ -558,6 +568,28 @@ function love.graphics.scale(sx, sy)
    end
    transform_ox, transform_oy = transform_ox * sx, transform_oy * sy
    transform_sx, transform_sy = transform_sx * sx, transform_sy * sy
+end
+function love.graphics.push()
+   graph_stack[#graph_stack+1] = {
+      dc_r, dc_g, dc_b, dc_a,
+      bg_r, bg_g, bg_b, bg_a,
+      default_filter_mode,
+      scissor, blendmode, color_component_mask, wireframe,
+      transform_ox, transform_oy, transform_sx, transform_sy, transform_rot,
+      line_mode, point_size, line_size
+   }
+end
+function love.graphics.pop()
+   if #graph_stack == 0 then
+      love.graphics.reset()
+   else
+      dc_r, dc_g, dc_b, dc_a,
+      bg_r, bg_g, bg_b, bg_a,
+      default_filter_mode,
+      scissor, blendmode, color_component_mask, wireframe,
+      transform_ox, transform_oy, transform_sx, transform_sy, transform_rot,
+      line_mode, point_size, line_size = unpack(table.remove(graph_stack,#graph_stack))
+   end
 end
 function love.graphics.clear(r, g, b, a, stencil, depth)
    assert(love.graphics.isActive(), "not active...")
@@ -673,24 +705,24 @@ function love.graphics.print(text, font2, x, y, r, sx, sy, ox, oy)
    local filter = (font2 or font):getFilter()
    local sf = (font2 or font):_getScalingFactor()
    local sf2 = 1 / sf
-   if true then
-      local was_canvas = canvas ~= nil
-      local base = (font2 or font):getBaseline()
-      local lineheight = (font2 or font):getLineHeight()
-      canvas = allt
-      local color = { love.graphics.getColor() }
-      love.graphics.setColor(1, 0, 0, 1)
-      for i=1,50 do
-         local xpos = (lineheight*(i-1)-base)*sf
-         love.graphics.line(1, xpos, aw, xpos)
-      end
-      love.graphics.setColor(color)
-      if was_canvas then
-         canvas = target
-      else
-         canvas = nil
-      end
-   end
+   -- if true then
+   --    local was_canvas = canvas ~= nil
+   --    local base = (font2 or font):getBaseline()
+   --    local lineheight = (font2 or font):getLineHeight()
+   --    canvas = allt
+   --    local color = { love.graphics.getColor() }
+   --    love.graphics.setColor(1, 0, 0, 1)
+   --    for i=1,50 do
+   --       local xpos = (lineheight*(i-1)-base)*sf
+   --       love.graphics.line(1, xpos, aw, xpos)
+   --    end
+   --    love.graphics.setColor(color)
+   --    if was_canvas then
+   --       canvas = target
+   --    else
+   --       canvas = nil
+   --    end
+   -- end
    local scout
    if cg_works then
       scout = collectgarbage("count")
@@ -834,6 +866,45 @@ function love.graphics.draw(drawable, x, y, r, sx, sy, ox, oy)
       true
    )
 end
+function love.graphics.circle(mode, px, py, radius, _segments)
+   px,py=px+1,py+1
+   local target = (canvas or screen)
+   local width,height = target:getDimensions()
+   local tlx, tly = px-radius,py-radius
+   local canv = target:_clone_nc({ pxv_notunit(target:getFormat(), 0, 0, 0, 0) })
+   local pix = rawget(canv, "_pxarray")
+   local conv_color = { pxv_notunit(canv:getFormat(), dc_r, dc_g, dc_b, dc_a) }
+   -- local bboxx,bboxy = px-radius, py-radius
+   local radiussq = radius^2
+   local diameter = radius*2
+   if mode=="fill" then
+      for x=0,diameter do
+         for y=0,diameter do
+            local nx,ny = round(tlx+x),round(tlx+y)
+            if (x-radius)^2+(y-radius)^2<=radiussq and bounds(nx,ny,1,1,width,height) then
+               pix[nx][ny] = conv_color
+            end
+         end
+      end
+      -- for x=clampf(bboxx,1,width),clampc(px+radius,1,width) do
+      --    for y=clampf(bboxy,1,height),clampc(py+radius,1,height) do
+      --       if bounds(x,y,bboxx,bboxy,diameter,diameter) and x^2+y^2<=radius then
+      --          pix[x][y] = conv_color
+      --       end
+      --    end
+      -- end
+   elseif mode=="line" then
+      -- for x=clampf(bboxx,1,width),clampc(px+radius,1,width) do
+      --    for y=clampf(bboxy,1,height),clampc(py+radius,1,height) do
+      --       local dist = x^2+y^2
+      --       if bounds(x,y,bboxx,bboxy,diameter,diameter) and dist<=radius+.4 and dist>=radius-.4 then
+      --          pix[x][y] = conv_color
+      --       end
+      --    end
+      -- end
+   end
+   copy(target, blend(target, transform(canv), 1, 1), true)
+end
 function love.graphics.line(x1, y1, x2, y2)
    -- TODO: overloads
    x1, y1, x2, y2 = x1 + 1, y1 + 1, x2 + 1, y2 + 1
@@ -943,6 +1014,12 @@ function love.graphics.rectangle(mode, x, y, w, h)
    end
 end
 --
+function love.graphics._updateWindowMode(mode,dpi)
+   local w,h = screen:getDimensions()
+   if mode.width~=w or mode.height~=h then
+      love.graphics._newScreen(mode.width,mode.height,dpi or 1)
+   end
+end
 function love.graphics._setScreen(scree)
    screen = scree
 end

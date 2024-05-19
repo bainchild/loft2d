@@ -81,6 +81,11 @@ local function clone(a)
    end
    return n
 end
+local function updateWindowMode()
+   if love.graphics then
+      love.graphics._newScreen(mode.width, mode.height, dpi_scale)
+   end
+end
 function love.window.setMode(width, height, flags)
    if width == mode.width and height == mode.height and mode.flags ~= nil then
       local bad = false
@@ -99,7 +104,7 @@ function love.window.setMode(width, height, flags)
    if prov.display and prov.display.DPIEnabled then
       dpi_scale = prov.display.DPIScale
    end
-   if prov.display and (prov.display.sizeCompatible == nil or prov.display.sizeCompatible(width, height)) then
+   if prov.display==nil or prov.display and (prov.display.sizeCompatible == nil or prov.display.sizeCompatible(width, height)) then
       mode.width = (width == 0 and defmode.width) or width or (mode and mode.width) or defmode.width
       mode.height = (height == 0 and defmode.height) or height or (mode and mode.height) or defmode.height
       mode.flags = merge(mode.flags or defmode.flags, flags)
@@ -110,15 +115,13 @@ function love.window.setMode(width, height, flags)
             use_dpi_scale = flags.usedpiscale
          end
       end
-      if prov.display.changeSize then
+      if prov.display and prov.display.changeSize then
          prov.display.changeSize(mode.width, mode.height)
       end
-      if prov.display.changeFlags then
+      if prov.display and prov.display.changeFlags then
          prov.display.changeFlags(mode.flags)
       end
-      if love.graphics then
-         love.graphics._newScreen(mode.width, mode.height, dpi_scale)
-      end
+      updateWindowMode()
       return true
    end
    return false
@@ -127,7 +130,7 @@ function love.window.setPosition(x, y, display)
    if display == nil then
       display = 1
    end
-   if display > (prov.display.DisplayCount or 1) or display < 1 then
+   if display > (prov.display and prov.display.DisplayCount or 1) or display < 1 then
       error("Invalid display id: " .. display)
    end
    if prov.display and mode.flags then
@@ -135,10 +138,11 @@ function love.window.setPosition(x, y, display)
       newflags.x = x
       newflags.y = y
       newflags.display = display
-      if prov.display.changeFlags and not prov.display.changeFlags(newflags) then
+      if prov.display and prov.display.changeFlags and not prov.display.changeFlags(newflags) then
          return false
       end
       mode.flags = newflags
+      updateWindowMode()
    end
 end
 function love.window.getDPIScale()
@@ -178,7 +182,7 @@ function love.window.getDisplayName(idx)
    if idx > 1 or idx < 1 then
       error("Invalid display index: " .. idx)
    end
-   return "Display"
+   return "Display_"..idx
 end
 function love.window.getDisplayOrientation(idx)
    if idx == nil then
@@ -216,8 +220,12 @@ function love.window.setFullscreen(full, type)
                end
             end
          elseif type == "desktop" then
-            local x, y = prov.display.getDisplaySize(mode.flags.display)
-            if mode.width ~= x or mode.height ~= y then
+            if prov.display then
+               local x, y = prov.display.getDisplaySize(mode.flags.display)
+               if mode.width ~= x or mode.height ~= y then
+                  set = true
+               end
+            else
                set = true
             end
          end
@@ -239,6 +247,7 @@ function love.window.setFullscreen(full, type)
          end
       end
       mode.width, mode.height, mode.flags = newmode.width, newmode.height, newmode.flags
+      updateWindowMode()
       return true
    end
 end
@@ -255,7 +264,7 @@ function love.window.getFullscreenModes(idx)
    if idx > 1 or idx < 1 then
       error("Invalid display index: " .. idx)
    end
-   return { { width = 800, height = 600 } }
+   return { { width = mode.width, height = mode.height } }
 end
 -- TODO: geticon, seticon
 function love.window.getIcon()
@@ -331,12 +340,14 @@ function love.window.maximize()
    if prov.display and prov.display.maximize then
       prov.display.maximize()
    end
+   updateWindowMode()
 end
 function love.window.minimize()
    prevmode = { mode.width, mode.height, mode.flags }
    if prov.display and prov.display.minimize then
       prov.display.minimize()
    end
+   updateWindowMode()
 end
 function love.window.restore()
    if prevmode then
@@ -350,6 +361,7 @@ function love.window.restore()
             prov.display.changeFlags(mode.flags)
          end
       end
+      updateWindowMode()
    end
 end
 function love.window.requestAttention(continuous)
