@@ -8,6 +8,7 @@ log.quiet = flags.quiet or false
 love = {
    _version = "11.5",
    _loft_version = "scm",
+   _loft_version_code = "Flying Beagle",
    _provider = {},
    _providers = {},
 }

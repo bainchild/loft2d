@@ -728,7 +728,7 @@ function love.graphics.print(text, font2, x, y, r, sx, sy, ox, oy)
       scout = collectgarbage("count")
    end
    log.dbg("print", "scaling factor: %f (%f)", sf, sf2)
-   for i, v in next, (font2 or font):_arrange(text) do
+   for i, v in next, (font2 or font):_arrange("\n"..text) do --TODO: text is one line too high
       perf_start("plbody")
       local img = v.glyph:_getImage()
       local w, h, px = img:_getpxarray("rgba8")
@@ -871,6 +871,12 @@ function love.graphics.circle(mode, px, py, radius, _segments)
    local target = (canvas or screen)
    local width,height = target:getDimensions()
    local tlx, tly = px-radius,py-radius
+   -- love.graphics.push()
+   -- love.graphics.setColor(0,1,0,1)
+   -- love.graphics.points(tlx-1,tly-1)
+   -- love.graphics.setColor(0,1,1,1)
+   -- love.graphics.points(px+radius-1,py+radius-1)
+   -- love.graphics.pop()
    local canv = target:_clone_nc({ pxv_notunit(target:getFormat(), 0, 0, 0, 0) })
    local pix = rawget(canv, "_pxarray")
    local conv_color = { pxv_notunit(canv:getFormat(), dc_r, dc_g, dc_b, dc_a) }
@@ -880,7 +886,7 @@ function love.graphics.circle(mode, px, py, radius, _segments)
    if mode=="fill" then
       for x=0,diameter do
          for y=0,diameter do
-            local nx,ny = round(tlx+x),round(tlx+y)
+            local nx,ny = round(tlx+x),round(tly+y)
             if (x-radius)^2+(y-radius)^2<=radiussq and bounds(nx,ny,1,1,width,height) then
                pix[nx][ny] = conv_color
             end
